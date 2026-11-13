@@ -1,0 +1,4339 @@
+{
+ "label_set": "formal",
+ "criterion": {
+  "file": "frames/criterion_fine_width_r1.json",
+  "sha256": "fc7aac192cf1ae79fad0ab722bde62a45d8fb339d6c1f0191a5a124e8af96686"
+ },
+ "rule": "Dark-band width measured with the fine ruler (rows[].fine). The brightness profile across the trace is walked as by the earlier, coarser ruler, with two changes: every pixel of the target layer is a sample (no stride) and the profile step is 0.25 px (s = arange(-R, R + 0.125, 0.25)); the half-depth crossings are interpolated linearly between neighbouring profile samples, which gives a continuous width. Ring part, centre part, the rule that a depth below 2 grey levels has no dark band, and the median are unchanged. Self-check in the same code path: the coarse ruler (every 4th target pixel, step 0.5 px, width (hi - lo) x 0.5) is computed again on every row (old_ruler) and must equal apparent_width_px of b_summary_formal.json exactly (old_check, old_ruler_check). Inputs: the cases of b_cases.json whose role is not scale; the label layers (label_dir) and the image frame.png (png) of each frame; pixel_mm from the camera and the camera plan. Resolution check: the samples are split by their row-major index in np.argwhere(target) modulo 4 (k = 0..3) and the median is taken per subset. group_2: per camera, the change of the median width from a mean opening of 3 cm to 8 cm over the expected change in pixels, with its verdict on the full set and on each subset; resolved is true when the five verdicts agree. monotonic: at the 6 viewpoints of the dark-band width table, whether the median width never decreases with the mean opening (base 5.5 cm = row b055 of the camera), on the full set and on each subset, with the decreasing steps listed. criterion: name and SHA-256 of the file that lays down this procedure and its checks; module_sha256 and analyze_opening_sha256: SHA-256 of the script of this measurement and of the script of the coarse ruler; these three files are not part of the package. The numerical libraries ran with one thread.",
+ "wall_s": 6.798828125,
+ "guard": {
+  "min_free_gb": 32.22726058959961,
+  "peak_tree_gb": 0.0611724853515625,
+  "terminated": false
+ },
+ "module_sha256": "fe333f63be99537cd3202b3807279b3b3af1b3b7673ba957cb9cfea3e3c6bfec",
+ "analyze_opening_sha256": "6a35bdc5c9dd8873c39d1fc536d22c1b2172c3b208419863c23a7ec62bd62742",
+ "old_ruler_check": {
+  "rows": 46,
+  "equal": 46,
+  "mismatches": []
+ },
+ "group_2": {
+  "full": {
+   "per_camera": [
+    {
+     "camera": "a26120005_c2",
+     "width_3cm": 3.817811315291722,
+     "width_8cm": 5.193127675632462,
+     "expected_change_px": 2.578032138632198,
+     "ratio": 0.5334752580200293
+    },
+    {
+     "camera": "a26120005_c0",
+     "width_3cm": 3.6887032099232764,
+     "width_8cm": 9.901032150381265,
+     "expected_change_px": 7.38848792264007,
+     "ratio": 0.8408119503615819
+    },
+    {
+     "camera": "a26120005_c3",
+     "width_3cm": 2.538699886329007,
+     "width_8cm": 3.46402668010055,
+     "expected_change_px": 3.6920601736137466,
+     "ratio": 0.25062614103221503
+    },
+    {
+     "camera": "a26130005_c1",
+     "width_3cm": 5.868128624937751,
+     "width_8cm": 10.319364767481044,
+     "expected_change_px": 6.280627705786373,
+     "ratio": 0.7087247248300274
+    }
+   ],
+   "below_half": 1,
+   "triggered": false
+  },
+  "subsets": [
+   {
+    "per_camera": [
+     {
+      "camera": "a26120005_c2",
+      "width_3cm": 3.8111980040254227,
+      "width_8cm": 5.002124741222859,
+      "expected_change_px": 2.578032138632198,
+      "ratio": 0.46195185829967783
+     },
+     {
+      "camera": "a26120005_c0",
+      "width_3cm": 3.7124549071896773,
+      "width_8cm": 9.822634986226937,
+      "expected_change_px": 7.38848792264007,
+      "ratio": 0.826986542173836
+     },
+     {
+      "camera": "a26120005_c3",
+      "width_3cm": 2.641562419517776,
+      "width_8cm": 3.4522454063625174,
+      "expected_change_px": 3.6920601736137466,
+      "ratio": 0.21957469508175811
+     },
+     {
+      "camera": "a26130005_c1",
+      "width_3cm": 6.234282609144881,
+      "width_8cm": 10.15911156447267,
+      "expected_change_px": 6.280627705786373,
+      "ratio": 0.6249103018336568
+     }
+    ],
+    "below_half": 2,
+    "triggered": true
+   },
+   {
+    "per_camera": [
+     {
+      "camera": "a26120005_c2",
+      "width_3cm": 3.7237124079032844,
+      "width_8cm": 5.488036979655577,
+      "expected_change_px": 2.578032138632198,
+      "ratio": 0.6843687265622583
+     },
+     {
+      "camera": "a26120005_c0",
+      "width_3cm": 3.6163931311158173,
+      "width_8cm": 9.857640323817739,
+      "expected_change_px": 7.38848792264007,
+      "ratio": 0.8447259111809966
+     },
+     {
+      "camera": "a26120005_c3",
+      "width_3cm": 2.4422540028008966,
+      "width_8cm": 3.462489959073583,
+      "expected_change_px": 3.6920601736137466,
+      "ratio": 0.2763324291310483
+     },
+     {
+      "camera": "a26130005_c1",
+      "width_3cm": 6.047793863199567,
+      "width_8cm": 10.103022238552542,
+      "expected_change_px": 6.280627705786373,
+      "ratio": 0.6456724654475019
+     }
+    ],
+    "below_half": 1,
+    "triggered": false
+   },
+   {
+    "per_camera": [
+     {
+      "camera": "a26120005_c2",
+      "width_3cm": 3.706592347475297,
+      "width_8cm": 4.91213826807348,
+      "expected_change_px": 2.578032138632198,
+      "ratio": 0.46762253368873763
+     },
+     {
+      "camera": "a26120005_c0",
+      "width_3cm": 3.655697660281385,
+      "width_8cm": 10.10990123607399,
+      "expected_change_px": 7.38848792264007,
+      "ratio": 0.8735486399071456
+     },
+     {
+      "camera": "a26120005_c3",
+      "width_3cm": 2.5937688095269147,
+      "width_8cm": 3.381323698409115,
+      "expected_change_px": 3.6920601736137466,
+      "ratio": 0.2133104152826823
+     },
+     {
+      "camera": "a26130005_c1",
+      "width_3cm": 5.456333363174951,
+      "width_8cm": 10.314363993784879,
+      "expected_change_px": 6.280627705786373,
+      "ratio": 0.7734944432598989
+     }
+    ],
+    "below_half": 2,
+    "triggered": true
+   },
+   {
+    "per_camera": [
+     {
+      "camera": "a26120005_c2",
+      "width_3cm": 4.0075066126941685,
+      "width_8cm": 5.371503776554521,
+      "expected_change_px": 2.578032138632198,
+      "ratio": 0.5290846236633944
+     },
+     {
+      "camera": "a26120005_c0",
+      "width_3cm": 3.7062449171354244,
+      "width_8cm": 9.860205540777327,
+      "expected_change_px": 7.38848792264007,
+      "ratio": 0.8329120502159469
+     },
+     {
+      "camera": "a26120005_c3",
+      "width_3cm": 2.55244234226034,
+      "width_8cm": 3.545303647053427,
+      "expected_change_px": 3.6920601736137466,
+      "ratio": 0.2689179639835841
+     },
+     {
+      "camera": "a26130005_c1",
+      "width_3cm": 6.094682897897668,
+      "width_8cm": 10.673862753175552,
+      "expected_change_px": 6.280627705786373,
+      "ratio": 0.7290958913324957
+     }
+    ],
+    "below_half": 1,
+    "triggered": false
+   }
+  ],
+  "verdicts_full_then_subsets": [
+   false,
+   true,
+   false,
+   true,
+   false
+  ],
+  "resolved": false,
+  "ratios": {
+   "a26120005_c2": {
+    "full": 0.5334752580200293,
+    "subset_min": 0.46195185829967783,
+    "subset_max": 0.6843687265622583
+   },
+   "a26120005_c0": {
+    "full": 0.8408119503615819,
+    "subset_min": 0.826986542173836,
+    "subset_max": 0.8735486399071456
+   },
+   "a26120005_c3": {
+    "full": 0.25062614103221503,
+    "subset_min": 0.2133104152826823,
+    "subset_max": 0.2763324291310483
+   },
+   "a26130005_c1": {
+    "full": 0.7087247248300274,
+    "subset_min": 0.6249103018336568,
+    "subset_max": 0.7734944432598989
+   }
+  }
+ },
+ "monotonic": {
+  "a26120005_c2": {
+   "camera": "a26120005_c2",
+   "view": "flat 19.39",
+   "full": {
+    "medians": [
+     3.817811315291722,
+     3.9021134956747194,
+     4.286060838987955,
+     4.521261378255577,
+     5.193127675632462
+    ],
+    "non_decreasing": true,
+    "decreases": []
+   },
+   "subset_0": {
+    "medians": [
+     3.8111980040254227,
+     3.7848981470989598,
+     4.245291504500066,
+     4.551550408578562,
+     5.002124741222859
+    ],
+    "non_decreasing": false,
+    "decreases": [
+     {
+      "step": "w030->w040",
+      "drop_px": 0.026299856926462972
+     }
+    ]
+   },
+   "subset_1": {
+    "medians": [
+     3.7237124079032844,
+     3.7848316905112975,
+     4.287617042778828,
+     4.644420354695621,
+     5.488036979655577
+    ],
+    "non_decreasing": true,
+    "decreases": []
+   },
+   "subset_2": {
+    "medians": [
+     3.706592347475297,
+     3.958627164867999,
+     4.288636893836325,
+     4.33719743816417,
+     4.91213826807348
+    ],
+    "non_decreasing": true,
+    "decreases": []
+   },
+   "subset_3": {
+    "medians": [
+     4.0075066126941685,
+     4.051166931469046,
+     4.327201898463983,
+     4.553138351669034,
+     5.371503776554521
+    ],
+    "non_decreasing": true,
+    "decreases": []
+   }
+  },
+  "a26120005_c3": {
+   "camera": "a26120005_c3",
+   "view": "flat 13.54",
+   "full": {
+    "medians": [
+     2.538699886329007,
+     2.549786807279038,
+     2.813582251082245,
+     3.023302269037373,
+     3.46402668010055
+    ],
+    "non_decreasing": true,
+    "decreases": []
+   },
+   "subset_0": {
+    "medians": [
+     2.641562419517776,
+     2.517098321215934,
+     2.924936254074638,
+     3.0152070460155933,
+     3.4522454063625174
+    ],
+    "non_decreasing": false,
+    "decreases": [
+     {
+      "step": "w030->w040",
+      "drop_px": 0.12446409830184191
+     }
+    ]
+   },
+   "subset_1": {
+    "medians": [
+     2.4422540028008966,
+     2.738419227030663,
+     2.86536418315121,
+     2.9871782878824096,
+     3.462489959073583
+    ],
+    "non_decreasing": true,
+    "decreases": []
+   },
+   "subset_2": {
+    "medians": [
+     2.5937688095269147,
+     2.511976057871178,
+     2.691475168200265,
+     2.991392669459983,
+     3.381323698409115
+    ],
+    "non_decreasing": false,
+    "decreases": [
+     {
+      "step": "w030->w040",
+      "drop_px": 0.08179275165573685
+     }
+    ]
+   },
+   "subset_3": {
+    "medians": [
+     2.55244234226034,
+     2.5575219999235683,
+     2.7772860019319614,
+     3.0798554406155234,
+     3.545303647053427
+    ],
+    "non_decreasing": true,
+    "decreases": []
+   }
+  },
+  "a26120005_c0": {
+   "camera": "a26120005_c0",
+   "view": "flat 6.77",
+   "full": {
+    "medians": [
+     3.6887032099232764,
+     4.849941314731696,
+     6.604755867058506,
+     8.079331229359816,
+     9.901032150381265
+    ],
+    "non_decreasing": true,
+    "decreases": []
+   },
+   "subset_0": {
+    "medians": [
+     3.7124549071896773,
+     4.850942877495788,
+     6.4365275173699175,
+     8.223891046014124,
+     9.822634986226937
+    ],
+    "non_decreasing": true,
+    "decreases": []
+   },
+   "subset_1": {
+    "medians": [
+     3.6163931311158173,
+     4.654012254230661,
+     6.607429506518921,
+     8.13021609899613,
+     9.857640323817739
+    ],
+    "non_decreasing": true,
+    "decreases": []
+   },
+   "subset_2": {
+    "medians": [
+     3.655697660281385,
+     4.968485922702321,
+     6.575374246313738,
+     7.883576266424283,
+     10.10990123607399
+    ],
+    "non_decreasing": true,
+    "decreases": []
+   },
+   "subset_3": {
+    "medians": [
+     3.7062449171354244,
+     4.853703007916133,
+     6.774489002018066,
+     7.991748639456791,
+     9.860205540777327
+    ],
+    "non_decreasing": true,
+    "decreases": []
+   }
+  },
+  "a26130005_c1": {
+   "camera": "a26130005_c1",
+   "view": "isolated 7.96",
+   "full": {
+    "medians": [
+     5.868128624937751,
+     6.949356575728823,
+     8.338901659431542,
+     9.403231335983454,
+     10.319364767481044
+    ],
+    "non_decreasing": true,
+    "decreases": []
+   },
+   "subset_0": {
+    "medians": [
+     6.234282609144881,
+     7.588735551347582,
+     8.705985167305002,
+     9.592859973565368,
+     10.15911156447267
+    ],
+    "non_decreasing": true,
+    "decreases": []
+   },
+   "subset_1": {
+    "medians": [
+     6.047793863199567,
+     6.487747345932544,
+     7.9663338240375765,
+     9.065077217356183,
+     10.103022238552542
+    ],
+    "non_decreasing": true,
+    "decreases": []
+   },
+   "subset_2": {
+    "medians": [
+     5.456333363174951,
+     6.817118166935133,
+     8.534596066819741,
+     9.979137629257558,
+     10.314363993784879
+    ],
+    "non_decreasing": true,
+    "decreases": []
+   },
+   "subset_3": {
+    "medians": [
+     6.094682897897668,
+     7.09479884829107,
+     8.058910278226868,
+     8.744433155633743,
+     10.673862753175552
+    ],
+    "non_decreasing": true,
+    "decreases": []
+   }
+  },
+  "n26120003_c1": {
+   "camera": "n26120003_c1",
+   "view": "flat 2.00",
+   "full": {
+    "medians": [
+     8.175521711295314,
+     10.94099946862488,
+     15.010926406677587,
+     16.713498513694454,
+     19.9338399035774
+    ],
+    "non_decreasing": true,
+    "decreases": []
+   },
+   "subset_0": {
+    "medians": [
+     8.284997661545127,
+     10.694176385455208,
+     15.035532658552452,
+     15.637244296869616,
+     19.63330751644662
+    ],
+    "non_decreasing": true,
+    "decreases": []
+   },
+   "subset_1": {
+    "medians": [
+     8.223682867500868,
+     11.252447808703703,
+     14.623139354121715,
+     16.84788346301751,
+     20.41477533009879
+    ],
+    "non_decreasing": true,
+    "decreases": []
+   },
+   "subset_2": {
+    "medians": [
+     8.163286101163656,
+     11.252121549745043,
+     15.572947161057447,
+     16.974692137462515,
+     19.991357250085535
+    ],
+    "non_decreasing": true,
+    "decreases": []
+   },
+   "subset_3": {
+    "medians": [
+     8.044704048936772,
+     10.564945784186627,
+     14.745567445067229,
+     17.00480004343019,
+     19.508997696756474
+    ],
+    "non_decreasing": true,
+    "decreases": []
+   }
+  },
+  "n26130007_c0": {
+   "camera": "n26130007_c0",
+   "view": "isolated 2.00",
+   "full": {
+    "medians": [
+     11.358724404864734,
+     12.518439512957357,
+     17.74384068031506,
+     17.905986084245313,
+     22.568297829529584
+    ],
+    "non_decreasing": true,
+    "decreases": []
+   },
+   "subset_0": {
+    "medians": [
+     10.819359908245278,
+     12.892482999940047,
+     17.808862920168067,
+     17.38190166682085,
+     22.72668239110685
+    ],
+    "non_decreasing": false,
+    "decreases": [
+     {
+      "step": "b055->w065",
+      "drop_px": 0.4269612533472191
+     }
+    ]
+   },
+   "subset_1": {
+    "medians": [
+     11.134645633349695,
+     12.46039069622297,
+     18.07511872199862,
+     17.26426754253845,
+     24.73297643711109
+    ],
+    "non_decreasing": false,
+    "decreases": [
+     {
+      "step": "b055->w065",
+      "drop_px": 0.8108511794601689
+     }
+    ]
+   },
+   "subset_2": {
+    "medians": [
+     11.55884817162107,
+     12.620478998154002,
+     17.252010191316884,
+     20.902687259383274,
+     22.66028518412525
+    ],
+    "non_decreasing": true,
+    "decreases": []
+   },
+   "subset_3": {
+    "medians": [
+     11.804103770910682,
+     12.10704233089147,
+     17.89468282818772,
+     17.33425690098266,
+     20.01303122098918
+    ],
+    "non_decreasing": false,
+    "decreases": [
+     {
+      "step": "b055->w065",
+      "drop_px": 0.5604259272050598
+     }
+    ]
+   }
+  }
+ },
+ "rows": [
+  {
+   "id": "b_b055_a26120005_c0",
+   "cam": "a26120005_c0",
+   "tag": "b055",
+   "role": "baseline",
+   "group": "baseline",
+   "status": "measured",
+   "pixel_mm": 6.767284527431953,
+   "label_dir": "frames/fm/a0017",
+   "png": "frames/fr_de/out/fr_b055_a26120005_c0/sun0/render/frame.png",
+   "png_sha256": "180bec261d322660269318210a45831a1f42adc07e5a880b8202395633daf2e6",
+   "target_sha256": "1057842347a8b36ccbe5dd45ab3a02ea54f97d8702ea3e154f4086ba32f7d868",
+   "target_pixels": 1077,
+   "old_ruler": {
+    "samples": 269,
+    "median": 6.0,
+    "iqr": [
+     4.0,
+     9.0
+    ],
+    "no_band_share": 0.01486988847583643,
+    "end_reached": 0
+   },
+   "old_check": "equal",
+   "fine": {
+    "samples": 1072,
+    "median": 6.604755867058506,
+    "iqr": [
+     4.8247370687230084,
+     9.361746873034313
+    ],
+    "no_band_share": 0.010261194029850746,
+    "end_reached": 0
+   },
+   "subsets": [
+    {
+     "k": 0,
+     "samples": 269,
+     "median": 6.4365275173699175,
+     "iqr": [
+      4.702544824003843,
+      9.345899659768023
+     ],
+     "no_band_share": 0.01486988847583643,
+     "end_reached": 0
+    },
+    {
+     "k": 1,
+     "samples": 268,
+     "median": 6.607429506518921,
+     "iqr": [
+      5.081663394827936,
+      9.314700694496935
+     ],
+     "no_band_share": 0.007462686567164179,
+     "end_reached": 0
+    },
+    {
+     "k": 2,
+     "samples": 267,
+     "median": 6.575374246313738,
+     "iqr": [
+      4.821317455514714,
+      9.110776936695405
+     ],
+     "no_band_share": 0.003745318352059925,
+     "end_reached": 0
+    },
+    {
+     "k": 3,
+     "samples": 268,
+     "median": 6.774489002018066,
+     "iqr": [
+      4.8686789124850804,
+      9.632382150135447
+     ],
+     "no_band_share": 0.014925373134328358,
+     "end_reached": 0
+    }
+   ]
+  },
+  {
+   "id": "b_b055_a26120005_c2",
+   "cam": "a26120005_c2",
+   "tag": "b055",
+   "role": "baseline",
+   "group": "baseline",
+   "status": "measured",
+   "pixel_mm": 19.39463796852743,
+   "label_dir": "frames/fm/a0001",
+   "png": "frames/out/b_b055_a26120005_c2/sun0/render/frame.png",
+   "png_sha256": "3883358c2e9608be32cbecbbd7a06483f3afdf6a60dd657dc0c2ea8d561edd16",
+   "target_sha256": "00a3d0b1f0b6137199d42842bcb96ac41cd72bd2a697519b0e72082be9f2ce64",
+   "target_pixels": 1662,
+   "old_ruler": {
+    "samples": 414,
+    "median": 3.5,
+    "iqr": [
+     2.0,
+     5.0
+    ],
+    "no_band_share": 0.11835748792270531,
+    "end_reached": 2
+   },
+   "old_check": "equal",
+   "fine": {
+    "samples": 1656,
+    "median": 4.286060838987955,
+    "iqr": [
+     2.3525005776751797,
+     5.76169403083775
+    ],
+    "no_band_share": 0.13405797101449277,
+    "end_reached": 7
+   },
+   "subsets": [
+    {
+     "k": 0,
+     "samples": 414,
+     "median": 4.245291504500066,
+     "iqr": [
+      2.324472382477695,
+      5.736879930861547
+     ],
+     "no_band_share": 0.11594202898550725,
+     "end_reached": 2
+    },
+    {
+     "k": 1,
+     "samples": 415,
+     "median": 4.287617042778828,
+     "iqr": [
+      2.3685495878561955,
+      5.842979207121147
+     ],
+     "no_band_share": 0.1493975903614458,
+     "end_reached": 2
+    },
+    {
+     "k": 2,
+     "samples": 413,
+     "median": 4.288636893836325,
+     "iqr": [
+      2.3624929517158466,
+      5.778132789981733
+     ],
+     "no_band_share": 0.12832929782082325,
+     "end_reached": 3
+    },
+    {
+     "k": 3,
+     "samples": 414,
+     "median": 4.327201898463983,
+     "iqr": [
+      2.40138574032634,
+      5.748952599274855
+     ],
+     "no_band_share": 0.14251207729468598,
+     "end_reached": 0
+    }
+   ]
+  },
+  {
+   "id": "b_b055_a26120005_c3",
+   "cam": "a26120005_c3",
+   "tag": "b055",
+   "role": "baseline",
+   "group": "baseline",
+   "status": "measured",
+   "pixel_mm": 13.542574510929644,
+   "label_dir": "frames/fm/a0002",
+   "png": "frames/out/b_b055_a26120005_c3/sun0/render/frame.png",
+   "png_sha256": "1fb6dbebc08305f69dfe769370f7c536285c5eaeac2a69d61086499b7a216aee",
+   "target_sha256": "0b6b5f29f7f10cddd3ea20086e7c3b5ad2a38e441d9e2bb8f140414b35d05729",
+   "target_pixels": 1096,
+   "old_ruler": {
+    "samples": 267,
+    "median": 2.5,
+    "iqr": [
+     1.5,
+     3.5
+    ],
+    "no_band_share": 0.11235955056179775,
+    "end_reached": 0
+   },
+   "old_check": "equal",
+   "fine": {
+    "samples": 1071,
+    "median": 2.813582251082245,
+    "iqr": [
+     1.9853128759047707,
+     4.24145011213498
+    ],
+    "no_band_share": 0.10270774976657329,
+    "end_reached": 0
+   },
+   "subsets": [
+    {
+     "k": 0,
+     "samples": 267,
+     "median": 2.924936254074638,
+     "iqr": [
+      1.9559759666099406,
+      4.138541714784273
+     ],
+     "no_band_share": 0.11235955056179775,
+     "end_reached": 0
+    },
+    {
+     "k": 1,
+     "samples": 267,
+     "median": 2.86536418315121,
+     "iqr": [
+      1.9789263995787274,
+      4.608010996199965
+     ],
+     "no_band_share": 0.10112359550561797,
+     "end_reached": 0
+    },
+    {
+     "k": 2,
+     "samples": 269,
+     "median": 2.691475168200265,
+     "iqr": [
+      1.9247772039411546,
+      4.215850444884795
+     ],
+     "no_band_share": 0.10408921933085502,
+     "end_reached": 0
+    },
+    {
+     "k": 3,
+     "samples": 268,
+     "median": 2.7772860019319614,
+     "iqr": [
+      2.0653772757832725,
+      4.15439427496379
+     ],
+     "no_band_share": 0.09328358208955224,
+     "end_reached": 0
+    }
+   ]
+  },
+  {
+   "id": "b_b055_a26130005_c1",
+   "cam": "a26130005_c1",
+   "tag": "b055",
+   "role": "baseline",
+   "group": "baseline",
+   "status": "measured",
+   "pixel_mm": 7.960987713685808,
+   "label_dir": "frames/fm/a0061",
+   "png": "frames/out/b_b055_a26130005_c1/sun0/render/frame.png",
+   "png_sha256": "a2ded7d4d237ab17f18c7c5df0b4e9165f6007a84337e717c93b76d7f7b1653b",
+   "target_sha256": "e6452174101ca53d6656cb131dab2deb2b3361392109c82efce39d0e3ac73630",
+   "target_pixels": 1649,
+   "old_ruler": {
+    "samples": 407,
+    "median": 8.0,
+    "iqr": [
+     3.0,
+     14.5
+    ],
+    "no_band_share": 0.04176904176904177,
+    "end_reached": 1
+   },
+   "old_check": "equal",
+   "fine": {
+    "samples": 1632,
+    "median": 8.338901659431542,
+    "iqr": [
+     3.2655343778875316,
+     15.194528364539655
+    ],
+    "no_band_share": 0.03676470588235294,
+    "end_reached": 3
+   },
+   "subsets": [
+    {
+     "k": 0,
+     "samples": 407,
+     "median": 8.705985167305002,
+     "iqr": [
+      3.471587656085026,
+      14.660288148583694
+     ],
+     "no_band_share": 0.04176904176904177,
+     "end_reached": 1
+    },
+    {
+     "k": 1,
+     "samples": 408,
+     "median": 7.9663338240375765,
+     "iqr": [
+      3.226665496414552,
+      15.323285905592364
+     ],
+     "no_band_share": 0.024509803921568627,
+     "end_reached": 0
+    },
+    {
+     "k": 2,
+     "samples": 408,
+     "median": 8.534596066819741,
+     "iqr": [
+      3.1992901740281288,
+      16.282995977735887
+     ],
+     "no_band_share": 0.04411764705882353,
+     "end_reached": 0
+    },
+    {
+     "k": 3,
+     "samples": 409,
+     "median": 8.058910278226868,
+     "iqr": [
+      3.0950522018635525,
+      13.897019609841863
+     ],
+     "no_band_share": 0.03667481662591687,
+     "end_reached": 2
+    }
+   ]
+  },
+  {
+   "id": "b_b055_n26120003_c1",
+   "cam": "n26120003_c1",
+   "tag": "b055",
+   "role": "baseline",
+   "group": "baseline",
+   "status": "measured",
+   "pixel_mm": 2.0,
+   "label_dir": "frames/fm/a0018",
+   "png": "frames/near_r1/out/nr_b055_n26120003_c1/sun0/render/frame.png",
+   "png_sha256": "240eb816f01091a8121129c55e75820ca76aa4aedec34e9a37bbba86c1ba43fe",
+   "target_sha256": "91f8c39a356f5f8c9f98fb68137eb383134f5dc75a2d69f3fe0904d8077534b6",
+   "target_pixels": 1009,
+   "old_ruler": {
+    "samples": 253,
+    "median": 14.5,
+    "iqr": [
+     9.0,
+     20.0
+    ],
+    "no_band_share": 0.0,
+    "end_reached": 0
+   },
+   "old_check": "equal",
+   "fine": {
+    "samples": 1009,
+    "median": 15.010926406677587,
+    "iqr": [
+     9.405221745342667,
+     20.12211075792122
+    ],
+    "no_band_share": 0.0019821605550049554,
+    "end_reached": 0
+   },
+   "subsets": [
+    {
+     "k": 0,
+     "samples": 253,
+     "median": 15.035532658552452,
+     "iqr": [
+      9.40762240949241,
+      20.307106535841292
+     ],
+     "no_band_share": 0.0,
+     "end_reached": 0
+    },
+    {
+     "k": 1,
+     "samples": 252,
+     "median": 14.623139354121715,
+     "iqr": [
+      9.423568757889036,
+      19.767417429166883
+     ],
+     "no_band_share": 0.003968253968253968,
+     "end_reached": 0
+    },
+    {
+     "k": 2,
+     "samples": 252,
+     "median": 15.572947161057447,
+     "iqr": [
+      9.7700199266912,
+      20.39055718281441
+     ],
+     "no_band_share": 0.0,
+     "end_reached": 0
+    },
+    {
+     "k": 3,
+     "samples": 252,
+     "median": 14.745567445067229,
+     "iqr": [
+      9.279030018268074,
+      19.87809360274465
+     ],
+     "no_band_share": 0.003968253968253968,
+     "end_reached": 0
+    }
+   ]
+  },
+  {
+   "id": "b_b055_n26130007_c0",
+   "cam": "n26130007_c0",
+   "tag": "b055",
+   "role": "baseline",
+   "group": "baseline",
+   "status": "measured",
+   "pixel_mm": 2.0,
+   "label_dir": "frames/fm/a0020",
+   "png": "frames/fr_de/out/fr_b055_n26130007_c0/sun0/render/frame.png",
+   "png_sha256": "2154d66accdf23aede3bc339393e465b0c930057137401580a89e9149b9c3106",
+   "target_sha256": "d829c5173384f8b4135241df8b715d37d7fd33cadae5e7600c60f70f23361bf2",
+   "target_pixels": 1827,
+   "old_ruler": {
+    "samples": 455,
+    "median": 17.5,
+    "iqr": [
+     7.5,
+     32.5
+    ],
+    "no_band_share": 0.013186813186813187,
+    "end_reached": 0
+   },
+   "old_check": "equal",
+   "fine": {
+    "samples": 1821,
+    "median": 17.74384068031506,
+    "iqr": [
+     8.007100175607537,
+     34.12176156857494
+    ],
+    "no_band_share": 0.012081274025260845,
+    "end_reached": 0
+   },
+   "subsets": [
+    {
+     "k": 0,
+     "samples": 455,
+     "median": 17.808862920168067,
+     "iqr": [
+      7.847020374775384,
+      33.35584434319917
+     ],
+     "no_band_share": 0.013186813186813187,
+     "end_reached": 0
+    },
+    {
+     "k": 1,
+     "samples": 455,
+     "median": 18.07511872199862,
+     "iqr": [
+      8.248065711580931,
+      33.245108010935795
+     ],
+     "no_band_share": 0.015384615384615385,
+     "end_reached": 0
+    },
+    {
+     "k": 2,
+     "samples": 455,
+     "median": 17.252010191316884,
+     "iqr": [
+      7.917895659691487,
+      34.78116465535349
+     ],
+     "no_band_share": 0.015384615384615385,
+     "end_reached": 0
+    },
+    {
+     "k": 3,
+     "samples": 456,
+     "median": 17.89468282818772,
+     "iqr": [
+      8.255080479241558,
+      34.338257112847515
+     ],
+     "no_band_share": 0.0043859649122807015,
+     "end_reached": 0
+    }
+   ]
+  },
+  {
+   "id": "b_w030_a26120005_c2",
+   "cam": "a26120005_c2",
+   "tag": "w030",
+   "role": "variant",
+   "group": "A_opening",
+   "status": "measured",
+   "pixel_mm": 19.39463796852743,
+   "label_dir": "frames/fm/a0003",
+   "png": "frames/out/b_w030_a26120005_c2/sun0/render/frame.png",
+   "png_sha256": "57914463dd60124943fd8a3604537af7583bd9a2771a5d1c8760f7b27b951fd9",
+   "target_sha256": "31606631f74a8b38d769c715c0477937914ee5cc62e73a064ec90d93b3a42a73",
+   "target_pixels": 1677,
+   "old_ruler": {
+    "samples": 418,
+    "median": 3.5,
+    "iqr": [
+     1.5,
+     5.5
+    ],
+    "no_band_share": 0.12679425837320574,
+    "end_reached": 2
+   },
+   "old_check": "equal",
+   "fine": {
+    "samples": 1671,
+    "median": 3.817811315291722,
+    "iqr": [
+     2.1993888831148887,
+     5.5176050222962925
+    ],
+    "no_band_share": 0.13524835427887494,
+    "end_reached": 7
+   },
+   "subsets": [
+    {
+     "k": 0,
+     "samples": 418,
+     "median": 3.8111980040254227,
+     "iqr": [
+      2.192533455855458,
+      5.61430980705695
+     ],
+     "no_band_share": 0.12679425837320574,
+     "end_reached": 2
+    },
+    {
+     "k": 1,
+     "samples": 417,
+     "median": 3.7237124079032844,
+     "iqr": [
+      2.234880607536152,
+      5.364348931748432
+     ],
+     "no_band_share": 0.1510791366906475,
+     "end_reached": 3
+    },
+    {
+     "k": 2,
+     "samples": 417,
+     "median": 3.706592347475297,
+     "iqr": [
+      2.0940789861253686,
+      5.469479651524182
+     ],
+     "no_band_share": 0.11750599520383694,
+     "end_reached": 0
+    },
+    {
+     "k": 3,
+     "samples": 419,
+     "median": 4.0075066126941685,
+     "iqr": [
+      2.2950852623155944,
+      5.696818973761043
+     ],
+     "no_band_share": 0.14558472553699284,
+     "end_reached": 2
+    }
+   ]
+  },
+  {
+   "id": "b_w040_a26120005_c2",
+   "cam": "a26120005_c2",
+   "tag": "w040",
+   "role": "variant",
+   "group": "A_opening",
+   "status": "measured",
+   "pixel_mm": 19.39463796852743,
+   "label_dir": "frames/fm/a0004",
+   "png": "frames/out/b_w040_a26120005_c2/sun0/render/frame.png",
+   "png_sha256": "f57f816eb4cadaee8d16e8860438f87bfe7193848dcbea16974045bb124f7b87",
+   "target_sha256": "87e5a4add86cc2c6b3b4c1e3106d9da16111341753efe8e7c6e661612b4f3629",
+   "target_pixels": 1664,
+   "old_ruler": {
+    "samples": 414,
+    "median": 3.5,
+    "iqr": [
+     2.0,
+     5.0
+    ],
+    "no_band_share": 0.15942028985507245,
+    "end_reached": 3
+   },
+   "old_check": "equal",
+   "fine": {
+    "samples": 1658,
+    "median": 3.9021134956747194,
+    "iqr": [
+     2.2912704410474953,
+     5.503500874188368
+    ],
+    "no_band_share": 0.13510253317249699,
+    "end_reached": 7
+   },
+   "subsets": [
+    {
+     "k": 0,
+     "samples": 414,
+     "median": 3.7848981470989598,
+     "iqr": [
+      2.3291957794947873,
+      5.448868363742102
+     ],
+     "no_band_share": 0.1570048309178744,
+     "end_reached": 3
+    },
+    {
+     "k": 1,
+     "samples": 414,
+     "median": 3.7848316905112975,
+     "iqr": [
+      2.237170054611701,
+      5.506108942927533
+     ],
+     "no_band_share": 0.12318840579710146,
+     "end_reached": 0
+    },
+    {
+     "k": 2,
+     "samples": 416,
+     "median": 3.958627164867999,
+     "iqr": [
+      2.2744106283301004,
+      5.467773877465822
+     ],
+     "no_band_share": 0.12740384615384615,
+     "end_reached": 2
+    },
+    {
+     "k": 3,
+     "samples": 414,
+     "median": 4.051166931469046,
+     "iqr": [
+      2.3763572302312452,
+      5.563628140652378
+     ],
+     "no_band_share": 0.13285024154589373,
+     "end_reached": 2
+    }
+   ]
+  },
+  {
+   "id": "b_w065_a26120005_c2",
+   "cam": "a26120005_c2",
+   "tag": "w065",
+   "role": "variant",
+   "group": "A_opening",
+   "status": "measured",
+   "pixel_mm": 19.39463796852743,
+   "label_dir": "frames/fm/a0005",
+   "png": "frames/out/b_w065_a26120005_c2/sun0/render/frame.png",
+   "png_sha256": "9b081fd61d8861484e192faf923944da97861efe60460bbf27a6e32952231e11",
+   "target_sha256": "590f0799a102a5f2e897137c8061e830679f4687c5dc2e421f64385bf1ceafcf",
+   "target_pixels": 1682,
+   "old_ruler": {
+    "samples": 420,
+    "median": 4.0,
+    "iqr": [
+     1.5,
+     5.5
+    ],
+    "no_band_share": 0.15,
+    "end_reached": 3
+   },
+   "old_check": "equal",
+   "fine": {
+    "samples": 1676,
+    "median": 4.521261378255577,
+    "iqr": [
+     2.3444424183738084,
+     6.0417028501446435
+    ],
+    "no_band_share": 0.13007159904534607,
+    "end_reached": 7
+   },
+   "subsets": [
+    {
+     "k": 0,
+     "samples": 420,
+     "median": 4.551550408578562,
+     "iqr": [
+      2.289646105356336,
+      6.026563200806812
+     ],
+     "no_band_share": 0.14761904761904762,
+     "end_reached": 3
+    },
+    {
+     "k": 1,
+     "samples": 420,
+     "median": 4.644420354695621,
+     "iqr": [
+      2.513555106065454,
+      6.197232409973523
+     ],
+     "no_band_share": 0.12142857142857143,
+     "end_reached": 0
+    },
+    {
+     "k": 2,
+     "samples": 418,
+     "median": 4.33719743816417,
+     "iqr": [
+      2.2901556994835763,
+      5.920169786737725
+     ],
+     "no_band_share": 0.11961722488038277,
+     "end_reached": 2
+    },
+    {
+     "k": 3,
+     "samples": 418,
+     "median": 4.553138351669034,
+     "iqr": [
+      2.3891830124972175,
+      5.9263460856753865
+     ],
+     "no_band_share": 0.13157894736842105,
+     "end_reached": 2
+    }
+   ]
+  },
+  {
+   "id": "b_w080_a26120005_c2",
+   "cam": "a26120005_c2",
+   "tag": "w080",
+   "role": "variant",
+   "group": "A_opening",
+   "status": "measured",
+   "pixel_mm": 19.39463796852743,
+   "label_dir": "frames/fm/a0006",
+   "png": "frames/out/b_w080_a26120005_c2/sun0/render/frame.png",
+   "png_sha256": "bedfd781551b76017b1ee619611c664b0ca8d961e572549b27bc0388082fddf3",
+   "target_sha256": "5a99744dd027f4ad78d2fbc8457f78200cad51da2fddb87d11924fcd05733b68",
+   "target_pixels": 1632,
+   "old_ruler": {
+    "samples": 407,
+    "median": 4.5,
+    "iqr": [
+     2.0,
+     6.0
+    ],
+    "no_band_share": 0.16216216216216217,
+    "end_reached": 2
+   },
+   "old_check": "equal",
+   "fine": {
+    "samples": 1626,
+    "median": 5.193127675632462,
+    "iqr": [
+     2.546041775077077,
+     6.797708662560137
+    ],
+    "no_band_share": 0.13591635916359163,
+    "end_reached": 7
+   },
+   "subsets": [
+    {
+     "k": 0,
+     "samples": 407,
+     "median": 5.002124741222859,
+     "iqr": [
+      2.3355357160630064,
+      6.609707255772451
+     ],
+     "no_band_share": 0.1597051597051597,
+     "end_reached": 2
+    },
+    {
+     "k": 1,
+     "samples": 407,
+     "median": 5.488036979655577,
+     "iqr": [
+      2.72102459448317,
+      7.130126673410412
+     ],
+     "no_band_share": 0.11547911547911548,
+     "end_reached": 3
+    },
+    {
+     "k": 2,
+     "samples": 406,
+     "median": 4.91213826807348,
+     "iqr": [
+      2.511085745254194,
+      6.439412207692027
+     ],
+     "no_band_share": 0.14285714285714285,
+     "end_reached": 1
+    },
+    {
+     "k": 3,
+     "samples": 406,
+     "median": 5.371503776554521,
+     "iqr": [
+      2.602993648284228,
+      6.85347915144134
+     ],
+     "no_band_share": 0.12561576354679804,
+     "end_reached": 1
+    }
+   ]
+  },
+  {
+   "id": "b_w030_a26120005_c0",
+   "cam": "a26120005_c0",
+   "tag": "w030",
+   "role": "variant",
+   "group": "A_opening",
+   "status": "measured",
+   "pixel_mm": 6.767284527431953,
+   "label_dir": "frames/fm/a0022",
+   "png": "frames/fr_de/out/fr_w030_a26120005_c0/sun0/render/frame.png",
+   "png_sha256": "7fb50c6957a672ed05183a4b1baba144a9a63eedee4a2a1eb092b8a84503a961",
+   "target_sha256": "84988a8c7bf490c2a6b461c06cdf4220ca48eecc0cef76aab50c8f2494df39d1",
+   "target_pixels": 1126,
+   "old_ruler": {
+    "samples": 281,
+    "median": 3.0,
+    "iqr": [
+     2.0,
+     6.0
+    ],
+    "no_band_share": 0.03202846975088968,
+    "end_reached": 0
+   },
+   "old_check": "equal",
+   "fine": {
+    "samples": 1123,
+    "median": 3.6887032099232764,
+    "iqr": [
+     2.7411583615278663,
+     6.509542926154506
+    ],
+    "no_band_share": 0.017809439002671415,
+    "end_reached": 0
+   },
+   "subsets": [
+    {
+     "k": 0,
+     "samples": 281,
+     "median": 3.7124549071896773,
+     "iqr": [
+      2.697297015978147,
+      6.449407044610626
+     ],
+     "no_band_share": 0.03202846975088968,
+     "end_reached": 0
+    },
+    {
+     "k": 1,
+     "samples": 280,
+     "median": 3.6163931311158173,
+     "iqr": [
+      2.660314091732847,
+      6.802957754333921
+     ],
+     "no_band_share": 0.010714285714285714,
+     "end_reached": 0
+    },
+    {
+     "k": 2,
+     "samples": 281,
+     "median": 3.655697660281385,
+     "iqr": [
+      2.8592271386255264,
+      6.366091790293159
+     ],
+     "no_band_share": 0.021352313167259787,
+     "end_reached": 0
+    },
+    {
+     "k": 3,
+     "samples": 281,
+     "median": 3.7062449171354244,
+     "iqr": [
+      2.7819347531458076,
+      6.445546942139117
+     ],
+     "no_band_share": 0.0071174377224199285,
+     "end_reached": 0
+    }
+   ]
+  },
+  {
+   "id": "b_w040_a26120005_c0",
+   "cam": "a26120005_c0",
+   "tag": "w040",
+   "role": "variant",
+   "group": "A_opening",
+   "status": "measured",
+   "pixel_mm": 6.767284527431953,
+   "label_dir": "frames/fm/a0007",
+   "png": "frames/out/b_w040_a26120005_c0/sun0/render/frame.png",
+   "png_sha256": "e6d616bbd7ef18726d2db4aa46b27ede464bbf0e57e083676b6f896f32b77ff0",
+   "target_sha256": "b2a8886a3e4e5305faba1a63d07d85eebf125fbb89ee30dc5d9967e3c85fd927",
+   "target_pixels": 1110,
+   "old_ruler": {
+    "samples": 277,
+    "median": 4.5,
+    "iqr": [
+     3.0,
+     7.0
+    ],
+    "no_band_share": 0.01444043321299639,
+    "end_reached": 0
+   },
+   "old_check": "equal",
+   "fine": {
+    "samples": 1105,
+    "median": 4.849941314731696,
+    "iqr": [
+     3.591175011091247,
+     7.715859483831142
+    ],
+    "no_band_share": 0.013574660633484163,
+    "end_reached": 0
+   },
+   "subsets": [
+    {
+     "k": 0,
+     "samples": 277,
+     "median": 4.850942877495788,
+     "iqr": [
+      3.668626978263675,
+      7.665196818506008
+     ],
+     "no_band_share": 0.018050541516245487,
+     "end_reached": 0
+    },
+    {
+     "k": 1,
+     "samples": 278,
+     "median": 4.654012254230661,
+     "iqr": [
+      3.5498381739347464,
+      7.438024375394232
+     ],
+     "no_band_share": 0.007194244604316547,
+     "end_reached": 0
+    },
+    {
+     "k": 2,
+     "samples": 276,
+     "median": 4.968485922702321,
+     "iqr": [
+      3.6186089602419695,
+      7.9272965468469865
+     ],
+     "no_band_share": 0.021739130434782608,
+     "end_reached": 0
+    },
+    {
+     "k": 3,
+     "samples": 274,
+     "median": 4.853703007916133,
+     "iqr": [
+      3.5287259574047933,
+      7.873741163058801
+     ],
+     "no_band_share": 0.0072992700729927005,
+     "end_reached": 0
+    }
+   ]
+  },
+  {
+   "id": "b_w065_a26120005_c0",
+   "cam": "a26120005_c0",
+   "tag": "w065",
+   "role": "variant",
+   "group": "A_opening",
+   "status": "measured",
+   "pixel_mm": 6.767284527431953,
+   "label_dir": "frames/fm/a0008",
+   "png": "frames/out/b_w065_a26120005_c0/sun0/render/frame.png",
+   "png_sha256": "95072e523dacb51ea1dca86d6cd4c8f123307011216a8217822bbba5e4edd61e",
+   "target_sha256": "9486f005e60b0d95b781d6caf2bbcf9b1c66bc5c18a999359b8d5c50b7312330",
+   "target_pixels": 1108,
+   "old_ruler": {
+    "samples": 276,
+    "median": 7.5,
+    "iqr": [
+     5.5,
+     10.0
+    ],
+    "no_band_share": 0.007246376811594203,
+    "end_reached": 0
+   },
+   "old_check": "equal",
+   "fine": {
+    "samples": 1105,
+    "median": 8.079331229359816,
+    "iqr": [
+     5.907132294036677,
+     10.341065275168098
+    ],
+    "no_band_share": 0.011764705882352941,
+    "end_reached": 0
+   },
+   "subsets": [
+    {
+     "k": 0,
+     "samples": 276,
+     "median": 8.223891046014124,
+     "iqr": [
+      5.915791084840716,
+      10.65023080132234
+     ],
+     "no_band_share": 0.007246376811594203,
+     "end_reached": 0
+    },
+    {
+     "k": 1,
+     "samples": 277,
+     "median": 8.13021609899613,
+     "iqr": [
+      5.920254810698748,
+      10.453835468819399
+     ],
+     "no_band_share": 0.010830324909747292,
+     "end_reached": 0
+    },
+    {
+     "k": 2,
+     "samples": 276,
+     "median": 7.883576266424283,
+     "iqr": [
+      5.87208003088287,
+      10.2416181468068
+     ],
+     "no_band_share": 0.018115942028985508,
+     "end_reached": 0
+    },
+    {
+     "k": 3,
+     "samples": 276,
+     "median": 7.991748639456791,
+     "iqr": [
+      5.932764292284637,
+      10.317943317778944
+     ],
+     "no_band_share": 0.010869565217391304,
+     "end_reached": 0
+    }
+   ]
+  },
+  {
+   "id": "b_w080_a26120005_c0",
+   "cam": "a26120005_c0",
+   "tag": "w080",
+   "role": "variant",
+   "group": "A_opening",
+   "status": "measured",
+   "pixel_mm": 6.767284527431953,
+   "label_dir": "frames/fm/a0023",
+   "png": "frames/fr_de/out/fr_w080_a26120005_c0/sun0/render/frame.png",
+   "png_sha256": "5c4957e38706094f6ac95d6ae86e9f8d65dbc886d7fa2d60e648262d49e9faea",
+   "target_sha256": "3a51f62ebd16ae601bf0493574fbac1018922dcff46d11233729bda6d5a2dd42",
+   "target_pixels": 1107,
+   "old_ruler": {
+    "samples": 276,
+    "median": 9.5,
+    "iqr": [
+     7.5,
+     11.5
+    ],
+    "no_band_share": 0.007246376811594203,
+    "end_reached": 0
+   },
+   "old_check": "equal",
+   "fine": {
+    "samples": 1104,
+    "median": 9.901032150381265,
+    "iqr": [
+     7.8170415697756965,
+     11.856894176528312
+    ],
+    "no_band_share": 0.010869565217391304,
+    "end_reached": 0
+   },
+   "subsets": [
+    {
+     "k": 0,
+     "samples": 276,
+     "median": 9.822634986226937,
+     "iqr": [
+      7.986377832856821,
+      11.883036775597619
+     ],
+     "no_band_share": 0.010869565217391304,
+     "end_reached": 0
+    },
+    {
+     "k": 1,
+     "samples": 276,
+     "median": 9.857640323817739,
+     "iqr": [
+      7.926635079283768,
+      11.800556281587339
+     ],
+     "no_band_share": 0.018115942028985508,
+     "end_reached": 0
+    },
+    {
+     "k": 2,
+     "samples": 276,
+     "median": 10.10990123607399,
+     "iqr": [
+      7.864538940559373,
+      11.99322400388687
+     ],
+     "no_band_share": 0.0036231884057971015,
+     "end_reached": 0
+    },
+    {
+     "k": 3,
+     "samples": 276,
+     "median": 9.860205540777327,
+     "iqr": [
+      7.65319863438019,
+      11.8131153766702
+     ],
+     "no_band_share": 0.010869565217391304,
+     "end_reached": 0
+    }
+   ]
+  },
+  {
+   "id": "b_w030_a26120005_c3",
+   "cam": "a26120005_c3",
+   "tag": "w030",
+   "role": "variant",
+   "group": "A_opening",
+   "status": "measured",
+   "pixel_mm": 13.542574510929644,
+   "label_dir": "frames/fm/a0009",
+   "png": "frames/out/b_w030_a26120005_c3/sun0/render/frame.png",
+   "png_sha256": "2b1bfe3e51f3b78b7aadf8cb3ce62eb219d037b3c15d3a8597c7d5fa6c27d336",
+   "target_sha256": "fd6fd7a24ff1cbf4db6c6488d35732c2b6c5713ed09370caa6feaa805347e92d",
+   "target_pixels": 1073,
+   "old_ruler": {
+    "samples": 261,
+    "median": 2.0,
+    "iqr": [
+     1.0,
+     4.0
+    ],
+    "no_band_share": 0.10344827586206896,
+    "end_reached": 0
+   },
+   "old_check": "equal",
+   "fine": {
+    "samples": 1047,
+    "median": 2.538699886329007,
+    "iqr": [
+     1.6800759421846783,
+     4.413896645756871
+    ],
+    "no_band_share": 0.10315186246418338,
+    "end_reached": 0
+   },
+   "subsets": [
+    {
+     "k": 0,
+     "samples": 261,
+     "median": 2.641562419517776,
+     "iqr": [
+      1.6605587621097389,
+      4.454804457187038
+     ],
+     "no_band_share": 0.09961685823754789,
+     "end_reached": 0
+    },
+    {
+     "k": 1,
+     "samples": 259,
+     "median": 2.4422540028008966,
+     "iqr": [
+      1.683180943624274,
+      3.9224895316488766
+     ],
+     "no_band_share": 0.10810810810810811,
+     "end_reached": 0
+    },
+    {
+     "k": 2,
+     "samples": 263,
+     "median": 2.5937688095269147,
+     "iqr": [
+      1.6227120263776795,
+      4.693482556220243
+     ],
+     "no_band_share": 0.09125475285171103,
+     "end_reached": 0
+    },
+    {
+     "k": 3,
+     "samples": 264,
+     "median": 2.55244234226034,
+     "iqr": [
+      1.756654105254573,
+      4.406631113164838
+     ],
+     "no_band_share": 0.11363636363636363,
+     "end_reached": 0
+    }
+   ]
+  },
+  {
+   "id": "b_w040_a26120005_c3",
+   "cam": "a26120005_c3",
+   "tag": "w040",
+   "role": "variant",
+   "group": "A_opening",
+   "status": "measured",
+   "pixel_mm": 13.542574510929644,
+   "label_dir": "frames/fm/a0096",
+   "png": "frames/out/b_w040_a26120005_c3/sun0/render/frame.png",
+   "png_sha256": "385c605f3def5b5491b56ef994178a1f10faa3eca1b87255825e90c0b4713c1a",
+   "target_sha256": "025f87e9d1c48aab38fdaad9c60ac75e0ee7e6b80cba20b381bfde086a835653",
+   "target_pixels": 1071,
+   "old_ruler": {
+    "samples": 264,
+    "median": 2.0,
+    "iqr": [
+     1.5,
+     4.0
+    ],
+    "no_band_share": 0.11363636363636363,
+    "end_reached": 0
+   },
+   "old_check": "equal",
+   "fine": {
+    "samples": 1047,
+    "median": 2.549786807279038,
+    "iqr": [
+     1.8105192514125412,
+     4.197085851530984
+    ],
+    "no_band_share": 0.1041069723018147,
+    "end_reached": 0
+   },
+   "subsets": [
+    {
+     "k": 0,
+     "samples": 264,
+     "median": 2.517098321215934,
+     "iqr": [
+      1.756728655950964,
+      3.9882960893107904
+     ],
+     "no_band_share": 0.10984848484848485,
+     "end_reached": 0
+    },
+    {
+     "k": 1,
+     "samples": 263,
+     "median": 2.738419227030663,
+     "iqr": [
+      1.7722559488803986,
+      4.4389076964332235
+     ],
+     "no_band_share": 0.09505703422053231,
+     "end_reached": 0
+    },
+    {
+     "k": 2,
+     "samples": 260,
+     "median": 2.511976057871178,
+     "iqr": [
+      1.8618908237746858,
+      4.067570014813654
+     ],
+     "no_band_share": 0.10384615384615385,
+     "end_reached": 0
+    },
+    {
+     "k": 3,
+     "samples": 260,
+     "median": 2.5575219999235683,
+     "iqr": [
+      1.8417741486837476,
+      4.15827839889319
+     ],
+     "no_band_share": 0.1076923076923077,
+     "end_reached": 0
+    }
+   ]
+  },
+  {
+   "id": "b_w065_a26120005_c3",
+   "cam": "a26120005_c3",
+   "tag": "w065",
+   "role": "variant",
+   "group": "A_opening",
+   "status": "measured",
+   "pixel_mm": 13.542574510929644,
+   "label_dir": "frames/fm/a0097",
+   "png": "frames/out/b_w065_a26120005_c3/sun0/render/frame.png",
+   "png_sha256": "8ae91fa10ff78520d0043fab13fcc4210ffa844c51e31b728633000bae41067d",
+   "target_sha256": "4f9a64c2832bad09fcfb63edf1a50d296abc8f580c56fec87c5f3fc2d2c08240",
+   "target_pixels": 1085,
+   "old_ruler": {
+    "samples": 270,
+    "median": 2.5,
+    "iqr": [
+     1.5,
+     4.0
+    ],
+    "no_band_share": 0.10740740740740741,
+    "end_reached": 0
+   },
+   "old_check": "equal",
+   "fine": {
+    "samples": 1063,
+    "median": 3.023302269037373,
+    "iqr": [
+     2.1053366961471367,
+     4.360240357242356
+    ],
+    "no_band_share": 0.10442144873000941,
+    "end_reached": 0
+   },
+   "subsets": [
+    {
+     "k": 0,
+     "samples": 270,
+     "median": 3.0152070460155933,
+     "iqr": [
+      2.0781783967354857,
+      4.53082796444905
+     ],
+     "no_band_share": 0.1037037037037037,
+     "end_reached": 0
+    },
+    {
+     "k": 1,
+     "samples": 264,
+     "median": 2.9871782878824096,
+     "iqr": [
+      2.0791932773160173,
+      3.972411630050511
+     ],
+     "no_band_share": 0.10984848484848485,
+     "end_reached": 0
+    },
+    {
+     "k": 2,
+     "samples": 267,
+     "median": 2.991392669459983,
+     "iqr": [
+      2.1113581953009026,
+      4.4900703195088125
+     ],
+     "no_band_share": 0.09737827715355805,
+     "end_reached": 0
+    },
+    {
+     "k": 3,
+     "samples": 262,
+     "median": 3.0798554406155234,
+     "iqr": [
+      2.194716881075685,
+      4.536508944126429
+     ],
+     "no_band_share": 0.10687022900763359,
+     "end_reached": 0
+    }
+   ]
+  },
+  {
+   "id": "b_w080_a26120005_c3",
+   "cam": "a26120005_c3",
+   "tag": "w080",
+   "role": "variant",
+   "group": "A_opening",
+   "status": "measured",
+   "pixel_mm": 13.542574510929644,
+   "label_dir": "frames/fm/a0098",
+   "png": "frames/out/b_w080_a26120005_c3/sun0/render/frame.png",
+   "png_sha256": "2c9ec2aa8ed400619f25a07914cb6e05f5a3171d5fb7711e88fc8d17b7f78b01",
+   "target_sha256": "a718b22ec11b6204abb29d29862a7d171314dcd52d5a5594d8ae28f920cb4431",
+   "target_pixels": 1096,
+   "old_ruler": {
+    "samples": 271,
+    "median": 3.0,
+    "iqr": [
+     2.0,
+     4.5
+    ],
+    "no_band_share": 0.1033210332103321,
+    "end_reached": 0
+   },
+   "old_check": "equal",
+   "fine": {
+    "samples": 1078,
+    "median": 3.46402668010055,
+    "iqr": [
+     2.416832512826174,
+     5.07973728941827
+    ],
+    "no_band_share": 0.09833024118738404,
+    "end_reached": 0
+   },
+   "subsets": [
+    {
+     "k": 0,
+     "samples": 271,
+     "median": 3.4522454063625174,
+     "iqr": [
+      2.5154852667597662,
+      5.163373579844787
+     ],
+     "no_band_share": 0.0996309963099631,
+     "end_reached": 0
+    },
+    {
+     "k": 1,
+     "samples": 269,
+     "median": 3.462489959073583,
+     "iqr": [
+      2.3140704128465632,
+      5.072461481344924
+     ],
+     "no_band_share": 0.09293680297397769,
+     "end_reached": 0
+    },
+    {
+     "k": 2,
+     "samples": 269,
+     "median": 3.381323698409115,
+     "iqr": [
+      2.314668624403158,
+      4.720109689614141
+     ],
+     "no_band_share": 0.10408921933085502,
+     "end_reached": 0
+    },
+    {
+     "k": 3,
+     "samples": 269,
+     "median": 3.545303647053427,
+     "iqr": [
+      2.539053882176455,
+      5.26258078571958
+     ],
+     "no_band_share": 0.09665427509293681,
+     "end_reached": 0
+    }
+   ]
+  },
+  {
+   "id": "b_w030_a26130005_c1",
+   "cam": "a26130005_c1",
+   "tag": "w030",
+   "role": "variant",
+   "group": "A_opening",
+   "status": "measured",
+   "pixel_mm": 7.960987713685808,
+   "label_dir": "frames/fm/a0072",
+   "png": "frames/out/b_w030_a26130005_c1/sun0/render/frame.png",
+   "png_sha256": "63b57ee47bbbf31cb0184aff915c37fdbfd4ed6315ecc60a618833db33deabaa",
+   "target_sha256": "76654620917b57cd860ba576af6ac972d664e2759637a97555c59af57fc3d71a",
+   "target_pixels": 1501,
+   "old_ruler": {
+    "samples": 368,
+    "median": 6.0,
+    "iqr": [
+     2.0,
+     14.5
+    ],
+    "no_band_share": 0.0625,
+    "end_reached": 1
+   },
+   "old_check": "equal",
+   "fine": {
+    "samples": 1483,
+    "median": 5.868128624937751,
+    "iqr": [
+     2.5662862460205242,
+     14.217468621205898
+    ],
+    "no_band_share": 0.06271072151045179,
+    "end_reached": 2
+   },
+   "subsets": [
+    {
+     "k": 0,
+     "samples": 368,
+     "median": 6.234282609144881,
+     "iqr": [
+      2.476559001230573,
+      14.307688880408495
+     ],
+     "no_band_share": 0.057065217391304345,
+     "end_reached": 1
+    },
+    {
+     "k": 1,
+     "samples": 373,
+     "median": 6.047793863199567,
+     "iqr": [
+      2.533030109570387,
+      13.589942215186465
+     ],
+     "no_band_share": 0.06970509383378017,
+     "end_reached": 1
+    },
+    {
+     "k": 2,
+     "samples": 372,
+     "median": 5.456333363174951,
+     "iqr": [
+      2.5867855718384076,
+      14.639114964915436
+     ],
+     "no_band_share": 0.06182795698924731,
+     "end_reached": 0
+    },
+    {
+     "k": 3,
+     "samples": 370,
+     "median": 6.094682897897668,
+     "iqr": [
+      2.6097887941977684,
+      13.442099086233679
+     ],
+     "no_band_share": 0.062162162162162166,
+     "end_reached": 0
+    }
+   ]
+  },
+  {
+   "id": "b_w040_a26130005_c1",
+   "cam": "a26130005_c1",
+   "tag": "w040",
+   "role": "variant",
+   "group": "A_opening",
+   "status": "measured",
+   "pixel_mm": 7.960987713685808,
+   "label_dir": "frames/fm/a0075",
+   "png": "frames/out/b_w040_a26130005_c1/sun0/render/frame.png",
+   "png_sha256": "5e17a351ff20ea8fd23a779369e82da580b0a338c033e724952c5bb3b04f2d4b",
+   "target_sha256": "fee8face5ab6bc613ffe5e7c6af60ee4039dbaa6d154af4270bb465d6ff3fafd",
+   "target_pixels": 1561,
+   "old_ruler": {
+    "samples": 388,
+    "median": 7.0,
+    "iqr": [
+     3.0,
+     15.375
+    ],
+    "no_band_share": 0.03608247422680412,
+    "end_reached": 0
+   },
+   "old_check": "equal",
+   "fine": {
+    "samples": 1547,
+    "median": 6.949356575728823,
+    "iqr": [
+     3.1946263118770974,
+     15.451467946703977
+    ],
+    "no_band_share": 0.03684550743374273,
+    "end_reached": 5
+   },
+   "subsets": [
+    {
+     "k": 0,
+     "samples": 388,
+     "median": 7.588735551347582,
+     "iqr": [
+      3.325659462935162,
+      16.08389197186643
+     ],
+     "no_band_share": 0.03350515463917526,
+     "end_reached": 0
+    },
+    {
+     "k": 1,
+     "samples": 387,
+     "median": 6.487747345932544,
+     "iqr": [
+      3.1994747422370082,
+      14.614290623762379
+     ],
+     "no_band_share": 0.03617571059431524,
+     "end_reached": 3
+    },
+    {
+     "k": 2,
+     "samples": 386,
+     "median": 6.817118166935133,
+     "iqr": [
+      3.1594408232683118,
+      15.490718786836847
+     ],
+     "no_band_share": 0.031088082901554404,
+     "end_reached": 0
+    },
+    {
+     "k": 3,
+     "samples": 386,
+     "median": 7.09479884829107,
+     "iqr": [
+      3.1057925396539154,
+      15.83692584673815
+     ],
+     "no_band_share": 0.046632124352331605,
+     "end_reached": 2
+    }
+   ]
+  },
+  {
+   "id": "b_w065_a26130005_c1",
+   "cam": "a26130005_c1",
+   "tag": "w065",
+   "role": "variant",
+   "group": "A_opening",
+   "status": "measured",
+   "pixel_mm": 7.960987713685808,
+   "label_dir": "frames/fm/a0076",
+   "png": "frames/out/b_w065_a26130005_c1/sun0/render/frame.png",
+   "png_sha256": "63373b35fbcfe0278c97b59c7ecfe60d23ac929e5e8e2213673e1c14baa39879",
+   "target_sha256": "b99eab99c3c3f6f18d4bcccaabe433fcccae2ed30e1385103cd6dbaf0c3c9d7e",
+   "target_pixels": 1630,
+   "old_ruler": {
+    "samples": 405,
+    "median": 9.0,
+    "iqr": [
+     3.0,
+     17.0
+    ],
+    "no_band_share": 0.03950617283950617,
+    "end_reached": 2
+   },
+   "old_check": "equal",
+   "fine": {
+    "samples": 1614,
+    "median": 9.403231335983454,
+    "iqr": [
+     3.413410799484324,
+     17.43937861361886
+    ],
+    "no_band_share": 0.03717472118959108,
+    "end_reached": 3
+   },
+   "subsets": [
+    {
+     "k": 0,
+     "samples": 405,
+     "median": 9.592859973565368,
+     "iqr": [
+      3.363757932635348,
+      17.451953176485894
+     ],
+     "no_band_share": 0.03950617283950617,
+     "end_reached": 2
+    },
+    {
+     "k": 1,
+     "samples": 403,
+     "median": 9.065077217356183,
+     "iqr": [
+      3.406398966328986,
+      16.538697923241166
+     ],
+     "no_band_share": 0.04218362282878412,
+     "end_reached": 0
+    },
+    {
+     "k": 2,
+     "samples": 403,
+     "median": 9.979137629257558,
+     "iqr": [
+      3.801870145411491,
+      17.941859543027128
+     ],
+     "no_band_share": 0.02977667493796526,
+     "end_reached": 0
+    },
+    {
+     "k": 3,
+     "samples": 403,
+     "median": 8.744433155633743,
+     "iqr": [
+      3.2832338099367395,
+      17.518311127887575
+     ],
+     "no_band_share": 0.03722084367245657,
+     "end_reached": 1
+    }
+   ]
+  },
+  {
+   "id": "b_w080_a26130005_c1",
+   "cam": "a26130005_c1",
+   "tag": "w080",
+   "role": "variant",
+   "group": "A_opening",
+   "status": "measured",
+   "pixel_mm": 7.960987713685808,
+   "label_dir": "frames/fm/a0073",
+   "png": "frames/out/b_w080_a26130005_c1/sun0/render/frame.png",
+   "png_sha256": "311dc48875423c1a25542430aa7e3804574d9b0b5553438b117d0953c86c4f19",
+   "target_sha256": "335d3338b0a411944c976d3f523447e03d46eae3cb41b72d166d394cd6a5c004",
+   "target_pixels": 1637,
+   "old_ruler": {
+    "samples": 409,
+    "median": 9.5,
+    "iqr": [
+     3.0,
+     18.5
+    ],
+    "no_band_share": 0.02689486552567237,
+    "end_reached": 2
+   },
+   "old_check": "equal",
+   "fine": {
+    "samples": 1626,
+    "median": 10.319364767481044,
+    "iqr": [
+     3.6695745410758613,
+     19.2055287606984
+    ],
+    "no_band_share": 0.01968019680196802,
+    "end_reached": 4
+   },
+   "subsets": [
+    {
+     "k": 0,
+     "samples": 409,
+     "median": 10.15911156447267,
+     "iqr": [
+      3.5924036758079803,
+      18.794212034912345
+     ],
+     "no_band_share": 0.029339853300733496,
+     "end_reached": 2
+    },
+    {
+     "k": 1,
+     "samples": 406,
+     "median": 10.103022238552542,
+     "iqr": [
+      3.684521634467213,
+      19.60561190331491
+     ],
+     "no_band_share": 0.019704433497536946,
+     "end_reached": 1
+    },
+    {
+     "k": 2,
+     "samples": 406,
+     "median": 10.314363993784879,
+     "iqr": [
+      3.4960423907313483,
+      19.06871129034696
+     ],
+     "no_band_share": 0.0049261083743842365,
+     "end_reached": 1
+    },
+    {
+     "k": 3,
+     "samples": 405,
+     "median": 10.673862753175552,
+     "iqr": [
+      3.9457770513158783,
+      18.970970992861364
+     ],
+     "no_band_share": 0.024691358024691357,
+     "end_reached": 0
+    }
+   ]
+  },
+  {
+   "id": "b_w030_n26120003_c1",
+   "cam": "n26120003_c1",
+   "tag": "w030",
+   "role": "variant",
+   "group": "A_opening",
+   "status": "measured",
+   "pixel_mm": 2.0,
+   "label_dir": "frames/fm/a0010",
+   "png": "frames/out/b_w030_n26120003_c1/sun0/render/frame.png",
+   "png_sha256": "4c95d986086bbe3518f17780623b27bed6c04cd3ec6f794693a7ffbe1aaa60c2",
+   "target_sha256": "ab16da0a39574f9c1671277bfdbffdc71e8ea30126245f5e9cd2d589cd60cf64",
+   "target_pixels": 1052,
+   "old_ruler": {
+    "samples": 263,
+    "median": 7.75,
+    "iqr": [
+     4.125,
+     10.0
+    ],
+    "no_band_share": 0.0038022813688212928,
+    "end_reached": 0
+   },
+   "old_check": "equal",
+   "fine": {
+    "samples": 1052,
+    "median": 8.175521711295314,
+    "iqr": [
+     5.172582221918933,
+     10.632746723086612
+    ],
+    "no_band_share": 0.0009505703422053232,
+    "end_reached": 0
+   },
+   "subsets": [
+    {
+     "k": 0,
+     "samples": 263,
+     "median": 8.284997661545127,
+     "iqr": [
+      4.777221100714212,
+      10.792783613746991
+     ],
+     "no_band_share": 0.0038022813688212928,
+     "end_reached": 0
+    },
+    {
+     "k": 1,
+     "samples": 263,
+     "median": 8.223682867500868,
+     "iqr": [
+      5.276823006943399,
+      10.89358575091449
+     ],
+     "no_band_share": 0.0,
+     "end_reached": 0
+    },
+    {
+     "k": 2,
+     "samples": 263,
+     "median": 8.163286101163656,
+     "iqr": [
+      5.321206420366286,
+      10.438107776384484
+     ],
+     "no_band_share": 0.0,
+     "end_reached": 0
+    },
+    {
+     "k": 3,
+     "samples": 263,
+     "median": 8.044704048936772,
+     "iqr": [
+      5.001986071379626,
+      10.531518331814684
+     ],
+     "no_band_share": 0.0,
+     "end_reached": 0
+    }
+   ]
+  },
+  {
+   "id": "b_w040_n26120003_c1",
+   "cam": "n26120003_c1",
+   "tag": "w040",
+   "role": "variant",
+   "group": "A_opening",
+   "status": "measured",
+   "pixel_mm": 2.0,
+   "label_dir": "frames/fm/a0011",
+   "png": "frames/out/b_w040_n26120003_c1/sun0/render/frame.png",
+   "png_sha256": "c2ba2e6b8d620ca433d569620d3fe216fd1c0c44328c43cf73e9374f9694146a",
+   "target_sha256": "4842ea7d1d8877e3436b571082159a58159eaeb9a5cfae5cfe148dccbb55513f",
+   "target_pixels": 1071,
+   "old_ruler": {
+    "samples": 268,
+    "median": 10.25,
+    "iqr": [
+     6.5,
+     14.5
+    ],
+    "no_band_share": 0.0,
+    "end_reached": 0
+   },
+   "old_check": "equal",
+   "fine": {
+    "samples": 1071,
+    "median": 10.94099946862488,
+    "iqr": [
+     7.105972957175139,
+     15.200437017249293
+    ],
+    "no_band_share": 0.0018674136321195146,
+    "end_reached": 0
+   },
+   "subsets": [
+    {
+     "k": 0,
+     "samples": 268,
+     "median": 10.694176385455208,
+     "iqr": [
+      7.063911219661945,
+      14.977607644562616
+     ],
+     "no_band_share": 0.0,
+     "end_reached": 0
+    },
+    {
+     "k": 1,
+     "samples": 268,
+     "median": 11.252447808703703,
+     "iqr": [
+      7.18872063668295,
+      15.391229966174363
+     ],
+     "no_band_share": 0.0037313432835820895,
+     "end_reached": 0
+    },
+    {
+     "k": 2,
+     "samples": 268,
+     "median": 11.252121549745043,
+     "iqr": [
+      7.167482330831831,
+      15.421069243733744
+     ],
+     "no_band_share": 0.0,
+     "end_reached": 0
+    },
+    {
+     "k": 3,
+     "samples": 267,
+     "median": 10.564945784186627,
+     "iqr": [
+      7.080445684610681,
+      14.955308578207571
+     ],
+     "no_band_share": 0.003745318352059925,
+     "end_reached": 0
+    }
+   ]
+  },
+  {
+   "id": "b_w065_n26120003_c1",
+   "cam": "n26120003_c1",
+   "tag": "w065",
+   "role": "variant",
+   "group": "A_opening",
+   "status": "measured",
+   "pixel_mm": 2.0,
+   "label_dir": "frames/fm/a0012",
+   "png": "frames/out/b_w065_n26120003_c1/sun0/render/frame.png",
+   "png_sha256": "a69f2e1e946ea1afc5e90f36bfc475b9950c48f33b00b3a881ba833beac3f5b7",
+   "target_sha256": "393aded30691f7b624d5051f16795d98e423152a411b3e14dd29769a0673a618",
+   "target_pixels": 958,
+   "old_ruler": {
+    "samples": 240,
+    "median": 15.25,
+    "iqr": [
+     10.5,
+     21.5
+    ],
+    "no_band_share": 0.008333333333333333,
+    "end_reached": 0
+   },
+   "old_check": "equal",
+   "fine": {
+    "samples": 958,
+    "median": 16.713498513694454,
+    "iqr": [
+     11.283392198893033,
+     22.474371745288977
+    ],
+    "no_band_share": 0.009394572025052192,
+    "end_reached": 0
+   },
+   "subsets": [
+    {
+     "k": 0,
+     "samples": 240,
+     "median": 15.637244296869616,
+     "iqr": [
+      11.129415823853225,
+      22.117044921835667
+     ],
+     "no_band_share": 0.008333333333333333,
+     "end_reached": 0
+    },
+    {
+     "k": 1,
+     "samples": 240,
+     "median": 16.84788346301751,
+     "iqr": [
+      11.417010877665657,
+      22.457446629294836
+     ],
+     "no_band_share": 0.0125,
+     "end_reached": 0
+    },
+    {
+     "k": 2,
+     "samples": 239,
+     "median": 16.974692137462515,
+     "iqr": [
+      11.341978725920065,
+      22.79542101807831
+     ],
+     "no_band_share": 0.008368200836820083,
+     "end_reached": 0
+    },
+    {
+     "k": 3,
+     "samples": 239,
+     "median": 17.00480004343019,
+     "iqr": [
+      11.139812530173476,
+      22.548410655123778
+     ],
+     "no_band_share": 0.008368200836820083,
+     "end_reached": 0
+    }
+   ]
+  },
+  {
+   "id": "b_w080_n26120003_c1",
+   "cam": "n26120003_c1",
+   "tag": "w080",
+   "role": "variant",
+   "group": "A_opening",
+   "status": "measured",
+   "pixel_mm": 2.0,
+   "label_dir": "frames/fm/a0024",
+   "png": "frames/near_r1/out/nr_w080_n26120003_c1/sun0/render/frame.png",
+   "png_sha256": "8511b02e336edcb3218d8d58055f070003c1336d629ba9e77f7b7ee6a5a330a7",
+   "target_sha256": "6148a57a5e578c1b38640febc15a2623b9884f2e80a564ac9ef71851a2152584",
+   "target_pixels": 856,
+   "old_ruler": {
+    "samples": 214,
+    "median": 19.25,
+    "iqr": [
+     12.625,
+     27.5
+    ],
+    "no_band_share": 0.018691588785046728,
+    "end_reached": 0
+   },
+   "old_check": "equal",
+   "fine": {
+    "samples": 854,
+    "median": 19.9338399035774,
+    "iqr": [
+     12.682587757763399,
+     28.201814063709495
+    ],
+    "no_band_share": 0.01639344262295082,
+    "end_reached": 0
+   },
+   "subsets": [
+    {
+     "k": 0,
+     "samples": 214,
+     "median": 19.63330751644662,
+     "iqr": [
+      12.879275784539132,
+      28.189762938177488
+     ],
+     "no_band_share": 0.018691588785046728,
+     "end_reached": 0
+    },
+    {
+     "k": 1,
+     "samples": 214,
+     "median": 20.41477533009879,
+     "iqr": [
+      12.904967781034271,
+      28.321946265284588
+     ],
+     "no_band_share": 0.018691588785046728,
+     "end_reached": 0
+    },
+    {
+     "k": 2,
+     "samples": 213,
+     "median": 19.991357250085535,
+     "iqr": [
+      12.095605349339255,
+      28.116307532659874
+     ],
+     "no_band_share": 0.014084507042253521,
+     "end_reached": 0
+    },
+    {
+     "k": 3,
+     "samples": 213,
+     "median": 19.508997696756474,
+     "iqr": [
+      12.451860916413608,
+      28.225822297105157
+     ],
+     "no_band_share": 0.014084507042253521,
+     "end_reached": 0
+    }
+   ]
+  },
+  {
+   "id": "b_w030_n26130007_c0",
+   "cam": "n26130007_c0",
+   "tag": "w030",
+   "role": "variant",
+   "group": "A_opening",
+   "status": "measured",
+   "pixel_mm": 2.0,
+   "label_dir": "frames/fm/a0025",
+   "png": "frames/fr_de/out/fr_w030_n26130007_c0/sun0/render/frame.png",
+   "png_sha256": "8b498a22fd75d66954785634bf018c2d625662c9f72641045a3e197c5f16d525",
+   "target_sha256": "eb35abdfd4b30c93f40ccf902daced5de63824066912cea8c85004e62aa1f8a9",
+   "target_pixels": 2009,
+   "old_ruler": {
+    "samples": 499,
+    "median": 10.5,
+    "iqr": [
+     5.0,
+     23.0
+    ],
+    "no_band_share": 0.028056112224448898,
+    "end_reached": 0
+   },
+   "old_check": "equal",
+   "fine": {
+    "samples": 2003,
+    "median": 11.358724404864734,
+    "iqr": [
+     5.783556037013724,
+     26.843504955860652
+    ],
+    "no_band_share": 0.0254618072890664,
+    "end_reached": 0
+   },
+   "subsets": [
+    {
+     "k": 0,
+     "samples": 499,
+     "median": 10.819359908245278,
+     "iqr": [
+      5.4785695179435745,
+      22.79414177965086
+     ],
+     "no_band_share": 0.028056112224448898,
+     "end_reached": 0
+    },
+    {
+     "k": 1,
+     "samples": 501,
+     "median": 11.134645633349695,
+     "iqr": [
+      5.831037659801917,
+      26.41297645204418
+     ],
+     "no_band_share": 0.029940119760479042,
+     "end_reached": 0
+    },
+    {
+     "k": 2,
+     "samples": 501,
+     "median": 11.55884817162107,
+     "iqr": [
+      5.789614913158185,
+      28.149041497078713
+     ],
+     "no_band_share": 0.01996007984031936,
+     "end_reached": 0
+    },
+    {
+     "k": 3,
+     "samples": 502,
+     "median": 11.804103770910682,
+     "iqr": [
+      6.019067047127759,
+      29.4627015073628
+     ],
+     "no_band_share": 0.02390438247011952,
+     "end_reached": 0
+    }
+   ]
+  },
+  {
+   "id": "b_w040_n26130007_c0",
+   "cam": "n26130007_c0",
+   "tag": "w040",
+   "role": "variant",
+   "group": "A_opening",
+   "status": "measured",
+   "pixel_mm": 2.0,
+   "label_dir": "frames/fm/a0054",
+   "png": "frames/out/b_w040_n26130007_c0/sun0/render/frame.png",
+   "png_sha256": "844422af6d18de902e4332b2a549e9998cc2bb175a152f178b755cbc7aeb99d5",
+   "target_sha256": "46facf34cdc80ba2a1e31c4c504d2637773d3c1df9f9f593c35e7cdcd15c0e36",
+   "target_pixels": 1959,
+   "old_ruler": {
+    "samples": 488,
+    "median": 12.5,
+    "iqr": [
+     6.0,
+     29.125
+    ],
+    "no_band_share": 0.01639344262295082,
+    "end_reached": 0
+   },
+   "old_check": "equal",
+   "fine": {
+    "samples": 1952,
+    "median": 12.518439512957357,
+    "iqr": [
+     6.323392919305624,
+     28.169850475645706
+    ],
+    "no_band_share": 0.018954918032786885,
+    "end_reached": 0
+   },
+   "subsets": [
+    {
+     "k": 0,
+     "samples": 488,
+     "median": 12.892482999940047,
+     "iqr": [
+      6.37928068231936,
+      29.47229670814774
+     ],
+     "no_band_share": 0.01639344262295082,
+     "end_reached": 0
+    },
+    {
+     "k": 1,
+     "samples": 487,
+     "median": 12.46039069622297,
+     "iqr": [
+      6.065562892723783,
+      29.689823794469525
+     ],
+     "no_band_share": 0.02053388090349076,
+     "end_reached": 0
+    },
+    {
+     "k": 2,
+     "samples": 489,
+     "median": 12.620478998154002,
+     "iqr": [
+      6.08954962300561,
+      27.11035945353678
+     ],
+     "no_band_share": 0.022494887525562373,
+     "end_reached": 0
+    },
+    {
+     "k": 3,
+     "samples": 488,
+     "median": 12.10704233089147,
+     "iqr": [
+      6.507545884218895,
+      26.638272739508416
+     ],
+     "no_band_share": 0.01639344262295082,
+     "end_reached": 0
+    }
+   ]
+  },
+  {
+   "id": "b_w065_n26130007_c0",
+   "cam": "n26130007_c0",
+   "tag": "w065",
+   "role": "variant",
+   "group": "A_opening",
+   "status": "measured",
+   "pixel_mm": 2.0,
+   "label_dir": "frames/fm/a0041",
+   "png": "frames/out/b_w065_n26130007_c0/sun0/render/frame.png",
+   "png_sha256": "7a62242656a32d7bdf876610469bcf6711008d541e0dc86cd361f1880390e522",
+   "target_sha256": "1830f4aa918004ffeb49a65c9bbf0c845030e8a0213f866a9ef1908dccb675d6",
+   "target_pixels": 1806,
+   "old_ruler": {
+    "samples": 450,
+    "median": 17.0,
+    "iqr": [
+     8.0,
+     35.0
+    ],
+    "no_band_share": 0.024444444444444446,
+    "end_reached": 0
+   },
+   "old_check": "equal",
+   "fine": {
+    "samples": 1802,
+    "median": 17.905986084245313,
+    "iqr": [
+     8.437401553301365,
+     34.8536174498529
+    ],
+    "no_band_share": 0.014983351831298557,
+    "end_reached": 0
+   },
+   "subsets": [
+    {
+     "k": 0,
+     "samples": 450,
+     "median": 17.38190166682085,
+     "iqr": [
+      8.289693318864606,
+      35.297088734444074
+     ],
+     "no_band_share": 0.024444444444444446,
+     "end_reached": 0
+    },
+    {
+     "k": 1,
+     "samples": 451,
+     "median": 17.26426754253845,
+     "iqr": [
+      8.289766631656159,
+      37.08672331239218
+     ],
+     "no_band_share": 0.013303769401330377,
+     "end_reached": 0
+    },
+    {
+     "k": 2,
+     "samples": 451,
+     "median": 20.902687259383274,
+     "iqr": [
+      8.678595469444351,
+      35.04381354821278
+     ],
+     "no_band_share": 0.015521064301552107,
+     "end_reached": 0
+    },
+    {
+     "k": 3,
+     "samples": 450,
+     "median": 17.33425690098266,
+     "iqr": [
+      8.605591947574776,
+      33.59214826216717
+     ],
+     "no_band_share": 0.006666666666666667,
+     "end_reached": 0
+    }
+   ]
+  },
+  {
+   "id": "b_w080_n26130007_c0",
+   "cam": "n26130007_c0",
+   "tag": "w080",
+   "role": "variant",
+   "group": "A_opening",
+   "status": "measured",
+   "pixel_mm": 2.0,
+   "label_dir": "frames/fm/a0026",
+   "png": "frames/fr_de/out/fr_w080_n26130007_c0/sun0/render/frame.png",
+   "png_sha256": "b739d934f194e2f59907d92e9df6b9efbc5c7a92405c1363f55966ad989c4c42",
+   "target_sha256": "dc9e4d0c53069e0c6850b6bc2f7a5a91c1385203e709cad3c955ba0e979b2d59",
+   "target_pixels": 1615,
+   "old_ruler": {
+    "samples": 402,
+    "median": 22.0,
+    "iqr": [
+     10.5,
+     41.5
+    ],
+    "no_band_share": 0.022388059701492536,
+    "end_reached": 0
+   },
+   "old_check": "equal",
+   "fine": {
+    "samples": 1607,
+    "median": 22.568297829529584,
+    "iqr": [
+     10.659170649127056,
+     42.550996288470216
+    ],
+    "no_band_share": 0.024891101431238332,
+    "end_reached": 0
+   },
+   "subsets": [
+    {
+     "k": 0,
+     "samples": 402,
+     "median": 22.72668239110685,
+     "iqr": [
+      10.689964778934298,
+      41.92988769657083
+     ],
+     "no_band_share": 0.022388059701492536,
+     "end_reached": 0
+    },
+    {
+     "k": 1,
+     "samples": 402,
+     "median": 24.73297643711109,
+     "iqr": [
+      10.870862948645172,
+      44.296402174781264
+     ],
+     "no_band_share": 0.02736318407960199,
+     "end_reached": 0
+    },
+    {
+     "k": 2,
+     "samples": 402,
+     "median": 22.66028518412525,
+     "iqr": [
+      10.714330185877557,
+      45.60276440143048
+     ],
+     "no_band_share": 0.022388059701492536,
+     "end_reached": 0
+    },
+    {
+     "k": 3,
+     "samples": 401,
+     "median": 20.01303122098918,
+     "iqr": [
+      10.359276046503343,
+      38.27862415177435
+     ],
+     "no_band_share": 0.02743142144638404,
+     "end_reached": 0
+    }
+   ]
+  },
+  {
+   "id": "b_v000_a26120005_c0",
+   "cam": "a26120005_c0",
+   "tag": "v000",
+   "role": "variant",
+   "group": "B_other_genes",
+   "status": "measured",
+   "pixel_mm": 6.767284527431953,
+   "label_dir": "frames/fm/a0013",
+   "png": "frames/out/b_v000_a26120005_c0/sun0/render/frame.png",
+   "png_sha256": "280b6e649fee7015cb5282e2aeeece29b01d3f2e7c6e9dc1bb95a7fcd70e4cdd",
+   "target_sha256": "f6b3e80507e3319d06d310512b30bd28b16ba679360c71d6ae0198bda549a11c",
+   "target_pixels": 1131,
+   "old_ruler": {
+    "samples": 282,
+    "median": 5.5,
+    "iqr": [
+     4.0,
+     8.5
+    ],
+    "no_band_share": 0.0035460992907801418,
+    "end_reached": 0
+   },
+   "old_check": "equal",
+   "fine": {
+    "samples": 1128,
+    "median": 5.762849589474004,
+    "iqr": [
+     4.315388893632683,
+     8.920237518287804
+    ],
+    "no_band_share": 0.010638297872340425,
+    "end_reached": 0
+   },
+   "subsets": [
+    {
+     "k": 0,
+     "samples": 282,
+     "median": 5.901631010130617,
+     "iqr": [
+      4.342689652993335,
+      9.242657804456012
+     ],
+     "no_band_share": 0.0035460992907801418,
+     "end_reached": 0
+    },
+    {
+     "k": 1,
+     "samples": 281,
+     "median": 5.728809871747545,
+     "iqr": [
+      4.266173277891879,
+      8.962304907922686
+     ],
+     "no_band_share": 0.017793594306049824,
+     "end_reached": 0
+    },
+    {
+     "k": 2,
+     "samples": 283,
+     "median": 5.711785170351575,
+     "iqr": [
+      4.3171344790221955,
+      8.692767690359796
+     ],
+     "no_band_share": 0.0035335689045936395,
+     "end_reached": 0
+    },
+    {
+     "k": 3,
+     "samples": 282,
+     "median": 5.697075622550813,
+     "iqr": [
+      4.351144884513726,
+      8.509273727800007
+     ],
+     "no_band_share": 0.01773049645390071,
+     "end_reached": 0
+    }
+   ]
+  },
+  {
+   "id": "b_v045_a26120005_c0",
+   "cam": "a26120005_c0",
+   "tag": "v045",
+   "role": "variant",
+   "group": "B_other_genes",
+   "status": "measured",
+   "pixel_mm": 6.767284527431953,
+   "label_dir": "frames/fm/a0014",
+   "png": "frames/out/b_v045_a26120005_c0/sun0/render/frame.png",
+   "png_sha256": "4e03406d805c282eda0be300620630251bfd8fc6472cd112124a3c436e4485ad",
+   "target_sha256": "8f052e9e43e082fa1132b2b0baddf68357d5b50273f41ef10223849770be0f4c",
+   "target_pixels": 1099,
+   "old_ruler": {
+    "samples": 274,
+    "median": 7.0,
+    "iqr": [
+     5.0,
+     9.5
+    ],
+    "no_band_share": 0.010948905109489052,
+    "end_reached": 0
+   },
+   "old_check": "equal",
+   "fine": {
+    "samples": 1093,
+    "median": 7.685904234603128,
+    "iqr": [
+     5.418114041607087,
+     10.115487804305172
+    ],
+    "no_band_share": 0.010064043915827997,
+    "end_reached": 0
+   },
+   "subsets": [
+    {
+     "k": 0,
+     "samples": 274,
+     "median": 7.686927400218491,
+     "iqr": [
+      5.406080340575484,
+      10.114688330637136
+     ],
+     "no_band_share": 0.010948905109489052,
+     "end_reached": 0
+    },
+    {
+     "k": 1,
+     "samples": 274,
+     "median": 7.761202480387994,
+     "iqr": [
+      5.575342853098734,
+      10.030350999619912
+     ],
+     "no_band_share": 0.010948905109489052,
+     "end_reached": 0
+    },
+    {
+     "k": 2,
+     "samples": 272,
+     "median": 7.5865963427023395,
+     "iqr": [
+      5.399515144552279,
+      10.212606750778757
+     ],
+     "no_band_share": 0.011029411764705883,
+     "end_reached": 0
+    },
+    {
+     "k": 3,
+     "samples": 273,
+     "median": 7.613818059295382,
+     "iqr": [
+      5.44528491575543,
+      10.234483909298177
+     ],
+     "no_band_share": 0.007326007326007326,
+     "end_reached": 0
+    }
+   ]
+  },
+  {
+   "id": "b_d010_a26120005_c0",
+   "cam": "a26120005_c0",
+   "tag": "d010",
+   "role": "variant",
+   "group": "B_other_genes",
+   "status": "measured",
+   "pixel_mm": 6.767284527431953,
+   "label_dir": "frames/fm/a0027",
+   "png": "frames/fr_de/out/fr_d010_a26120005_c0/sun0/render/frame.png",
+   "png_sha256": "d04ae88289af4163fb98e8bc726957337ac36ac409e3925ea65d5f855d5dbf66",
+   "target_sha256": "9ee9ff28f949959e4a167e8e7b441fb76ec7f71509523e9b068a28b1af0a8dec",
+   "target_pixels": 1051,
+   "old_ruler": {
+    "samples": 261,
+    "median": 6.5,
+    "iqr": [
+     4.5,
+     9.0
+    ],
+    "no_band_share": 0.007662835249042145,
+    "end_reached": 0
+   },
+   "old_check": "equal",
+   "fine": {
+    "samples": 1046,
+    "median": 6.852384171284189,
+    "iqr": [
+     4.965722209413114,
+     9.639128987858845
+    ],
+    "no_band_share": 0.0076481835564053535,
+    "end_reached": 0
+   },
+   "subsets": [
+    {
+     "k": 0,
+     "samples": 261,
+     "median": 6.8833378652813515,
+     "iqr": [
+      4.963441202748203,
+      9.46333233232044
+     ],
+     "no_band_share": 0.007662835249042145,
+     "end_reached": 0
+    },
+    {
+     "k": 1,
+     "samples": 261,
+     "median": 6.855127209259331,
+     "iqr": [
+      4.959170073371958,
+      9.75245724077653
+     ],
+     "no_band_share": 0.011494252873563218,
+     "end_reached": 0
+    },
+    {
+     "k": 2,
+     "samples": 263,
+     "median": 6.8135748953224615,
+     "iqr": [
+      5.024936093641697,
+      9.604621166380376
+     ],
+     "no_band_share": 0.0076045627376425855,
+     "end_reached": 0
+    },
+    {
+     "k": 3,
+     "samples": 261,
+     "median": 6.815036027993578,
+     "iqr": [
+      4.950103893912824,
+      9.760658445881457
+     ],
+     "no_band_share": 0.0038314176245210726,
+     "end_reached": 0
+    }
+   ]
+  },
+  {
+   "id": "b_d025_a26120005_c0",
+   "cam": "a26120005_c0",
+   "tag": "d025",
+   "role": "variant",
+   "group": "B_other_genes",
+   "status": "measured",
+   "pixel_mm": 6.767284527431953,
+   "label_dir": "frames/fm/a0015",
+   "png": "frames/out/b_d025_a26120005_c0/sun0/render/frame.png",
+   "png_sha256": "3c8644dc34203bfd59f4c7641ef3f65f1a392f80f17c650ce83f8beefb75a560",
+   "target_sha256": "ff7348875103adb692bb47af1626e048ac37741e5fe8db9efb74a89246a10abb",
+   "target_pixels": 1145,
+   "old_ruler": {
+    "samples": 286,
+    "median": 6.0,
+    "iqr": [
+     4.0,
+     9.0
+    ],
+    "no_band_share": 0.013986013986013986,
+    "end_reached": 0
+   },
+   "old_check": "equal",
+   "fine": {
+    "samples": 1140,
+    "median": 6.488642473792815,
+    "iqr": [
+     4.736655722471793,
+     9.24289100616458
+    ],
+    "no_band_share": 0.009649122807017544,
+    "end_reached": 0
+   },
+   "subsets": [
+    {
+     "k": 0,
+     "samples": 286,
+     "median": 6.544514797742251,
+     "iqr": [
+      4.701562951704503,
+      9.380670444111207
+     ],
+     "no_band_share": 0.013986013986013986,
+     "end_reached": 0
+    },
+    {
+     "k": 1,
+     "samples": 284,
+     "median": 6.496091318540201,
+     "iqr": [
+      4.908177822172925,
+      9.562996205695185
+     ],
+     "no_band_share": 0.01056338028169014,
+     "end_reached": 0
+    },
+    {
+     "k": 2,
+     "samples": 285,
+     "median": 6.449636119706201,
+     "iqr": [
+      4.834991718235726,
+      9.078504864748663
+     ],
+     "no_band_share": 0.0035087719298245615,
+     "end_reached": 0
+    },
+    {
+     "k": 3,
+     "samples": 285,
+     "median": 6.515352419461166,
+     "iqr": [
+      4.641689727953677,
+      9.087761516461349
+     ],
+     "no_band_share": 0.010526315789473684,
+     "end_reached": 0
+    }
+   ]
+  },
+  {
+   "id": "b_r000_a26120005_c0",
+   "cam": "a26120005_c0",
+   "tag": "r000",
+   "role": "variant",
+   "group": "B_other_genes",
+   "status": "measured",
+   "pixel_mm": 6.767284527431953,
+   "label_dir": "frames/fm/a0016",
+   "png": "frames/out/b_r000_a26120005_c0/sun0/render/frame.png",
+   "png_sha256": "e42b89bce4f1bf581df54b965140fb777ecdc4b0c354972f83b99e8457944278",
+   "target_sha256": "4d1bae9bd118b1db39b94af0dadcde62777896b6208a9e6d738a8358f1cbabba",
+   "target_pixels": 1101,
+   "old_ruler": {
+    "samples": 274,
+    "median": 6.0,
+    "iqr": [
+     4.0,
+     8.5
+    ],
+    "no_band_share": 0.0036496350364963502,
+    "end_reached": 0
+   },
+   "old_check": "equal",
+   "fine": {
+    "samples": 1096,
+    "median": 6.472203011461328,
+    "iqr": [
+     4.7106252374660365,
+     9.047927070220119
+    ],
+    "no_band_share": 0.011861313868613138,
+    "end_reached": 0
+   },
+   "subsets": [
+    {
+     "k": 0,
+     "samples": 274,
+     "median": 6.557065342707121,
+     "iqr": [
+      4.769361941484864,
+      9.000580369037325
+     ],
+     "no_band_share": 0.0036496350364963502,
+     "end_reached": 0
+    },
+    {
+     "k": 1,
+     "samples": 274,
+     "median": 6.5665007218119795,
+     "iqr": [
+      4.70574479244639,
+      8.994503528592777
+     ],
+     "no_band_share": 0.014598540145985401,
+     "end_reached": 0
+    },
+    {
+     "k": 2,
+     "samples": 275,
+     "median": 6.441421723155051,
+     "iqr": [
+      4.790659494663521,
+      9.138307937251883
+     ],
+     "no_band_share": 0.02181818181818182,
+     "end_reached": 0
+    },
+    {
+     "k": 3,
+     "samples": 273,
+     "median": 6.429213574262295,
+     "iqr": [
+      4.603668149709071,
+      9.05931689195802
+     ],
+     "no_band_share": 0.007326007326007326,
+     "end_reached": 0
+    }
+   ]
+  },
+  {
+   "id": "b_r075_a26120005_c0",
+   "cam": "a26120005_c0",
+   "tag": "r075",
+   "role": "variant",
+   "group": "B_other_genes",
+   "status": "measured",
+   "pixel_mm": 6.767284527431953,
+   "label_dir": "frames/fm/a0042",
+   "png": "frames/out/b_r075_a26120005_c0/sun0/render/frame.png",
+   "png_sha256": "795bbc142e929c37993d2665f73d842ad0fb3d8ae2552ca6b05eb9864f6b0ade",
+   "target_sha256": "422216d45786da3833437657f680858a08c08cd1f9eda881f5652de9c67456e3",
+   "target_pixels": 1112,
+   "old_ruler": {
+    "samples": 277,
+    "median": 6.0,
+    "iqr": [
+     4.5,
+     9.0
+    ],
+    "no_band_share": 0.007220216606498195,
+    "end_reached": 0
+   },
+   "old_check": "equal",
+   "fine": {
+    "samples": 1107,
+    "median": 6.6895813089820955,
+    "iqr": [
+     4.88894363565333,
+     9.54548295178251
+    ],
+    "no_band_share": 0.013550135501355014,
+    "end_reached": 0
+   },
+   "subsets": [
+    {
+     "k": 0,
+     "samples": 277,
+     "median": 6.703032169597199,
+     "iqr": [
+      4.877520158198221,
+      9.592557712830125
+     ],
+     "no_band_share": 0.007220216606498195,
+     "end_reached": 0
+    },
+    {
+     "k": 1,
+     "samples": 275,
+     "median": 6.696215763476473,
+     "iqr": [
+      4.880395971221208,
+      9.761569254517969
+     ],
+     "no_band_share": 0.01818181818181818,
+     "end_reached": 0
+    },
+    {
+     "k": 2,
+     "samples": 277,
+     "median": 6.646138723611014,
+     "iqr": [
+      4.8867950301303456,
+      9.31732779812852
+     ],
+     "no_band_share": 0.018050541516245487,
+     "end_reached": 0
+    },
+    {
+     "k": 3,
+     "samples": 278,
+     "median": 6.739102106779658,
+     "iqr": [
+      4.985225569999047,
+      9.45136143746837
+     ],
+     "no_band_share": 0.01079136690647482,
+     "end_reached": 0
+    }
+   ]
+  },
+  {
+   "id": "b_v000_n26130007_c0",
+   "cam": "n26130007_c0",
+   "tag": "v000",
+   "role": "variant",
+   "group": "B_other_genes",
+   "status": "measured",
+   "pixel_mm": 2.0,
+   "label_dir": "frames/fm/a0057",
+   "png": "frames/out/b_v000_n26130007_c0/sun0/render/frame.png",
+   "png_sha256": "06df0a076540fe4721f520360685c6399d0cdb66891f69e20a595223c55496f8",
+   "target_sha256": "f8a6887970aa27e2e38e4fea24a61a32464dbe1e506f6501ff1277610eb091ab",
+   "target_pixels": 1897,
+   "old_ruler": {
+    "samples": 474,
+    "median": 16.5,
+    "iqr": [
+     8.0,
+     33.0
+    ],
+    "no_band_share": 0.02109704641350211,
+    "end_reached": 0
+   },
+   "old_check": "equal",
+   "fine": {
+    "samples": 1893,
+    "median": 17.275327814553734,
+    "iqr": [
+     8.591216908734786,
+     34.620622245724505
+    ],
+    "no_band_share": 0.020073956682514528,
+    "end_reached": 0
+   },
+   "subsets": [
+    {
+     "k": 0,
+     "samples": 474,
+     "median": 16.984745686067825,
+     "iqr": [
+      8.621907369933172,
+      33.54986941635673
+     ],
+     "no_band_share": 0.02109704641350211,
+     "end_reached": 0
+    },
+    {
+     "k": 1,
+     "samples": 474,
+     "median": 17.93546347462622,
+     "iqr": [
+      8.400385090438078,
+      35.07443208032568
+     ],
+     "no_band_share": 0.0189873417721519,
+     "end_reached": 0
+    },
+    {
+     "k": 2,
+     "samples": 472,
+     "median": 16.615668818458808,
+     "iqr": [
+      7.883427081052687,
+      36.156537730489404
+     ],
+     "no_band_share": 0.0211864406779661,
+     "end_reached": 0
+    },
+    {
+     "k": 3,
+     "samples": 473,
+     "median": 17.465716566751084,
+     "iqr": [
+      9.117188539887787,
+      33.82612461067441
+     ],
+     "no_band_share": 0.019027484143763214,
+     "end_reached": 0
+    }
+   ]
+  },
+  {
+   "id": "b_v045_n26130007_c0",
+   "cam": "n26130007_c0",
+   "tag": "v045",
+   "role": "variant",
+   "group": "B_other_genes",
+   "status": "measured",
+   "pixel_mm": 2.0,
+   "label_dir": "frames/fm/a0043",
+   "png": "frames/out/b_v045_n26130007_c0/sun0/render/frame.png",
+   "png_sha256": "8fc30a0caab3c173950c9cb35acac0f2362bac88fc5cc31a0a6f4c6e8cf53b88",
+   "target_sha256": "57fbcaf0919e71f290a06143fa7d298cba363cd5aac8991ec78af3646d85e66f",
+   "target_pixels": 1804,
+   "old_ruler": {
+    "samples": 450,
+    "median": 17.0,
+    "iqr": [
+     6.5,
+     28.0
+    ],
+    "no_band_share": 0.03777777777777778,
+    "end_reached": 0
+   },
+   "old_check": "equal",
+   "fine": {
+    "samples": 1797,
+    "median": 18.018579603826215,
+    "iqr": [
+     7.623000064678317,
+     31.158552573984846
+    ],
+    "no_band_share": 0.03171953255425709,
+    "end_reached": 0
+   },
+   "subsets": [
+    {
+     "k": 0,
+     "samples": 450,
+     "median": 17.042234413542168,
+     "iqr": [
+      6.883667312112108,
+      28.42326455921168
+     ],
+     "no_band_share": 0.035555555555555556,
+     "end_reached": 0
+    },
+    {
+     "k": 1,
+     "samples": 448,
+     "median": 17.20995340090017,
+     "iqr": [
+      8.151769501695302,
+      31.336620676948428
+     ],
+     "no_band_share": 0.026785714285714284,
+     "end_reached": 0
+    },
+    {
+     "k": 2,
+     "samples": 449,
+     "median": 18.219266049303954,
+     "iqr": [
+      7.627359702193933,
+      32.94764254627515
+     ],
+     "no_band_share": 0.028953229398663696,
+     "end_reached": 0
+    },
+    {
+     "k": 3,
+     "samples": 450,
+     "median": 18.68413627983635,
+     "iqr": [
+      7.900257160908606,
+      32.42253373230972
+     ],
+     "no_band_share": 0.035555555555555556,
+     "end_reached": 0
+    }
+   ]
+  },
+  {
+   "id": "b_d010_n26130007_c0",
+   "cam": "n26130007_c0",
+   "tag": "d010",
+   "role": "variant",
+   "group": "B_other_genes",
+   "status": "measured",
+   "pixel_mm": 2.0,
+   "label_dir": "frames/fm/a0028",
+   "png": "frames/fr_de/out/fr_d010_n26130007_c0/sun0/render/frame.png",
+   "png_sha256": "c52c32c77842b879577c06d765a7d661d4364e55638e1d29773db6bb13d81796",
+   "target_sha256": "7c9a2eb11cf408ea6ae01a8799bacaef7dc7400f5a9681c803736d23b0c8dfb4",
+   "target_pixels": 1771,
+   "old_ruler": {
+    "samples": 443,
+    "median": 14.5,
+    "iqr": [
+     7.0,
+     30.5
+    ],
+    "no_band_share": 0.03160270880361174,
+    "end_reached": 0
+   },
+   "old_check": "equal",
+   "fine": {
+    "samples": 1767,
+    "median": 14.978331265994136,
+    "iqr": [
+     7.508802004627681,
+     29.852222751646107
+    ],
+    "no_band_share": 0.028296547821165818,
+    "end_reached": 0
+   },
+   "subsets": [
+    {
+     "k": 0,
+     "samples": 443,
+     "median": 15.13956599922205,
+     "iqr": [
+      7.032503087114514,
+      31.039422655150826
+     ],
+     "no_band_share": 0.03160270880361174,
+     "end_reached": 0
+    },
+    {
+     "k": 1,
+     "samples": 441,
+     "median": 14.362870621917967,
+     "iqr": [
+      7.53782160154479,
+      28.389273319349012
+     ],
+     "no_band_share": 0.022675736961451247,
+     "end_reached": 0
+    },
+    {
+     "k": 2,
+     "samples": 441,
+     "median": 14.499008623156048,
+     "iqr": [
+      7.203809333367996,
+      28.613910183249995
+     ],
+     "no_band_share": 0.02947845804988662,
+     "end_reached": 0
+    },
+    {
+     "k": 3,
+     "samples": 442,
+     "median": 16.881099820660925,
+     "iqr": [
+      8.096238522668578,
+      31.0646440870723
+     ],
+     "no_band_share": 0.029411764705882353,
+     "end_reached": 0
+    }
+   ]
+  },
+  {
+   "id": "b_d025_n26130007_c0",
+   "cam": "n26130007_c0",
+   "tag": "d025",
+   "role": "variant",
+   "group": "B_other_genes",
+   "status": "measured",
+   "pixel_mm": 2.0,
+   "label_dir": "frames/fm/a0058",
+   "png": "frames/out/b_d025_n26130007_c0/sun0/render/frame.png",
+   "png_sha256": "e32b5585a916a868c509bbf993f42f28be6e8f9389c2ecccca89365a5fddfbe9",
+   "target_sha256": "3764f79b7a6c7dd9cd3e798cf06c460477cd4b4d4af3060dfbe1608945ce2460",
+   "target_pixels": 1884,
+   "old_ruler": {
+    "samples": 468,
+    "median": 17.0,
+    "iqr": [
+     7.5,
+     33.25
+    ],
+    "no_band_share": 0.021367521367521368,
+    "end_reached": 0
+   },
+   "old_check": "equal",
+   "fine": {
+    "samples": 1876,
+    "median": 17.826394187931463,
+    "iqr": [
+     7.952793541615964,
+     32.89539766389602
+    ],
+    "no_band_share": 0.020788912579957356,
+    "end_reached": 0
+   },
+   "subsets": [
+    {
+     "k": 0,
+     "samples": 468,
+     "median": 17.466813231549388,
+     "iqr": [
+      7.961243017173713,
+      33.14490961371367
+     ],
+     "no_band_share": 0.021367521367521368,
+     "end_reached": 0
+    },
+    {
+     "k": 1,
+     "samples": 468,
+     "median": 18.25982276088536,
+     "iqr": [
+      7.989288206588251,
+      35.218951538497535
+     ],
+     "no_band_share": 0.019230769230769232,
+     "end_reached": 0
+    },
+    {
+     "k": 2,
+     "samples": 470,
+     "median": 18.406047774635365,
+     "iqr": [
+      8.556097645432375,
+      33.395093925294816
+     ],
+     "no_band_share": 0.02127659574468085,
+     "end_reached": 0
+    },
+    {
+     "k": 3,
+     "samples": 470,
+     "median": 17.47990148567397,
+     "iqr": [
+      7.5860084692600225,
+      30.555596146876965
+     ],
+     "no_band_share": 0.02127659574468085,
+     "end_reached": 0
+    }
+   ]
+  },
+  {
+   "id": "b_r000_n26130007_c0",
+   "cam": "n26130007_c0",
+   "tag": "r000",
+   "role": "variant",
+   "group": "B_other_genes",
+   "status": "measured",
+   "pixel_mm": 2.0,
+   "label_dir": "frames/fm/a0059",
+   "png": "frames/out/b_r000_n26130007_c0/sun0/render/frame.png",
+   "png_sha256": "fc64413eaab6ed52e89c868b89818543d3c3ab7ada6eb2020611213983516259",
+   "target_sha256": "50ea49cc2173df8e704a781ca5b6023869fa54ea3100e474aec77b2e2f3759a9",
+   "target_pixels": 1828,
+   "old_ruler": {
+    "samples": 456,
+    "median": 16.0,
+    "iqr": [
+     6.5,
+     30.0
+    ],
+    "no_band_share": 0.019736842105263157,
+    "end_reached": 0
+   },
+   "old_check": "equal",
+   "fine": {
+    "samples": 1822,
+    "median": 17.113892355054983,
+    "iqr": [
+     7.802634566520461,
+     33.08849776887905
+    ],
+    "no_band_share": 0.014270032930845226,
+    "end_reached": 0
+   },
+   "subsets": [
+    {
+     "k": 0,
+     "samples": 456,
+     "median": 16.46899750197323,
+     "iqr": [
+      7.348521319589378,
+      29.96411055901713
+     ],
+     "no_band_share": 0.019736842105263157,
+     "end_reached": 0
+    },
+    {
+     "k": 1,
+     "samples": 454,
+     "median": 16.687583757384903,
+     "iqr": [
+      7.655934092076809,
+      30.3671485843469
+     ],
+     "no_band_share": 0.011013215859030838,
+     "end_reached": 0
+    },
+    {
+     "k": 2,
+     "samples": 456,
+     "median": 18.37344103145758,
+     "iqr": [
+      8.025497809516683,
+      34.19353953092401
+     ],
+     "no_band_share": 0.015350877192982455,
+     "end_reached": 0
+    },
+    {
+     "k": 3,
+     "samples": 456,
+     "median": 17.02648124372532,
+     "iqr": [
+      8.183432355677187,
+      34.444679998448656
+     ],
+     "no_band_share": 0.010964912280701754,
+     "end_reached": 0
+    }
+   ]
+  },
+  {
+   "id": "b_r075_n26130007_c0",
+   "cam": "n26130007_c0",
+   "tag": "r075",
+   "role": "variant",
+   "group": "B_other_genes",
+   "status": "measured",
+   "pixel_mm": 2.0,
+   "label_dir": "frames/fm/a0060",
+   "png": "frames/out/b_r075_n26130007_c0/sun0/render/frame.png",
+   "png_sha256": "9d3326ddb18730dadc3bc6237c6a23a15580bd37a670c7b5ec5bde6c5400c1b3",
+   "target_sha256": "b589d4e2b21f128c63228db62a1fefa2528a783313a8a77dca006c0d2b8bcfb3",
+   "target_pixels": 1833,
+   "old_ruler": {
+    "samples": 457,
+    "median": 18.0,
+    "iqr": [
+     8.0,
+     33.125
+    ],
+    "no_band_share": 0.010940919037199124,
+    "end_reached": 0
+   },
+   "old_check": "equal",
+   "fine": {
+    "samples": 1824,
+    "median": 18.176762550178385,
+    "iqr": [
+     8.101947317474773,
+     34.803980309655856
+    ],
+    "no_band_share": 0.01206140350877193,
+    "end_reached": 0
+   },
+   "subsets": [
+    {
+     "k": 0,
+     "samples": 457,
+     "median": 18.315257345666858,
+     "iqr": [
+      8.424229726064887,
+      33.32554875859847
+     ],
+     "no_band_share": 0.010940919037199124,
+     "end_reached": 0
+    },
+    {
+     "k": 1,
+     "samples": 454,
+     "median": 18.66165993630198,
+     "iqr": [
+      7.84001413996115,
+      33.844791666666666
+     ],
+     "no_band_share": 0.011013215859030838,
+     "end_reached": 0
+    },
+    {
+     "k": 2,
+     "samples": 456,
+     "median": 17.744059186779772,
+     "iqr": [
+      8.126597241725653,
+      35.59220001950454
+     ],
+     "no_band_share": 0.013157894736842105,
+     "end_reached": 0
+    },
+    {
+     "k": 3,
+     "samples": 457,
+     "median": 17.61504618600683,
+     "iqr": [
+      7.987801575965411,
+      38.26549230644322
+     ],
+     "no_band_share": 0.01312910284463895,
+     "end_reached": 0
+    }
+   ]
+  },
+  {
+   "id": "b_cA_a26120005_c0",
+   "cam": "a26120005_c0",
+   "tag": "cA",
+   "role": "variant",
+   "group": "C_corners",
+   "status": "measured",
+   "pixel_mm": 6.767284527431953,
+   "label_dir": "frames/fm/a0029",
+   "png": "frames/fr_de/out/fr_cA_a26120005_c0/sun0/render/frame.png",
+   "png_sha256": "20ebea4dd54cd0af36026fd353d1559785f7227051fade019e8a55b4be0bd74a",
+   "target_sha256": "7bba6406f33f7f11ea302afb1dd1bfc58d6af2da06901f16cf3c42be06ca979d",
+   "target_pixels": 1124,
+   "old_ruler": {
+    "samples": 279,
+    "median": 3.5,
+    "iqr": [
+     2.5,
+     7.0
+    ],
+    "no_band_share": 0.021505376344086023,
+    "end_reached": 0
+   },
+   "old_check": "equal",
+   "fine": {
+    "samples": 1119,
+    "median": 4.077576964738381,
+    "iqr": [
+     2.9285944555863286,
+     7.036033981212375
+    ],
+    "no_band_share": 0.0160857908847185,
+    "end_reached": 0
+   },
+   "subsets": [
+    {
+     "k": 0,
+     "samples": 279,
+     "median": 4.056755762325787,
+     "iqr": [
+      2.9141049266247108,
+      7.541849776019371
+     ],
+     "no_band_share": 0.021505376344086023,
+     "end_reached": 0
+    },
+    {
+     "k": 1,
+     "samples": 281,
+     "median": 4.228017449831241,
+     "iqr": [
+      3.019097797065177,
+      7.341659364055705
+     ],
+     "no_band_share": 0.0,
+     "end_reached": 0
+    },
+    {
+     "k": 2,
+     "samples": 280,
+     "median": 4.037931418782184,
+     "iqr": [
+      2.81848733518584,
+      6.288577666574786
+     ],
+     "no_band_share": 0.025,
+     "end_reached": 0
+    },
+    {
+     "k": 3,
+     "samples": 279,
+     "median": 4.0408603425342715,
+     "iqr": [
+      2.9343671618553238,
+      6.134420439668511
+     ],
+     "no_band_share": 0.017921146953405017,
+     "end_reached": 0
+    }
+   ]
+  },
+  {
+   "id": "b_cB_a26120005_c0",
+   "cam": "a26120005_c0",
+   "tag": "cB",
+   "role": "variant",
+   "group": "C_corners",
+   "status": "measured",
+   "pixel_mm": 6.767284527431953,
+   "label_dir": "frames/fm/a0030",
+   "png": "frames/fr_de/out/fr_cB_a26120005_c0/sun0/render/frame.png",
+   "png_sha256": "a1bdbd67ea54c2a80b7bc80a632cd1f6bdf46a5e417a0905981025fcfddd10cc",
+   "target_sha256": "4b0ee21451c1c5541f3d2f6c4ecaa681dd5da1098931f032441b525a71f1a51a",
+   "target_pixels": 1037,
+   "old_ruler": {
+    "samples": 259,
+    "median": 10.5,
+    "iqr": [
+     7.5,
+     13.0
+    ],
+    "no_band_share": 0.007722007722007722,
+    "end_reached": 0
+   },
+   "old_check": "equal",
+   "fine": {
+    "samples": 1034,
+    "median": 10.699492983771608,
+    "iqr": [
+     8.14958842311879,
+     13.23091109134076
+    ],
+    "no_band_share": 0.006769825918762089,
+    "end_reached": 0
+   },
+   "subsets": [
+    {
+     "k": 0,
+     "samples": 259,
+     "median": 10.813379122096489,
+     "iqr": [
+      8.178651978602721,
+      13.325443386182908
+     ],
+     "no_band_share": 0.007722007722007722,
+     "end_reached": 0
+    },
+    {
+     "k": 1,
+     "samples": 258,
+     "median": 10.84611644009152,
+     "iqr": [
+      8.130525208811973,
+      13.112162232362847
+     ],
+     "no_band_share": 0.003875968992248062,
+     "end_reached": 0
+    },
+    {
+     "k": 2,
+     "samples": 259,
+     "median": 10.5140469320226,
+     "iqr": [
+      8.086488788254597,
+      13.153790252678746
+     ],
+     "no_band_share": 0.003861003861003861,
+     "end_reached": 0
+    },
+    {
+     "k": 3,
+     "samples": 258,
+     "median": 10.559441406438651,
+     "iqr": [
+      8.257517929813256,
+      13.304037729448584
+     ],
+     "no_band_share": 0.011627906976744186,
+     "end_reached": 0
+    }
+   ]
+  },
+  {
+   "id": "b_cA_n26130007_c0",
+   "cam": "n26130007_c0",
+   "tag": "cA",
+   "role": "variant",
+   "group": "C_corners",
+   "status": "measured",
+   "pixel_mm": 2.0,
+   "label_dir": "frames/fm/a0031",
+   "png": "frames/fr_de/out/fr_cA_n26130007_c0/sun0/render/frame.png",
+   "png_sha256": "dfac2abe1b377309766cf10517dc31357a32d1f779dbfc1f9a998dc43a541584",
+   "target_sha256": "e22ef92a030910e46c71815bec98734b115a0715b4f580606321a7e30aecfa74",
+   "target_pixels": 2026,
+   "old_ruler": {
+    "samples": 506,
+    "median": 11.0,
+    "iqr": [
+     5.0,
+     27.0
+    ],
+    "no_band_share": 0.019762845849802372,
+    "end_reached": 0
+   },
+   "old_check": "equal",
+   "fine": {
+    "samples": 2021,
+    "median": 10.995030637332214,
+    "iqr": [
+     5.306598841837728,
+     27.418164498148034
+    ],
+    "no_band_share": 0.028203859475507173,
+    "end_reached": 0
+   },
+   "subsets": [
+    {
+     "k": 0,
+     "samples": 506,
+     "median": 11.45690918850752,
+     "iqr": [
+      5.495582658431214,
+      27.324986361749993
+     ],
+     "no_band_share": 0.019762845849802372,
+     "end_reached": 0
+    },
+    {
+     "k": 1,
+     "samples": 506,
+     "median": 11.127166440311736,
+     "iqr": [
+      5.503285181865499,
+      26.781302877982682
+     ],
+     "no_band_share": 0.02766798418972332,
+     "end_reached": 0
+    },
+    {
+     "k": 2,
+     "samples": 504,
+     "median": 10.197701622036892,
+     "iqr": [
+      5.360731832323532,
+      22.3780843152961
+     ],
+     "no_band_share": 0.031746031746031744,
+     "end_reached": 0
+    },
+    {
+     "k": 3,
+     "samples": 505,
+     "median": 11.476134251091052,
+     "iqr": [
+      5.0429779254986045,
+      32.02563573802699
+     ],
+     "no_band_share": 0.033663366336633666,
+     "end_reached": 0
+    }
+   ]
+  },
+  {
+   "id": "b_cB_n26130007_c0",
+   "cam": "n26130007_c0",
+   "tag": "cB",
+   "role": "variant",
+   "group": "C_corners",
+   "status": "measured",
+   "pixel_mm": 2.0,
+   "label_dir": "frames/fm/a0032",
+   "png": "frames/fr_de/out/fr_cB_n26130007_c0/sun0/render/frame.png",
+   "png_sha256": "24ac2cebd09f04487021bc99b54d4c4f19a228736794facba86cc84cb5a5ff63",
+   "target_sha256": "f52dadb2b28d3967f3f60f65880324935734544fe942169b5ecf0a20c37ae0d8",
+   "target_pixels": 1486,
+   "old_ruler": {
+    "samples": 370,
+    "median": 14.0,
+    "iqr": [
+     6.5,
+     33.0
+    ],
+    "no_band_share": 0.01891891891891892,
+    "end_reached": 0
+   },
+   "old_check": "equal",
+   "fine": {
+    "samples": 1475,
+    "median": 15.959796285037447,
+    "iqr": [
+     7.28482317722915,
+     33.29072948078917
+    ],
+    "no_band_share": 0.022372881355932205,
+    "end_reached": 0
+   },
+   "subsets": [
+    {
+     "k": 0,
+     "samples": 370,
+     "median": 14.07281847174017,
+     "iqr": [
+      6.703478012449359,
+      33.35628171549878
+     ],
+     "no_band_share": 0.01891891891891892,
+     "end_reached": 0
+    },
+    {
+     "k": 1,
+     "samples": 371,
+     "median": 16.209182288224547,
+     "iqr": [
+      7.206976974153643,
+      33.002598033207235
+     ],
+     "no_band_share": 0.026954177897574125,
+     "end_reached": 0
+    },
+    {
+     "k": 2,
+     "samples": 368,
+     "median": 17.304059398496847,
+     "iqr": [
+      7.799939255404656,
+      33.649546566131406
+     ],
+     "no_band_share": 0.024456521739130436,
+     "end_reached": 0
+    },
+    {
+     "k": 3,
+     "samples": 366,
+     "median": 15.75052439723644,
+     "iqr": [
+      7.353936387483427,
+      32.53528052426742
+     ],
+     "no_band_share": 0.01912568306010929,
+     "end_reached": 0
+    }
+   ]
+  }
+ ]
+}

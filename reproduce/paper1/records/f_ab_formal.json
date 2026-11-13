@@ -1,0 +1,31 @@
+{
+ "at": "2026-11-09T01:09:26.531605+09:00",
+ "pairs": {
+  "cr_26120001_p2": {
+   "footprint_mm": 0.5,
+   "status": "unavailable",
+   "frames": {
+    "A": true,
+    "B": false,
+    "A_seed1": true
+   },
+   "labelled": true
+  },
+  "cr_26120001_p3": {
+   "footprint_mm": 0.25,
+   "input_check": {
+    "matched": true,
+    "mismatches": []
+   },
+   "labels": "frames/fm/a0110",
+   "status": "measured",
+   "wall_pixels": 201872,
+   "p99_9_max_channel_8bit": 10.0,
+   "mean_max_channel_8bit": 0.7181283189347706,
+   "T": 2.0,
+   "gate": 2.0,
+   "facets_visible": true
+  }
+ },
+ "box_measurements": "scenes/close_range_r1/measure_20261103/measurements.json"
+}

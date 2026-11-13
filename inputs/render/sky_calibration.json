@@ -1,0 +1,550 @@
+{
+ "meta": {
+  "blender": "4.5.14 LTS",
+  "sky": "NISHITA",
+  "altitude_m": 0.0,
+  "air_density": 1.0,
+  "dust_density": 1.0,
+  "ozone_density": 1.0,
+  "sun_angle_deg": 0.5357,
+  "sun_intensity": 1.0,
+  "background_strength": 1.0,
+  "resolution": [
+   8192,
+   4096
+  ],
+  "samples": 16,
+  "device": "CPU",
+  "filter": "BOX 1 px",
+  "method": "Sky/Sun calibration table for the Blender renderer, CPU only. For each Sun elevation, one equirectangular panorama of the Nishita sky (sea level, air/dust/ozone 1, Sun angular diameter 0.5357 deg) with the Sun disc ON and one with it OFF, from the origin, no geometry (camera rays hit the world directly: no light sampling noise, only pixel jitter): sun normal irradiance E_n(rgb) = sum over pixels of (L_on - L_off) dOmega      (the transmitted solar disc) sky horizontal irradiance E_h(rgb) = sum over upper-hemisphere pixels of L_off cos(zenith) dOmega Pixel solid angle of an equirectangular pixel = cos(latitude) dlat dlon. Rendered on the CPU (bit reproducible)."
+ },
+ "table": [
+  {
+   "elevation_deg": 5.0,
+   "sun_normal_irradiance_rgb": [
+    71.08671753115267,
+    37.16798157948741,
+    7.954105964533898
+   ],
+   "sky_horizontal_irradiance_rgb": [
+    3.1898600528159013,
+    3.9295383372746304,
+    4.450367988383038
+   ],
+   "disc_peak_elevation_deg": 5.031738281249995,
+   "disc_peak_column": 2047,
+   "disc_pixels": 137,
+   "seconds": 22.510529899969697
+  },
+  {
+   "elevation_deg": 7.5,
+   "sun_normal_irradiance_rgb": [
+    92.1915068909369,
+    55.95670582620955,
+    19.125626002690748
+   ],
+   "sky_horizontal_irradiance_rgb": [
+    3.93389248216146,
+    4.9388257224597085,
+    5.920139756597711
+   ],
+   "disc_peak_elevation_deg": 7.5366210937500036,
+   "disc_peak_column": 2048,
+   "disc_pixels": 136,
+   "seconds": 22.649884899961762
+  },
+  {
+   "elevation_deg": 10.0,
+   "sun_normal_irradiance_rgb": [
+    105.32004378438562,
+    69.58857044428136,
+    30.22445280957147
+   ],
+   "sky_horizontal_irradiance_rgb": [
+    4.527405469582384,
+    5.709124509699811,
+    7.1132116626477035
+   ],
+   "disc_peak_elevation_deg": 9.997558593749995,
+   "disc_peak_column": 2048,
+   "disc_pixels": 139,
+   "seconds": 22.39771439996548
+  },
+  {
+   "elevation_deg": 12.5,
+   "sun_normal_irradiance_rgb": [
+    114.90647909848559,
+    80.1239381180527,
+    40.28773131422364
+   ],
+   "sky_horizontal_irradiance_rgb": [
+    5.005035832635956,
+    6.30996648262713,
+    8.078827853818082
+   ],
+   "disc_peak_elevation_deg": 12.502441406250005,
+   "disc_peak_column": 2047,
+   "disc_pixels": 139,
+   "seconds": 22.57492119993549
+  },
+  {
+   "elevation_deg": 15.0,
+   "sun_normal_irradiance_rgb": [
+    121.6223394330638,
+    87.98991294310423,
+    48.828489134384775
+   ],
+   "sky_horizontal_irradiance_rgb": [
+    5.400033378268228,
+    6.794065827125125,
+    8.87118274770258
+   ],
+   "disc_peak_elevation_deg": 15.00732421875,
+   "disc_peak_column": 2047,
+   "disc_pixels": 139,
+   "seconds": 22.513567099929787
+  },
+  {
+   "elevation_deg": 17.5,
+   "sun_normal_irradiance_rgb": [
+    127.04560119295681,
+    94.39328779010756,
+    56.22412767804985
+   ],
+   "sky_horizontal_irradiance_rgb": [
+    5.725786115933855,
+    7.189861365707106,
+    9.532291732906844
+   ],
+   "disc_peak_elevation_deg": 17.512207031249996,
+   "disc_peak_column": 2047,
+   "disc_pixels": 143,
+   "seconds": 22.666516799945384
+  },
+  {
+   "elevation_deg": 20.0,
+   "sun_normal_irradiance_rgb": [
+    130.88456011926817,
+    99.21520065895511,
+    62.32390598622582
+   ],
+   "sky_horizontal_irradiance_rgb": [
+    5.998083852377976,
+    7.519485123262015,
+    10.092498409619335
+   ],
+   "disc_peak_elevation_deg": 20.017089843750007,
+   "disc_peak_column": 2048,
+   "disc_pixels": 147,
+   "seconds": 22.520195799996145
+  },
+  {
+   "elevation_deg": 22.5,
+   "sun_normal_irradiance_rgb": [
+    133.7222130396717,
+    102.95872100048425,
+    67.40348039571792
+   ],
+   "sky_horizontal_irradiance_rgb": [
+    6.228233821138464,
+    7.798106006005668,
+    10.573760204900164
+   ],
+   "disc_peak_elevation_deg": 22.521972656250004,
+   "disc_peak_column": 2048,
+   "disc_pixels": 148,
+   "seconds": 22.07317900005728
+  },
+  {
+   "elevation_deg": 25.0,
+   "sun_normal_irradiance_rgb": [
+    136.63362948467793,
+    106.51499809995423,
+    72.06604240558595
+   ],
+   "sky_horizontal_irradiance_rgb": [
+    6.424564770977469,
+    8.03649178928189,
+    10.992142307936753
+   ],
+   "disc_peak_elevation_deg": 24.982910156249993,
+   "disc_peak_column": 2047,
+   "disc_pixels": 150,
+   "seconds": 22.358981300028972
+  },
+  {
+   "elevation_deg": 27.5,
+   "sun_normal_irradiance_rgb": [
+    138.55978538274957,
+    109.11451462628948,
+    75.83302744413429
+   ],
+   "sky_horizontal_irradiance_rgb": [
+    6.593417301310725,
+    8.24258451504799,
+    11.359689552652432
+   ],
+   "disc_peak_elevation_deg": 27.487792968750004,
+   "disc_peak_column": 2047,
+   "disc_pixels": 151,
+   "seconds": 22.74314660008531
+  },
+  {
+   "elevation_deg": 30.0,
+   "sun_normal_irradiance_rgb": [
+    140.593850900144,
+    111.6456015470175,
+    79.33435469688979
+   ],
+   "sky_horizontal_irradiance_rgb": [
+    6.739701095221804,
+    8.422372846492026,
+    11.685537793382816
+   ],
+   "disc_peak_elevation_deg": 29.99267578125,
+   "disc_peak_column": 2047,
+   "disc_pixels": 157,
+   "seconds": 22.67436240008101
+  },
+  {
+   "elevation_deg": 32.5,
+   "sun_normal_irradiance_rgb": [
+    142.00276280465397,
+    113.55750597028313,
+    82.21156286145741
+   ],
+   "sky_horizontal_irradiance_rgb": [
+    6.867281677730655,
+    8.58047347093508,
+    11.976719517211052
+   ],
+   "disc_peak_elevation_deg": 32.49755859374999,
+   "disc_peak_column": 2047,
+   "disc_pixels": 160,
+   "seconds": 22.599723200080916
+  },
+  {
+   "elevation_deg": 35.0,
+   "sun_normal_irradiance_rgb": [
+    143.12966244515616,
+    115.14092003712838,
+    84.6877406913238
+   ],
+   "sky_horizontal_irradiance_rgb": [
+    6.979208157544799,
+    8.720470264707442,
+    12.238714293765032
+   ],
+   "disc_peak_elevation_deg": 35.00244140625,
+   "disc_peak_column": 2048,
+   "disc_pixels": 165,
+   "seconds": 22.782805199967697
+  },
+  {
+   "elevation_deg": 37.5,
+   "sun_normal_irradiance_rgb": [
+    144.4019201194634,
+    116.75677932134987,
+    87.04892641464116
+   ],
+   "sky_horizontal_irradiance_rgb": [
+    7.077926995856346,
+    8.845204703268196,
+    12.475867277694864
+   ],
+   "disc_peak_elevation_deg": 37.50732421875,
+   "disc_peak_column": 2047,
+   "disc_pixels": 171,
+   "seconds": 22.661455600056797
+  },
+  {
+   "elevation_deg": 40.0,
+   "sun_normal_irradiance_rgb": [
+    145.57056573350948,
+    118.21928268584591,
+    89.17810322630658
+   ],
+   "sky_horizontal_irradiance_rgb": [
+    7.165386242198584,
+    8.956912786089724,
+    12.691591419520313
+   ],
+   "disc_peak_elevation_deg": 40.01220703125,
+   "disc_peak_column": 2048,
+   "disc_pixels": 171,
+   "seconds": 22.551204100018367
+  },
+  {
+   "elevation_deg": 42.5,
+   "sun_normal_irradiance_rgb": [
+    146.3235938020062,
+    119.28449964588258,
+    90.90271068821805
+   ],
+   "sky_horizontal_irradiance_rgb": [
+    7.243168274903582,
+    9.057392203135864,
+    12.88861677405347
+   ],
+   "disc_peak_elevation_deg": 42.51708984375,
+   "disc_peak_column": 2048,
+   "disc_pixels": 180,
+   "seconds": 23.08144330000505
+  },
+  {
+   "elevation_deg": 45.0,
+   "sun_normal_irradiance_rgb": [
+    147.20872490128747,
+    120.40606055219166,
+    92.57815669753217
+   ],
+   "sky_horizontal_irradiance_rgb": [
+    7.312553599597008,
+    9.148085378333326,
+    13.06912619215339
+   ],
+   "disc_peak_elevation_deg": 45.02197265625,
+   "disc_peak_column": 2047,
+   "disc_pixels": 189,
+   "seconds": 22.710770300007425
+  },
+  {
+   "elevation_deg": 47.5,
+   "sun_normal_irradiance_rgb": [
+    147.76686255325436,
+    121.21584466392073,
+    93.93209561703763
+   ],
+   "sky_horizontal_irradiance_rgb": [
+    7.374574546913636,
+    9.230142881528861,
+    13.234845216174511
+   ],
+   "disc_peak_elevation_deg": 47.48291015625,
+   "disc_peak_column": 2047,
+   "disc_pixels": 194,
+   "seconds": 23.971678900066763
+  },
+  {
+   "elevation_deg": 50.0,
+   "sun_normal_irradiance_rgb": [
+    148.10019656771075,
+    121.80170245118039,
+    95.03778057581795
+   ],
+   "sky_horizontal_irradiance_rgb": [
+    7.430093608695232,
+    9.304512799352546,
+    13.387174572881738
+   ],
+   "disc_peak_elevation_deg": 49.98779296875,
+   "disc_peak_column": 2048,
+   "disc_pixels": 208,
+   "seconds": 24.527148699969985
+  },
+  {
+   "elevation_deg": 52.5,
+   "sun_normal_irradiance_rgb": [
+    148.70818480133548,
+    122.57901262401465,
+    96.22715091591859
+   ],
+   "sky_horizontal_irradiance_rgb": [
+    7.47977716762122,
+    9.37192578812181,
+    13.527194840980213
+   ],
+   "disc_peak_elevation_deg": 52.49267578125,
+   "disc_peak_column": 2047,
+   "disc_pixels": 216,
+   "seconds": 23.746514200000092
+  },
+  {
+   "elevation_deg": 55.0,
+   "sun_normal_irradiance_rgb": [
+    149.31941699275455,
+    123.32913148915493,
+    97.33693563343921
+   ],
+   "sky_horizontal_irradiance_rgb": [
+    7.5242228834404035,
+    9.433023169031577,
+    13.655824886675752
+   ],
+   "disc_peak_elevation_deg": 54.99755859375,
+   "disc_peak_column": 2047,
+   "disc_pixels": 232,
+   "seconds": 24.184204699937254
+  },
+  {
+   "elevation_deg": 57.5,
+   "sun_normal_irradiance_rgb": [
+    149.37527100691278,
+    123.59331749836085,
+    98.0091171024524
+   ],
+   "sky_horizontal_irradiance_rgb": [
+    7.563848618294093,
+    9.48825546409278,
+    13.773715842740813
+   ],
+   "disc_peak_elevation_deg": 57.50244140625001,
+   "disc_peak_column": 2048,
+   "disc_pixels": 246,
+   "seconds": 23.863379499991424
+  },
+  {
+   "elevation_deg": 60.0,
+   "sun_normal_irradiance_rgb": [
+    150.0378409909941,
+    124.33530293872487,
+    99.01174358647488
+   ],
+   "sky_horizontal_irradiance_rgb": [
+    7.599036981331865,
+    9.538020790398416,
+    13.88141507983762
+   ],
+   "disc_peak_elevation_deg": 60.00732421875,
+   "disc_peak_column": 2048,
+   "disc_pixels": 267,
+   "seconds": 23.792310099932365
+  },
+  {
+   "elevation_deg": 62.5,
+   "sun_normal_irradiance_rgb": [
+    150.28441046692072,
+    124.71095104765288,
+    99.67883605095092
+   ],
+   "sky_horizontal_irradiance_rgb": [
+    7.630089020914108,
+    9.58263333325532,
+    13.979350222258836
+   ],
+   "disc_peak_elevation_deg": 62.51220703125,
+   "disc_peak_column": 2048,
+   "disc_pixels": 282,
+   "seconds": 23.903158799977973
+  },
+  {
+   "elevation_deg": 65.0,
+   "sun_normal_irradiance_rgb": [
+    150.7410198443949,
+    125.24109494896092,
+    100.42855882907189
+   ],
+   "sky_horizontal_irradiance_rgb": [
+    7.657206855327675,
+    9.622297102123515,
+    14.067789537609196
+   ],
+   "disc_peak_elevation_deg": 65.01708984375,
+   "disc_peak_column": 2048,
+   "disc_pixels": 308,
+   "seconds": 23.709869100013748
+  },
+  {
+   "elevation_deg": 67.5,
+   "sun_normal_irradiance_rgb": [
+    150.8515752764003,
+    125.46540986393468,
+    100.8947613163646
+   ],
+   "sky_horizontal_irradiance_rgb": [
+    7.6805897338294296,
+    9.657212532480147,
+    14.146989075010278
+   ],
+   "disc_peak_elevation_deg": 67.47802734375,
+   "disc_peak_column": 2048,
+   "disc_pixels": 336,
+   "seconds": 23.045382399926893
+  },
+  {
+   "elevation_deg": 70.0,
+   "sun_normal_irradiance_rgb": [
+    151.02733732262448,
+    125.72666017945598,
+    101.35454959071258
+   ],
+   "sky_horizontal_irradiance_rgb": [
+    7.700394699444546,
+    9.68752998484998,
+    14.217122929714856
+   ],
+   "disc_peak_elevation_deg": 69.98291015625,
+   "disc_peak_column": 2047,
+   "disc_pixels": 377,
+   "seconds": 22.411252600024454
+  },
+  {
+   "elevation_deg": 72.5,
+   "sun_normal_irradiance_rgb": [
+    151.36323123698463,
+    126.10552689328865,
+    101.87561708948103
+   ],
+   "sky_horizontal_irradiance_rgb": [
+    7.716762332445119,
+    9.713379709831724,
+    14.278331085096214
+   ],
+   "disc_peak_elevation_deg": 72.48779296875,
+   "disc_peak_column": 2048,
+   "disc_pixels": 431,
+   "seconds": 22.325645900098607
+  },
+  {
+   "elevation_deg": 75.0,
+   "sun_normal_irradiance_rgb": [
+    151.3703259035426,
+    126.19539994906398,
+    102.13122009388573
+   ],
+   "sky_horizontal_irradiance_rgb": [
+    7.7298637899686735,
+    9.734912124104017,
+    14.330753463309712
+   ],
+   "disc_peak_elevation_deg": 74.99267578125,
+   "disc_peak_column": 2047,
+   "disc_pixels": 502,
+   "seconds": 23.06635780003853
+  },
+  {
+   "elevation_deg": 77.5,
+   "sun_normal_irradiance_rgb": [
+    151.58927516467995,
+    126.44773570872151,
+    102.48783122922684
+   ],
+   "sky_horizontal_irradiance_rgb": [
+    7.739917386688139,
+    9.75231029160857,
+    14.37453694421271
+   ],
+   "disc_peak_elevation_deg": 77.49755859375,
+   "disc_peak_column": 2047,
+   "disc_pixels": 598,
+   "seconds": 22.195022800005972
+  },
+  {
+   "elevation_deg": 80.0,
+   "sun_normal_irradiance_rgb": [
+    151.70223898951494,
+    126.59829432140417,
+    102.73301135298802
+   ],
+   "sky_horizontal_irradiance_rgb": [
+    7.7472783848910405,
+    9.76587625695429,
+    14.409935505903002
+   ],
+   "disc_peak_elevation_deg": 80.00244140625,
+   "disc_peak_column": 2048,
+   "disc_pixels": 745,
+   "seconds": 22.45061080006417
+  }
+ ]
+}

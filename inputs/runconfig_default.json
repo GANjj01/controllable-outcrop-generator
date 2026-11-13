@@ -1,0 +1,62 @@
+{
+ "schema": "frgb-runconfig-1",
+ "about": "Default run configuration of the generator: logical name -> path, read by frgb/runconfig.py. Machine-specific entries (interpreters, Blender, manifold3d) are null here and are set in inputs/runconfig_local.json (copy runconfig_local.example.json) or in a file named by the environment variable FRGB_RUNCONFIG. Paths without a placeholder are relative to the file that sets them; ${p1} is the repository root and ${inputs} this directory.",
+ "roots": {
+  "data": "${inputs}/large"
+ },
+ "tools": {
+  "python.geometry": null,
+  "python.labels": null,
+  "env.geometry_dir": null,
+  "env.labels_dir": null,
+  "blender": null,
+  "manifold_site": "${p1}",
+  "outcrop_src": "${p1}",
+  "bash": null
+ },
+ "inputs": {
+  "relief.spec_C_r2": "relief/self_affine_spec_C_r2.json",
+  "relief.wall_C_r2": "relief/wall_relief_dev_t02_C_r2.json",
+  "relief.realized_spectrum_r1": "${data}/relief/realized_spectrum_r1.json",
+  "relief.megascans_protocol_r1": "${data}/relief/megascans_protocol_r1.json",
+  "render.backend_config_r1": "${data}/render/backend_config_r1.json",
+  "render.sky_calibration_r1": "render/sky_calibration.json",
+  "render.sliver_ladders": "${data}/render/sliver_ladders",
+  "exposure.gate_r14": "exposure/exposure_gate_r14.json",
+  "exposure.info_r2": "${data}/exposure/exposure_info_r2.json",
+  "labels.lithology_aliases_r1": "labels/lithology_aliases_r1.json",
+  "w0.config": "${data}/w0/w0_pilot_step800.json",
+  "w0.checkpoint": "${data}/w0/checkpoint_step0800.pt",
+  "model.resnet34_weights": "${data}/models/resnet34.a1_in1k/pytorch_model.bin",
+  "geocrack.whitelist_formal_r1": "${data}/geocrack/whitelist_formal_r1.json",
+  "geocrack.dev_root": null,
+  "fraxet.root": null,
+  "fraxet.list_root": null,
+  "material_u.p0": null,
+  "geometry.dev_t02_directions": "${data}/dev_t02_directions",
+  "geometry.dev_t02_sa_c2": "${data}/geometry/dev_t02_v2_attempt3_sa_c2",
+  "geometry.fx_n03_sa_c2": "${data}/geometry/fx_n03_s25102503_sa_c2",
+  "scan.bluff_cm_r1_erode_fields": "${data}/scan/bluff_cm_r1_erode_fields.pkl",
+  "scan.vog_donor_atlas": "${data}/scan/donor_atlas",
+  "scan.vog_donor_mesh": "${data}/scan/donor_atlas/mesh/mesh_donor.npz"
+ },
+ "params": {
+  "min_free_gb_generation": 10,
+  "nice": 10
+ },
+ "notes": {
+  "python.geometry": "interpreter of the geometry environment (NumPy, OpenEXR, trimesh, Pillow; manifold3d): scene generation, cavity construction, refinement, rendering server",
+  "python.labels": "interpreter of the labels environment (NumPy, SciPy, Shapely, Pillow): frame driver, refinement levels, trace labels",
+  "env.geometry_dir": "directory of the geometry environment (its DLL directories are put on PATH for the subprocesses)",
+  "env.labels_dir": "directory of the labels environment",
+  "blender": "Blender 4.5 LTS executable (tested: 4.5.14)",
+  "manifold_site": "a site-packages directory holding manifold3d 3.5.4, when it is not installed in the geometry environment itself",
+  "outcrop_src": "directory that holds the outcrop package (the repository root)",
+  "relief.spec_C_r2": "calibrated self-affine relief of the host (RMS per wavelength band, derived statistics only)",
+  "relief.wall_C_r2": "relief of the cavity walls (the host spectrum, groups 0-3)",
+  "render.sky_calibration_r1": "sun and sky table of the renderer",
+  "exposure.gate_r14": "exposure limits of a frame (mean luma, clipping)",
+  "null entries": "inputs that are not part of this repository",
+  "${data} entries": "inputs of internal studies (training, real-image data sets, calibration sources). Some modules resolve these names when they are imported, but the generator never opens the files; they are not part of the repository"
+ }
+}

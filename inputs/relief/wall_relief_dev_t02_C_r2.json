@@ -1,0 +1,44 @@
+{
+ "schema": "fracture-wall-relief-1",
+ "source_spec_sha256": "669d29bfd14b676dd159e55d821ab2646e699b8f9a9883758c2f77c1d4d6d7ec",
+ "seed": 550192121,
+ "octaves": [
+  [
+   0.024,
+   0.048,
+   0.0032254432847133216,
+   256
+  ],
+  [
+   0.048,
+   0.096,
+   0.004538115479770206,
+   256
+  ],
+  [
+   0.096,
+   0.192,
+   0.007483011874284285,
+   256
+  ],
+  [
+   0.192,
+   0.384,
+   0.00910799982052754,
+   256
+  ],
+  [
+   0.384,
+   0.768,
+   0.014977123068699616,
+   256
+  ]
+ ],
+ "groups": [
+  0,
+  1,
+  2,
+  3
+ ],
+ "note": "groups 0-3 = 2.4-38.4 cm, scan-measured (group 4 extrapolated, macro facets and meso are host-only: not on the walls). Mated walls: the same rho on both walls (aperture unchanged); the roughness gene now only adds the walls mismatch."
+}

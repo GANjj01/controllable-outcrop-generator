@@ -1,0 +1,3548 @@
+{
+ "rows": [
+  {
+   "id": "b_b055_a26120005_c0",
+   "cam": "a26120005_c0",
+   "group": "baseline",
+   "tag": "b055",
+   "role": "baseline",
+   "reused": true,
+   "recorded": true,
+   "physical": {
+    "mean_opening_m": 0.055,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0020625
+   },
+   "build_status": "completed",
+   "error": null,
+   "M3i": null,
+   "identity": true,
+   "own_noise_T": 1.0,
+   "status": "measured",
+   "labels": {
+    "visible_length_px": 1291.7051772907635,
+    "nontip_px": 1290.6559155198033,
+    "nontip_share": 0.9991876925250383,
+    "nontip_gate": true,
+    "positive_pixels": 1077,
+    "u_line_px": 59.89949493661166,
+    "u_windows": {
+     "total": 171,
+     "u": 14,
+     "ring_below_min": 5
+    },
+    "ignore_fraction_of_rock": 0.0028886795043945312,
+    "opening_class_px": 6009,
+    "exit_code": 0,
+    "numeric_overall": "PASS",
+    "numeric_items": {
+     "1_gates": true,
+     "2_jumps": true,
+     "3_displacement": true,
+     "4_breaks": true,
+     "5_capped": true
+    }
+   },
+   "pixel_mm": 6.767284527431953,
+   "apparent_width_px": {
+    "samples": 269,
+    "median": 6.0,
+    "iqr": [
+     4.0,
+     9.0
+    ],
+    "no_band_share": 0.01486988847583643
+   },
+   "overall": "PASS"
+  },
+  {
+   "id": "b_b055_a26120005_c2",
+   "cam": "a26120005_c2",
+   "group": "baseline",
+   "tag": "b055",
+   "role": "baseline",
+   "reused": false,
+   "recorded": true,
+   "physical": {
+    "mean_opening_m": 0.055,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0020625
+   },
+   "build_status": "built",
+   "error": null,
+   "M3i": null,
+   "identity": true,
+   "own_noise_T": 1.0,
+   "status": "measured",
+   "labels": {
+    "visible_length_px": 1178.8426714169748,
+    "nontip_px": 1115.6333875056575,
+    "nontip_share": 0.9463802206656302,
+    "nontip_gate": true,
+    "positive_pixels": 1662,
+    "u_line_px": 335.31370849898474,
+    "u_windows": {
+     "total": 308,
+     "u": 47,
+     "ring_below_min": 2
+    },
+    "ignore_fraction_of_rock": 0.01532745361328125,
+    "opening_class_px": 361,
+    "exit_code": 0,
+    "numeric_overall": "PASS",
+    "numeric_items": {
+     "1_gates": true,
+     "2_jumps": true,
+     "3_displacement": true,
+     "4_breaks": true,
+     "5_capped": true
+    }
+   },
+   "pixel_mm": 19.39463796852743,
+   "apparent_width_px": {
+    "samples": 414,
+    "median": 3.5,
+    "iqr": [
+     2.0,
+     5.0
+    ],
+    "no_band_share": 0.11835748792270531
+   },
+   "overall": "PASS"
+  },
+  {
+   "id": "b_b055_a26120005_c3",
+   "cam": "a26120005_c3",
+   "group": "baseline",
+   "tag": "b055",
+   "role": "baseline",
+   "reused": false,
+   "recorded": true,
+   "physical": {
+    "mean_opening_m": 0.055,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0020625
+   },
+   "build_status": "built",
+   "error": null,
+   "M3i": null,
+   "identity": true,
+   "own_noise_T": 1.0,
+   "status": "measured",
+   "labels": {
+    "visible_length_px": 1356.3320150412937,
+    "nontip_px": 1306.3266551099546,
+    "nontip_share": 0.963131918013587,
+    "nontip_gate": true,
+    "positive_pixels": 1096,
+    "u_line_px": 451.1248916810279,
+    "u_windows": {
+     "total": 384,
+     "u": 116,
+     "ring_below_min": 27
+    },
+    "ignore_fraction_of_rock": 0.07475090026855469,
+    "opening_class_px": 1285,
+    "exit_code": 0,
+    "numeric_overall": "PASS",
+    "numeric_items": {
+     "1_gates": true,
+     "2_jumps": true,
+     "3_displacement": true,
+     "4_breaks": true,
+     "5_capped": true
+    }
+   },
+   "pixel_mm": 13.542574510929644,
+   "apparent_width_px": {
+    "samples": 267,
+    "median": 2.5,
+    "iqr": [
+     1.5,
+     3.5
+    ],
+    "no_band_share": 0.11235955056179775
+   },
+   "overall": "PASS"
+  },
+  {
+   "id": "b_b055_a26130005_c1",
+   "cam": "a26130005_c1",
+   "group": "baseline",
+   "tag": "b055",
+   "role": "baseline",
+   "reused": false,
+   "recorded": true,
+   "physical": {
+    "mean_opening_m": 0.055,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0020625
+   },
+   "build_status": "built",
+   "error": null,
+   "M3i": null,
+   "identity": true,
+   "own_noise_T": 1.0,
+   "status": "measured",
+   "labels": {
+    "visible_length_px": 2452.100648418949,
+    "nontip_px": 2418.8044091564943,
+    "nontip_share": 0.9864213407047859,
+    "nontip_gate": true,
+    "positive_pixels": 1649,
+    "u_line_px": 161.8994949366117,
+    "u_windows": {
+     "total": 348,
+     "u": 53,
+     "ring_below_min": 37
+    },
+    "ignore_fraction_of_rock": 0.053496788564680285,
+    "opening_class_px": 12226,
+    "exit_code": 0,
+    "numeric_overall": "PASS",
+    "numeric_items": {
+     "1_gates": true,
+     "2_jumps": true,
+     "3_displacement": true,
+     "4_breaks": true,
+     "5_capped": true
+    }
+   },
+   "pixel_mm": 7.960987713685808,
+   "apparent_width_px": {
+    "samples": 407,
+    "median": 8.0,
+    "iqr": [
+     3.0,
+     14.5
+    ],
+    "no_band_share": 0.04176904176904177
+   },
+   "overall": "PASS"
+  },
+  {
+   "id": "b_b055_n26120003_c1",
+   "cam": "n26120003_c1",
+   "group": "baseline",
+   "tag": "b055",
+   "role": "baseline",
+   "reused": true,
+   "recorded": true,
+   "physical": {
+    "mean_opening_m": 0.055,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0020625
+   },
+   "build_status": "completed",
+   "error": null,
+   "M3i": {
+    "null_N2_all_pass": true,
+    "offset_pass": true,
+    "dperp_pass": true,
+    "reused_from": "frames/near_r1/measurements/nr_b055_n26120003_c1_M3i.json"
+   },
+   "identity": true,
+   "own_noise_T": 1.0,
+   "status": "measured",
+   "labels": {
+    "visible_length_px": 948.2418547008681,
+    "nontip_px": 906.9542429701321,
+    "nontip_share": 0.9564587752311771,
+    "nontip_gate": true,
+    "positive_pixels": 1009,
+    "u_line_px": 86.65685424949238,
+    "u_windows": {
+     "total": 119,
+     "u": 12,
+     "ring_below_min": 8
+    },
+    "ignore_fraction_of_rock": 0.0038315630879101445,
+    "opening_class_px": 22982,
+    "exit_code": 0,
+    "numeric_overall": "PASS",
+    "numeric_items": {
+     "1_gates": true,
+     "2_jumps": true,
+     "3_displacement": true,
+     "4_breaks": true,
+     "5_capped": true
+    }
+   },
+   "pixel_mm": 2.0,
+   "apparent_width_px": {
+    "samples": 253,
+    "median": 14.5,
+    "iqr": [
+     9.0,
+     20.0
+    ],
+    "no_band_share": 0.0
+   },
+   "overall": "PASS"
+  },
+  {
+   "id": "b_b055_n26130007_c0",
+   "cam": "n26130007_c0",
+   "group": "baseline",
+   "tag": "b055",
+   "role": "baseline",
+   "reused": true,
+   "recorded": true,
+   "physical": {
+    "mean_opening_m": 0.055,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0020625
+   },
+   "build_status": "completed",
+   "error": null,
+   "M3i": {
+    "null_N2_all_pass": true,
+    "offset_pass": true,
+    "dperp_pass": true
+   },
+   "identity": true,
+   "own_noise_T": 1.0,
+   "status": "measured",
+   "labels": {
+    "visible_length_px": 2233.3007315319683,
+    "nontip_px": 2233.300731531968,
+    "nontip_share": 0.9999999999999998,
+    "nontip_gate": true,
+    "positive_pixels": 1827,
+    "u_line_px": 333.1126983722081,
+    "u_windows": {
+     "total": 282,
+     "u": 48,
+     "ring_below_min": 38
+    },
+    "ignore_fraction_of_rock": 0.3287104897673974,
+    "opening_class_px": 25075,
+    "exit_code": 0,
+    "numeric_overall": "PASS",
+    "numeric_items": {
+     "1_gates": true,
+     "2_jumps": true,
+     "3_displacement": true,
+     "4_breaks": true,
+     "5_capped": true
+    }
+   },
+   "pixel_mm": 2.0,
+   "apparent_width_px": {
+    "samples": 455,
+    "median": 17.5,
+    "iqr": [
+     7.5,
+     32.5
+    ],
+    "no_band_share": 0.013186813186813187
+   },
+   "overall": "PASS"
+  },
+  {
+   "id": "b_w030_a26120005_c2",
+   "cam": "a26120005_c2",
+   "group": "A_opening",
+   "tag": "w030",
+   "role": "variant",
+   "reused": false,
+   "recorded": true,
+   "physical": {
+    "mean_opening_m": 0.03,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.001125
+   },
+   "build_status": "built",
+   "error": null,
+   "M3i": null,
+   "identity": true,
+   "own_noise_T": null,
+   "status": "measured",
+   "labels": {
+    "visible_length_px": 1177.1299470375798,
+    "nontip_px": 1053.4305226197057,
+    "nontip_share": 0.8949143850012636,
+    "nontip_gate": true,
+    "positive_pixels": 1677,
+    "u_line_px": 332.89949493661163,
+    "u_windows": {
+     "total": 307,
+     "u": 48,
+     "ring_below_min": 3
+    },
+    "ignore_fraction_of_rock": 0.015289306640625,
+    "opening_class_px": 53,
+    "exit_code": 0,
+    "numeric_overall": "PASS",
+    "numeric_items": {
+     "1_gates": true,
+     "2_jumps": true,
+     "3_displacement": true,
+     "4_breaks": true,
+     "5_capped": true
+    }
+   },
+   "pixel_mm": 19.39463796852743,
+   "apparent_width_px": {
+    "samples": 418,
+    "median": 3.5,
+    "iqr": [
+     1.5,
+     5.5
+    ],
+    "no_band_share": 0.12679425837320574
+   },
+   "baseline": "b_b055_a26120005_c2",
+   "baseline_noise_T": 1.0,
+   "local": {
+    "band_px": 25,
+    "outside_share_of_rock": 0.9058456420898438,
+    "geometry_changed_share": 0.0,
+    "T_variant": 0.0,
+    "T_null": 1.0,
+    "geometry_gate": "PASS",
+    "image_gate": "PASS",
+    "T_inside_band": 59.0
+   },
+   "centre_shift_px": {
+    "variant_to_base_p50": 0.0,
+    "variant_to_base_p99": 1.0,
+    "base_to_variant_p50": 0.0,
+    "base_to_variant_p99": 0.0
+   },
+   "overall": "PASS"
+  },
+  {
+   "id": "b_w040_a26120005_c2",
+   "cam": "a26120005_c2",
+   "group": "A_opening",
+   "tag": "w040",
+   "role": "variant",
+   "reused": false,
+   "recorded": true,
+   "physical": {
+    "mean_opening_m": 0.04,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0015
+   },
+   "build_status": "built",
+   "error": null,
+   "M3i": null,
+   "identity": true,
+   "own_noise_T": null,
+   "status": "measured",
+   "labels": {
+    "visible_length_px": 1178.8269189328664,
+    "nontip_px": 1089.3210111454052,
+    "nontip_share": 0.9240720530300696,
+    "nontip_gate": true,
+    "positive_pixels": 1664,
+    "u_line_px": 338.89949493661163,
+    "u_windows": {
+     "total": 309,
+     "u": 48,
+     "ring_below_min": 2
+    },
+    "ignore_fraction_of_rock": 0.015329360961914062,
+    "opening_class_px": 144,
+    "exit_code": 0,
+    "numeric_overall": "PASS",
+    "numeric_items": {
+     "1_gates": true,
+     "2_jumps": true,
+     "3_displacement": true,
+     "4_breaks": true,
+     "5_capped": true
+    }
+   },
+   "pixel_mm": 19.39463796852743,
+   "apparent_width_px": {
+    "samples": 414,
+    "median": 3.5,
+    "iqr": [
+     2.0,
+     5.0
+    ],
+    "no_band_share": 0.15942028985507245
+   },
+   "baseline": "b_b055_a26120005_c2",
+   "baseline_noise_T": 1.0,
+   "local": {
+    "band_px": 25,
+    "outside_share_of_rock": 0.9058504104614258,
+    "geometry_changed_share": 0.0,
+    "T_variant": 0.0,
+    "T_null": 1.0,
+    "geometry_gate": "PASS",
+    "image_gate": "PASS",
+    "T_inside_band": 39.0
+   },
+   "centre_shift_px": {
+    "variant_to_base_p50": 0.0,
+    "variant_to_base_p99": 1.0,
+    "base_to_variant_p50": 0.0,
+    "base_to_variant_p99": 1.0
+   },
+   "overall": "PASS"
+  },
+  {
+   "id": "b_w065_a26120005_c2",
+   "cam": "a26120005_c2",
+   "group": "A_opening",
+   "tag": "w065",
+   "role": "variant",
+   "reused": false,
+   "recorded": true,
+   "physical": {
+    "mean_opening_m": 0.065,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0024375
+   },
+   "build_status": "built",
+   "error": null,
+   "M3i": null,
+   "identity": true,
+   "own_noise_T": null,
+   "status": "measured",
+   "labels": {
+    "visible_length_px": 1178.5302018040527,
+    "nontip_px": 1126.2465471522264,
+    "nontip_share": 0.9556365593586043,
+    "nontip_gate": true,
+    "positive_pixels": 1682,
+    "u_line_px": 331.89949493661163,
+    "u_windows": {
+     "total": 309,
+     "u": 46,
+     "ring_below_min": 2
+    },
+    "ignore_fraction_of_rock": 0.015293121337890625,
+    "opening_class_px": 613,
+    "exit_code": 0,
+    "numeric_overall": "PASS",
+    "numeric_items": {
+     "1_gates": true,
+     "2_jumps": true,
+     "3_displacement": true,
+     "4_breaks": true,
+     "5_capped": true
+    }
+   },
+   "pixel_mm": 19.39463796852743,
+   "apparent_width_px": {
+    "samples": 420,
+    "median": 4.0,
+    "iqr": [
+     1.5,
+     5.5
+    ],
+    "no_band_share": 0.15
+   },
+   "baseline": "b_b055_a26120005_c2",
+   "baseline_noise_T": 1.0,
+   "local": {
+    "band_px": 25,
+    "outside_share_of_rock": 0.9052591323852539,
+    "geometry_changed_share": 0.0,
+    "T_variant": 0.0,
+    "T_null": 1.0,
+    "geometry_gate": "PASS",
+    "image_gate": "PASS",
+    "T_inside_band": 26.0
+   },
+   "centre_shift_px": {
+    "variant_to_base_p50": 0.0,
+    "variant_to_base_p99": 1.0,
+    "base_to_variant_p50": 0.0,
+    "base_to_variant_p99": 0.0
+   },
+   "overall": "PASS"
+  },
+  {
+   "id": "b_w080_a26120005_c2",
+   "cam": "a26120005_c2",
+   "group": "A_opening",
+   "tag": "w080",
+   "role": "variant",
+   "reused": false,
+   "recorded": true,
+   "physical": {
+    "mean_opening_m": 0.08,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.003
+   },
+   "build_status": "built",
+   "error": null,
+   "M3i": null,
+   "identity": true,
+   "own_noise_T": null,
+   "status": "measured",
+   "labels": {
+    "visible_length_px": 1178.8497676792965,
+    "nontip_px": 1141.9420920655662,
+    "nontip_share": 0.9686917903997323,
+    "nontip_gate": true,
+    "positive_pixels": 1632,
+    "u_line_px": 353.72792206135784,
+    "u_windows": {
+     "total": 307,
+     "u": 49,
+     "ring_below_min": 2
+    },
+    "ignore_fraction_of_rock": 0.015444755554199219,
+    "opening_class_px": 1138,
+    "exit_code": 0,
+    "numeric_overall": "PASS",
+    "numeric_items": {
+     "1_gates": true,
+     "2_jumps": true,
+     "3_displacement": true,
+     "4_breaks": true,
+     "5_capped": true
+    }
+   },
+   "pixel_mm": 19.39463796852743,
+   "apparent_width_px": {
+    "samples": 407,
+    "median": 4.5,
+    "iqr": [
+     2.0,
+     6.0
+    ],
+    "no_band_share": 0.16216216216216217
+   },
+   "baseline": "b_b055_a26120005_c2",
+   "baseline_noise_T": 1.0,
+   "local": {
+    "band_px": 25,
+    "outside_share_of_rock": 0.9043798446655273,
+    "geometry_changed_share": 0.0,
+    "T_variant": 0.0,
+    "T_null": 1.0,
+    "geometry_gate": "PASS",
+    "image_gate": "PASS",
+    "T_inside_band": 58.0
+   },
+   "centre_shift_px": {
+    "variant_to_base_p50": 0.0,
+    "variant_to_base_p99": 1.0,
+    "base_to_variant_p50": 0.0,
+    "base_to_variant_p99": 4.33214384159257
+   },
+   "overall": "PASS"
+  },
+  {
+   "id": "b_w030_a26120005_c0",
+   "cam": "a26120005_c0",
+   "group": "A_opening",
+   "tag": "w030",
+   "role": "variant",
+   "reused": true,
+   "recorded": true,
+   "physical": {
+    "mean_opening_m": 0.03,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.001125
+   },
+   "build_status": "reused",
+   "error": null,
+   "M3i": null,
+   "identity": true,
+   "own_noise_T": null,
+   "status": "measured",
+   "labels": {
+    "visible_length_px": 1280.0013801673495,
+    "nontip_px": 1244.8713285967538,
+    "nontip_share": 0.9725546768035495,
+    "nontip_gate": true,
+    "positive_pixels": 1126,
+    "u_line_px": 25.65685424949238,
+    "u_windows": {
+     "total": 167,
+     "u": 9,
+     "ring_below_min": 5
+    },
+    "ignore_fraction_of_rock": 0.0027818679809570312,
+    "opening_class_px": 1596,
+    "exit_code": 0,
+    "numeric_overall": "PASS",
+    "numeric_items": {
+     "1_gates": true,
+     "2_jumps": true,
+     "3_displacement": true,
+     "4_breaks": true,
+     "5_capped": true
+    }
+   },
+   "pixel_mm": 6.767284527431953,
+   "apparent_width_px": {
+    "samples": 281,
+    "median": 3.0,
+    "iqr": [
+     2.0,
+     6.0
+    ],
+    "no_band_share": 0.03202846975088968
+   },
+   "baseline": "b_b055_a26120005_c0",
+   "baseline_noise_T": 1.0,
+   "local": {
+    "band_px": 64,
+    "outside_share_of_rock": 0.8762035369873047,
+    "geometry_changed_share": 0.0,
+    "T_variant": 0.0,
+    "T_null": 1.0,
+    "geometry_gate": "PASS",
+    "image_gate": "PASS",
+    "T_inside_band": 114.0
+   },
+   "centre_shift_px": {
+    "variant_to_base_p50": 0.0,
+    "variant_to_base_p99": 4.47213595499958,
+    "base_to_variant_p50": 0.0,
+    "base_to_variant_p99": 2.23606797749979
+   },
+   "overall": "PASS"
+  },
+  {
+   "id": "b_w040_a26120005_c0",
+   "cam": "a26120005_c0",
+   "group": "A_opening",
+   "tag": "w040",
+   "role": "variant",
+   "reused": false,
+   "recorded": true,
+   "physical": {
+    "mean_opening_m": 0.04,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0015
+   },
+   "build_status": "built",
+   "error": null,
+   "M3i": null,
+   "identity": true,
+   "own_noise_T": null,
+   "status": "measured",
+   "labels": {
+    "visible_length_px": 1284.0667694450747,
+    "nontip_px": 1266.6985921897708,
+    "nontip_share": 0.9864740855626926,
+    "nontip_gate": true,
+    "positive_pixels": 1110,
+    "u_line_px": 40.48528137423857,
+    "u_windows": {
+     "total": 170,
+     "u": 11,
+     "ring_below_min": 6
+    },
+    "ignore_fraction_of_rock": 0.002849578857421875,
+    "opening_class_px": 3172,
+    "exit_code": 0,
+    "numeric_overall": "PASS",
+    "numeric_items": {
+     "1_gates": true,
+     "2_jumps": true,
+     "3_displacement": true,
+     "4_breaks": true,
+     "5_capped": true
+    }
+   },
+   "pixel_mm": 6.767284527431953,
+   "apparent_width_px": {
+    "samples": 277,
+    "median": 4.5,
+    "iqr": [
+     3.0,
+     7.0
+    ],
+    "no_band_share": 0.01444043321299639
+   },
+   "baseline": "b_b055_a26120005_c0",
+   "baseline_noise_T": 1.0,
+   "local": {
+    "band_px": 64,
+    "outside_share_of_rock": 0.8763332366943359,
+    "geometry_changed_share": 0.0,
+    "T_variant": 0.0,
+    "T_null": 1.0,
+    "geometry_gate": "PASS",
+    "image_gate": "PASS",
+    "T_inside_band": 87.0
+   },
+   "centre_shift_px": {
+    "variant_to_base_p50": 0.0,
+    "variant_to_base_p99": 3.605551275463989,
+    "base_to_variant_p50": 0.0,
+    "base_to_variant_p99": 1.0
+   },
+   "overall": "PASS"
+  },
+  {
+   "id": "b_w065_a26120005_c0",
+   "cam": "a26120005_c0",
+   "group": "A_opening",
+   "tag": "w065",
+   "role": "variant",
+   "reused": false,
+   "recorded": true,
+   "physical": {
+    "mean_opening_m": 0.065,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0024375
+   },
+   "build_status": "built",
+   "error": null,
+   "M3i": null,
+   "identity": true,
+   "own_noise_T": null,
+   "status": "measured",
+   "labels": {
+    "visible_length_px": 1293.4362915239037,
+    "nontip_px": 1292.386775918485,
+    "nontip_share": 0.9991885834561034,
+    "nontip_gate": true,
+    "positive_pixels": 1108,
+    "u_line_px": 43.071067811865476,
+    "u_windows": {
+     "total": 170,
+     "u": 13,
+     "ring_below_min": 10
+    },
+    "ignore_fraction_of_rock": 0.0017976760864257812,
+    "opening_class_px": 7885,
+    "exit_code": 0,
+    "numeric_overall": "PASS",
+    "numeric_items": {
+     "1_gates": true,
+     "2_jumps": true,
+     "3_displacement": true,
+     "4_breaks": true,
+     "5_capped": true
+    }
+   },
+   "pixel_mm": 6.767284527431953,
+   "apparent_width_px": {
+    "samples": 276,
+    "median": 7.5,
+    "iqr": [
+     5.5,
+     10.0
+    ],
+    "no_band_share": 0.007246376811594203
+   },
+   "baseline": "b_b055_a26120005_c0",
+   "baseline_noise_T": 1.0,
+   "local": {
+    "band_px": 64,
+    "outside_share_of_rock": 0.8748369216918945,
+    "geometry_changed_share": 0.0,
+    "T_variant": 0.0,
+    "T_null": 1.0,
+    "geometry_gate": "PASS",
+    "image_gate": "PASS",
+    "T_inside_band": 68.0
+   },
+   "centre_shift_px": {
+    "variant_to_base_p50": 0.0,
+    "variant_to_base_p99": 4.123105625617661,
+    "base_to_variant_p50": 0.0,
+    "base_to_variant_p99": 3.1622776601683795
+   },
+   "overall": "PASS"
+  },
+  {
+   "id": "b_w080_a26120005_c0",
+   "cam": "a26120005_c0",
+   "group": "A_opening",
+   "tag": "w080",
+   "role": "variant",
+   "reused": true,
+   "recorded": true,
+   "physical": {
+    "mean_opening_m": 0.08,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.003
+   },
+   "build_status": "reused",
+   "error": null,
+   "M3i": null,
+   "identity": true,
+   "own_noise_T": null,
+   "status": "measured",
+   "labels": {
+    "visible_length_px": 1293.1311730211066,
+    "nontip_px": 1292.0488963893877,
+    "nontip_share": 0.9991630573492475,
+    "nontip_gate": true,
+    "positive_pixels": 1107,
+    "u_line_px": 44.071067811865476,
+    "u_windows": {
+     "total": 169,
+     "u": 13,
+     "ring_below_min": 8
+    },
+    "ignore_fraction_of_rock": 0.0007104873657226562,
+    "opening_class_px": 10570,
+    "exit_code": 0,
+    "numeric_overall": "PASS",
+    "numeric_items": {
+     "1_gates": true,
+     "2_jumps": true,
+     "3_displacement": true,
+     "4_breaks": true,
+     "5_capped": true
+    }
+   },
+   "pixel_mm": 6.767284527431953,
+   "apparent_width_px": {
+    "samples": 276,
+    "median": 9.5,
+    "iqr": [
+     7.5,
+     11.5
+    ],
+    "no_band_share": 0.007246376811594203
+   },
+   "baseline": "b_b055_a26120005_c0",
+   "baseline_noise_T": 1.0,
+   "local": {
+    "band_px": 64,
+    "outside_share_of_rock": 0.8727684020996094,
+    "geometry_changed_share": 0.0,
+    "T_variant": 0.0,
+    "T_null": 1.0,
+    "geometry_gate": "PASS",
+    "image_gate": "PASS",
+    "T_inside_band": 111.0
+   },
+   "centre_shift_px": {
+    "variant_to_base_p50": 0.0,
+    "variant_to_base_p99": 4.968328157300004,
+    "base_to_variant_p50": 0.0,
+    "base_to_variant_p99": 3.7002189693526355
+   },
+   "overall": "PASS"
+  },
+  {
+   "id": "b_w030_a26120005_c3",
+   "cam": "a26120005_c3",
+   "group": "A_opening",
+   "tag": "w030",
+   "role": "variant",
+   "reused": false,
+   "recorded": true,
+   "physical": {
+    "mean_opening_m": 0.03,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.001125
+   },
+   "build_status": "built",
+   "error": null,
+   "M3i": null,
+   "identity": true,
+   "own_noise_T": null,
+   "status": "measured",
+   "labels": {
+    "visible_length_px": 1334.538910400207,
+    "nontip_px": 1222.575984223511,
+    "nontip_share": 0.9161036629923964,
+    "nontip_gate": true,
+    "positive_pixels": 1073,
+    "u_line_px": 459.6396103067893,
+    "u_windows": {
+     "total": 392,
+     "u": 115,
+     "ring_below_min": 25
+    },
+    "ignore_fraction_of_rock": 0.0761575698852539,
+    "opening_class_px": 254,
+    "exit_code": 0,
+    "numeric_overall": "PASS",
+    "numeric_items": {
+     "1_gates": true,
+     "2_jumps": true,
+     "3_displacement": true,
+     "4_breaks": true,
+     "5_capped": true
+    }
+   },
+   "pixel_mm": 13.542574510929644,
+   "apparent_width_px": {
+    "samples": 261,
+    "median": 2.0,
+    "iqr": [
+     1.0,
+     4.0
+    ],
+    "no_band_share": 0.10344827586206896
+   },
+   "baseline": "b_b055_a26120005_c3",
+   "baseline_noise_T": 1.0,
+   "local": {
+    "band_px": 34,
+    "outside_share_of_rock": 0.8593893051147461,
+    "geometry_changed_share": 0.0,
+    "T_variant": 0.0,
+    "T_null": 1.0,
+    "geometry_gate": "PASS",
+    "image_gate": "PASS",
+    "T_inside_band": 62.0
+   },
+   "centre_shift_px": {
+    "variant_to_base_p50": 0.0,
+    "variant_to_base_p99": 4.034469575172942,
+    "base_to_variant_p50": 0.0,
+    "base_to_variant_p99": 11.0330951894845
+   },
+   "overall": "PASS"
+  },
+  {
+   "id": "b_w040_a26120005_c3",
+   "cam": "a26120005_c3",
+   "group": "A_opening",
+   "tag": "w040",
+   "role": "variant",
+   "reused": false,
+   "recorded": true,
+   "physical": {
+    "mean_opening_m": 0.04,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0015
+   },
+   "build_status": "built",
+   "error": null,
+   "M3i": null,
+   "identity": true,
+   "own_noise_T": null,
+   "status": "measured",
+   "labels": {
+    "visible_length_px": 1343.031344031696,
+    "nontip_px": 1255.0978914699347,
+    "nontip_share": 0.9345261352592183,
+    "nontip_gate": true,
+    "positive_pixels": 1071,
+    "u_line_px": 476.2964645562817,
+    "u_windows": {
+     "total": 388,
+     "u": 119,
+     "ring_below_min": 27
+    },
+    "ignore_fraction_of_rock": 0.075164794921875,
+    "opening_class_px": 559,
+    "exit_code": 0,
+    "numeric_overall": "PASS",
+    "numeric_items": {
+     "1_gates": true,
+     "2_jumps": true,
+     "3_displacement": true,
+     "4_breaks": true,
+     "5_capped": true
+    }
+   },
+   "pixel_mm": 13.542574510929644,
+   "apparent_width_px": {
+    "samples": 264,
+    "median": 2.0,
+    "iqr": [
+     1.5,
+     4.0
+    ],
+    "no_band_share": 0.11363636363636363
+   },
+   "baseline": "b_b055_a26120005_c3",
+   "baseline_noise_T": 1.0,
+   "local": {
+    "band_px": 34,
+    "outside_share_of_rock": 0.8593368530273438,
+    "geometry_changed_share": 0.0,
+    "T_variant": 0.0,
+    "T_null": 1.0,
+    "geometry_gate": "PASS",
+    "image_gate": "PASS",
+    "T_inside_band": 39.51299999997718
+   },
+   "centre_shift_px": {
+    "variant_to_base_p50": 0.0,
+    "variant_to_base_p99": 3.2952597447570424,
+    "base_to_variant_p50": 0.0,
+    "base_to_variant_p99": 10.085898320778263
+   },
+   "overall": "PASS"
+  },
+  {
+   "id": "b_w065_a26120005_c3",
+   "cam": "a26120005_c3",
+   "group": "A_opening",
+   "tag": "w065",
+   "role": "variant",
+   "reused": false,
+   "recorded": true,
+   "physical": {
+    "mean_opening_m": 0.065,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0024375
+   },
+   "build_status": "built",
+   "error": null,
+   "M3i": null,
+   "identity": true,
+   "own_noise_T": null,
+   "status": "measured",
+   "labels": {
+    "visible_length_px": 1360.9597559645772,
+    "nontip_px": 1317.319758293468,
+    "nontip_share": 0.9679343952090785,
+    "nontip_gate": true,
+    "positive_pixels": 1085,
+    "u_line_px": 479.78174593052023,
+    "u_windows": {
+     "total": 386,
+     "u": 120,
+     "ring_below_min": 26
+    },
+    "ignore_fraction_of_rock": 0.07473564147949219,
+    "opening_class_px": 1803,
+    "exit_code": 0,
+    "numeric_overall": "PASS",
+    "numeric_items": {
+     "1_gates": true,
+     "2_jumps": true,
+     "3_displacement": true,
+     "4_breaks": true,
+     "5_capped": true
+    }
+   },
+   "pixel_mm": 13.542574510929644,
+   "apparent_width_px": {
+    "samples": 270,
+    "median": 2.5,
+    "iqr": [
+     1.5,
+     4.0
+    ],
+    "no_band_share": 0.10740740740740741
+   },
+   "baseline": "b_b055_a26120005_c3",
+   "baseline_noise_T": 1.0,
+   "local": {
+    "band_px": 34,
+    "outside_share_of_rock": 0.8589410781860352,
+    "geometry_changed_share": 0.0,
+    "T_variant": 0.0,
+    "T_null": 1.0,
+    "geometry_gate": "PASS",
+    "image_gate": "PASS",
+    "T_inside_band": 27.0
+   },
+   "centre_shift_px": {
+    "variant_to_base_p50": 0.0,
+    "variant_to_base_p99": 3.1622776601683795,
+    "base_to_variant_p50": 0.0,
+    "base_to_variant_p99": 8.003112887414925
+   },
+   "overall": "PASS"
+  },
+  {
+   "id": "b_w080_a26120005_c3",
+   "cam": "a26120005_c3",
+   "group": "A_opening",
+   "tag": "w080",
+   "role": "variant",
+   "reused": false,
+   "recorded": true,
+   "physical": {
+    "mean_opening_m": 0.08,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.003
+   },
+   "build_status": "built",
+   "error": null,
+   "M3i": null,
+   "identity": true,
+   "own_noise_T": null,
+   "status": "measured",
+   "labels": {
+    "visible_length_px": 1369.233423793892,
+    "nontip_px": 1331.197586101667,
+    "nontip_share": 0.9722210712715187,
+    "nontip_gate": true,
+    "positive_pixels": 1096,
+    "u_line_px": 480.71067811865476,
+    "u_windows": {
+     "total": 386,
+     "u": 117,
+     "ring_below_min": 24
+    },
+    "ignore_fraction_of_rock": 0.07470893859863281,
+    "opening_class_px": 2667,
+    "exit_code": 0,
+    "numeric_overall": "PASS",
+    "numeric_items": {
+     "1_gates": true,
+     "2_jumps": true,
+     "3_displacement": true,
+     "4_breaks": true,
+     "5_capped": true
+    }
+   },
+   "pixel_mm": 13.542574510929644,
+   "apparent_width_px": {
+    "samples": 271,
+    "median": 3.0,
+    "iqr": [
+     2.0,
+     4.5
+    ],
+    "no_band_share": 0.1033210332103321
+   },
+   "baseline": "b_b055_a26120005_c3",
+   "baseline_noise_T": 1.0,
+   "local": {
+    "band_px": 34,
+    "outside_share_of_rock": 0.8578157424926758,
+    "geometry_changed_share": 0.0,
+    "T_variant": 0.0,
+    "T_null": 1.0,
+    "geometry_gate": "PASS",
+    "image_gate": "PASS",
+    "T_inside_band": 58.0
+   },
+   "centre_shift_px": {
+    "variant_to_base_p50": 0.0,
+    "variant_to_base_p99": 2.23606797749979,
+    "base_to_variant_p50": 0.0,
+    "base_to_variant_p99": 11.05210996070284
+   },
+   "overall": "PASS"
+  },
+  {
+   "id": "b_w030_a26130005_c1",
+   "cam": "a26130005_c1",
+   "group": "A_opening",
+   "tag": "w030",
+   "role": "variant",
+   "reused": false,
+   "recorded": true,
+   "physical": {
+    "mean_opening_m": 0.03,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.001125
+   },
+   "build_status": "built",
+   "error": null,
+   "M3i": null,
+   "identity": true,
+   "own_noise_T": null,
+   "status": "measured",
+   "labels": {
+    "visible_length_px": 2352.7490201995347,
+    "nontip_px": 2295.577380223913,
+    "nontip_share": 0.9757000685220675,
+    "nontip_gate": true,
+    "positive_pixels": 1501,
+    "u_line_px": 152.8994949366117,
+    "u_windows": {
+     "total": 353,
+     "u": 59,
+     "ring_below_min": 37
+    },
+    "ignore_fraction_of_rock": 0.07084309889945192,
+    "opening_class_px": 4523,
+    "exit_code": 0,
+    "numeric_overall": "PASS",
+    "numeric_items": {
+     "1_gates": true,
+     "2_jumps": true,
+     "3_displacement": true,
+     "4_breaks": true,
+     "5_capped": true
+    }
+   },
+   "pixel_mm": 7.960987713685808,
+   "apparent_width_px": {
+    "samples": 368,
+    "median": 6.0,
+    "iqr": [
+     2.0,
+     14.5
+    ],
+    "no_band_share": 0.0625
+   },
+   "baseline": "b_b055_a26130005_c1",
+   "baseline_noise_T": 1.0,
+   "local": {
+    "band_px": 55,
+    "outside_share_of_rock": 0.6450404611132717,
+    "geometry_changed_share": 0.0,
+    "T_variant": 1.0,
+    "T_null": 1.0,
+    "geometry_gate": "PASS",
+    "image_gate": "PASS",
+    "T_inside_band": 112.0
+   },
+   "centre_shift_px": {
+    "variant_to_base_p50": 0.0,
+    "variant_to_base_p99": 6.4031242374328485,
+    "base_to_variant_p50": 0.0,
+    "base_to_variant_p99": 10.370861852307245
+   },
+   "overall": "PASS"
+  },
+  {
+   "id": "b_w040_a26130005_c1",
+   "cam": "a26130005_c1",
+   "group": "A_opening",
+   "tag": "w040",
+   "role": "variant",
+   "reused": false,
+   "recorded": true,
+   "physical": {
+    "mean_opening_m": 0.04,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0015
+   },
+   "build_status": "built",
+   "error": null,
+   "M3i": null,
+   "identity": true,
+   "own_noise_T": null,
+   "status": "measured",
+   "labels": {
+    "visible_length_px": 2390.2418121134956,
+    "nontip_px": 2346.4825545419894,
+    "nontip_share": 0.9816925394954858,
+    "nontip_gate": true,
+    "positive_pixels": 1561,
+    "u_line_px": 99.82842712474618,
+    "u_windows": {
+     "total": 351,
+     "u": 53,
+     "ring_below_min": 38
+    },
+    "ignore_fraction_of_rock": 0.0659793867713048,
+    "opening_class_px": 7489,
+    "exit_code": 0,
+    "numeric_overall": "PASS",
+    "numeric_items": {
+     "1_gates": true,
+     "2_jumps": true,
+     "3_displacement": true,
+     "4_breaks": true,
+     "5_capped": true
+    }
+   },
+   "pixel_mm": 7.960987713685808,
+   "apparent_width_px": {
+    "samples": 388,
+    "median": 7.0,
+    "iqr": [
+     3.0,
+     15.375
+    ],
+    "no_band_share": 0.03608247422680412
+   },
+   "baseline": "b_b055_a26130005_c1",
+   "baseline_noise_T": 1.0,
+   "local": {
+    "band_px": 55,
+    "outside_share_of_rock": 0.6450391690451487,
+    "geometry_changed_share": 0.0,
+    "T_variant": 1.0,
+    "T_null": 1.0,
+    "geometry_gate": "PASS",
+    "image_gate": "PASS",
+    "T_inside_band": 92.0
+   },
+   "centre_shift_px": {
+    "variant_to_base_p50": 0.0,
+    "variant_to_base_p99": 9.400000000000091,
+    "base_to_variant_p50": 0.0,
+    "base_to_variant_p99": 5.656854249492381
+   },
+   "overall": "PASS"
+  },
+  {
+   "id": "b_w065_a26130005_c1",
+   "cam": "a26130005_c1",
+   "group": "A_opening",
+   "tag": "w065",
+   "role": "variant",
+   "reused": false,
+   "recorded": true,
+   "physical": {
+    "mean_opening_m": 0.065,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0024375
+   },
+   "build_status": "built",
+   "error": null,
+   "M3i": null,
+   "identity": true,
+   "own_noise_T": null,
+   "status": "measured",
+   "labels": {
+    "visible_length_px": 2469.8480026803777,
+    "nontip_px": 2441.336049782795,
+    "nontip_share": 0.9884559888435885,
+    "nontip_gate": true,
+    "positive_pixels": 1630,
+    "u_line_px": 181.97056274847716,
+    "u_windows": {
+     "total": 348,
+     "u": 54,
+     "ring_below_min": 41
+    },
+    "ignore_fraction_of_rock": 0.04785808609002835,
+    "opening_class_px": 15342,
+    "exit_code": 0,
+    "numeric_overall": "PASS",
+    "numeric_items": {
+     "1_gates": true,
+     "2_jumps": true,
+     "3_displacement": true,
+     "4_breaks": true,
+     "5_capped": true
+    }
+   },
+   "pixel_mm": 7.960987713685808,
+   "apparent_width_px": {
+    "samples": 405,
+    "median": 9.0,
+    "iqr": [
+     3.0,
+     17.0
+    ],
+    "no_band_share": 0.03950617283950617
+   },
+   "baseline": "b_b055_a26130005_c1",
+   "baseline_noise_T": 1.0,
+   "local": {
+    "band_px": 55,
+    "outside_share_of_rock": 0.6415417852168273,
+    "geometry_changed_share": 0.0,
+    "T_variant": 0.0,
+    "T_null": 1.0,
+    "geometry_gate": "PASS",
+    "image_gate": "PASS",
+    "T_inside_band": 71.0
+   },
+   "centre_shift_px": {
+    "variant_to_base_p50": 0.0,
+    "variant_to_base_p99": 5.0,
+    "base_to_variant_p50": 0.0,
+    "base_to_variant_p99": 5.385164807134504
+   },
+   "overall": "PASS"
+  },
+  {
+   "id": "b_w080_a26130005_c1",
+   "cam": "a26130005_c1",
+   "group": "A_opening",
+   "tag": "w080",
+   "role": "variant",
+   "reused": false,
+   "recorded": true,
+   "physical": {
+    "mean_opening_m": 0.08,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.003
+   },
+   "build_status": "built",
+   "error": null,
+   "M3i": null,
+   "identity": true,
+   "own_noise_T": null,
+   "status": "measured",
+   "labels": {
+    "visible_length_px": 2500.169577011222,
+    "nontip_px": 2478.712304797359,
+    "nontip_share": 0.991417673260582,
+    "nontip_gate": true,
+    "positive_pixels": 1637,
+    "u_line_px": 220.62741699796953,
+    "u_windows": {
+     "total": 350,
+     "u": 61,
+     "ring_below_min": 43
+    },
+    "ignore_fraction_of_rock": 0.04485650415433718,
+    "opening_class_px": 19649,
+    "exit_code": 0,
+    "numeric_overall": "PASS",
+    "numeric_items": {
+     "1_gates": true,
+     "2_jumps": true,
+     "3_displacement": true,
+     "4_breaks": true,
+     "5_capped": true
+    }
+   },
+   "pixel_mm": 7.960987713685808,
+   "apparent_width_px": {
+    "samples": 409,
+    "median": 9.5,
+    "iqr": [
+     3.0,
+     18.5
+    ],
+    "no_band_share": 0.02689486552567237
+   },
+   "baseline": "b_b055_a26130005_c1",
+   "baseline_noise_T": 1.0,
+   "local": {
+    "band_px": 55,
+    "outside_share_of_rock": 0.6364664228766362,
+    "geometry_changed_share": 0.0,
+    "T_variant": 1.0,
+    "T_null": 1.0,
+    "geometry_gate": "PASS",
+    "image_gate": "PASS",
+    "T_inside_band": 103.0
+   },
+   "centre_shift_px": {
+    "variant_to_base_p50": 0.0,
+    "variant_to_base_p99": 12.639999999999873,
+    "base_to_variant_p50": 0.0,
+    "base_to_variant_p99": 8.06225774829855
+   },
+   "overall": "PASS"
+  },
+  {
+   "id": "b_w030_n26120003_c1",
+   "cam": "n26120003_c1",
+   "group": "A_opening",
+   "tag": "w030",
+   "role": "variant",
+   "reused": false,
+   "recorded": true,
+   "physical": {
+    "mean_opening_m": 0.03,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.001125
+   },
+   "build_status": "built",
+   "error": null,
+   "M3i": {
+    "null_N2_all_pass": true,
+    "offset_pass": true,
+    "dperp_pass": true
+   },
+   "identity": true,
+   "own_noise_T": null,
+   "status": "measured",
+   "labels": {
+    "visible_length_px": 946.5431183059039,
+    "nontip_px": 885.9904589529203,
+    "nontip_share": 0.936027574252128,
+    "nontip_gate": true,
+    "positive_pixels": 1052,
+    "u_line_px": 51.24264068711929,
+    "u_windows": {
+     "total": 119,
+     "u": 8,
+     "ring_below_min": 4
+    },
+    "ignore_fraction_of_rock": 0.0036430090775637376,
+    "opening_class_px": 10230,
+    "exit_code": 0,
+    "numeric_overall": "PASS",
+    "numeric_items": {
+     "1_gates": true,
+     "2_jumps": true,
+     "3_displacement": true,
+     "4_breaks": true,
+     "5_capped": true
+    }
+   },
+   "pixel_mm": 2.0,
+   "apparent_width_px": {
+    "samples": 263,
+    "median": 7.75,
+    "iqr": [
+     4.125,
+     10.0
+    ],
+    "no_band_share": 0.0038022813688212928
+   },
+   "baseline": "b_b055_n26120003_c1",
+   "baseline_noise_T": 1.0,
+   "local": {
+    "band_px": 204,
+    "outside_share_of_rock": 0.31766005892714233,
+    "geometry_changed_share": 0.0,
+    "T_variant": 1.0,
+    "T_null": 1.0,
+    "geometry_gate": "PASS",
+    "image_gate": "PASS",
+    "T_inside_band": 121.0
+   },
+   "centre_shift_px": {
+    "variant_to_base_p50": 0.0,
+    "variant_to_base_p99": 7.103440249954711,
+    "base_to_variant_p50": 0.0,
+    "base_to_variant_p99": 5.61222747062039
+   },
+   "overall": "PASS"
+  },
+  {
+   "id": "b_w040_n26120003_c1",
+   "cam": "n26120003_c1",
+   "group": "A_opening",
+   "tag": "w040",
+   "role": "variant",
+   "reused": false,
+   "recorded": true,
+   "physical": {
+    "mean_opening_m": 0.04,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0015
+   },
+   "build_status": "built",
+   "error": null,
+   "M3i": {
+    "null_N2_all_pass": true,
+    "offset_pass": true,
+    "dperp_pass": true
+   },
+   "identity": true,
+   "own_noise_T": null,
+   "status": "measured",
+   "labels": {
+    "visible_length_px": 947.2544478484267,
+    "nontip_px": 897.2624555076524,
+    "nontip_share": 0.9472243255713129,
+    "nontip_gate": true,
+    "positive_pixels": 1071,
+    "u_line_px": 43.82842712474619,
+    "u_windows": {
+     "total": 119,
+     "u": 7,
+     "ring_below_min": 5
+    },
+    "ignore_fraction_of_rock": 0.003597661220567995,
+    "opening_class_px": 15101,
+    "exit_code": 0,
+    "numeric_overall": "PASS",
+    "numeric_items": {
+     "1_gates": true,
+     "2_jumps": true,
+     "3_displacement": true,
+     "4_breaks": true,
+     "5_capped": true
+    }
+   },
+   "pixel_mm": 2.0,
+   "apparent_width_px": {
+    "samples": 268,
+    "median": 10.25,
+    "iqr": [
+     6.5,
+     14.5
+    ],
+    "no_band_share": 0.0
+   },
+   "baseline": "b_b055_n26120003_c1",
+   "baseline_noise_T": 1.0,
+   "local": {
+    "band_px": 204,
+    "outside_share_of_rock": 0.3178468913384694,
+    "geometry_changed_share": 0.0,
+    "T_variant": 1.0,
+    "T_null": 1.0,
+    "geometry_gate": "PASS",
+    "image_gate": "PASS",
+    "T_inside_band": 114.0
+   },
+   "centre_shift_px": {
+    "variant_to_base_p50": 0.0,
+    "variant_to_base_p99": 7.063330765278383,
+    "base_to_variant_p50": 0.0,
+    "base_to_variant_p99": 2.8284271247461903
+   },
+   "overall": "PASS"
+  },
+  {
+   "id": "b_w065_n26120003_c1",
+   "cam": "n26120003_c1",
+   "group": "A_opening",
+   "tag": "w065",
+   "role": "variant",
+   "reused": false,
+   "recorded": true,
+   "physical": {
+    "mean_opening_m": 0.065,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0024375
+   },
+   "build_status": "built",
+   "error": null,
+   "M3i": {
+    "null_N2_all_pass": true,
+    "offset_pass": true,
+    "dperp_pass": true
+   },
+   "identity": true,
+   "own_noise_T": null,
+   "status": "measured",
+   "labels": {
+    "visible_length_px": 948.4676597821583,
+    "nontip_px": 911.8193865577323,
+    "nontip_share": 0.9613605452474328,
+    "nontip_gate": true,
+    "positive_pixels": 958,
+    "u_line_px": 103.65685424949237,
+    "u_windows": {
+     "total": 119,
+     "u": 14,
+     "ring_below_min": 9
+    },
+    "ignore_fraction_of_rock": 0.003960350525498441,
+    "opening_class_px": 28453,
+    "exit_code": 0,
+    "numeric_overall": "PASS",
+    "numeric_items": {
+     "1_gates": true,
+     "2_jumps": true,
+     "3_displacement": true,
+     "4_breaks": true,
+     "5_capped": true
+    }
+   },
+   "pixel_mm": 2.0,
+   "apparent_width_px": {
+    "samples": 240,
+    "median": 15.25,
+    "iqr": [
+     10.5,
+     21.5
+    ],
+    "no_band_share": 0.008333333333333333
+   },
+   "baseline": "b_b055_n26120003_c1",
+   "baseline_noise_T": 1.0,
+   "local": {
+    "band_px": 204,
+    "outside_share_of_rock": 0.3132444394699946,
+    "geometry_changed_share": 0.0,
+    "T_variant": 0.0,
+    "T_null": 1.0,
+    "geometry_gate": "PASS",
+    "image_gate": "PASS",
+    "T_inside_band": 109.0
+   },
+   "centre_shift_px": {
+    "variant_to_base_p50": 0.0,
+    "variant_to_base_p99": 3.605551275463989,
+    "base_to_variant_p50": 0.0,
+    "base_to_variant_p99": 6.976656314599937
+   },
+   "overall": "PASS"
+  },
+  {
+   "id": "b_w080_n26120003_c1",
+   "cam": "n26120003_c1",
+   "group": "A_opening",
+   "tag": "w080",
+   "role": "variant",
+   "reused": true,
+   "recorded": true,
+   "physical": {
+    "mean_opening_m": 0.08,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.003
+   },
+   "build_status": "completed",
+   "error": null,
+   "M3i": {
+    "null_N2_all_pass": true,
+    "offset_pass": true,
+    "dperp_pass": true,
+    "reused_from": "frames/near_r1/measurements/nr_w080_n26120003_c1_M3i.json"
+   },
+   "identity": true,
+   "own_noise_T": null,
+   "status": "measured",
+   "labels": {
+    "visible_length_px": 949.605008112698,
+    "nontip_px": 917.655993236287,
+    "nontip_share": 0.9663554692704197,
+    "nontip_gate": true,
+    "positive_pixels": 856,
+    "u_line_px": 134.97056274847714,
+    "u_windows": {
+     "total": 119,
+     "u": 21,
+     "ring_below_min": 15
+    },
+    "ignore_fraction_of_rock": 0.004328826887913376,
+    "opening_class_px": 35890,
+    "exit_code": 0,
+    "numeric_overall": "PASS",
+    "numeric_items": {
+     "1_gates": true,
+     "2_jumps": true,
+     "3_displacement": true,
+     "4_breaks": true,
+     "5_capped": true
+    }
+   },
+   "pixel_mm": 2.0,
+   "apparent_width_px": {
+    "samples": 214,
+    "median": 19.25,
+    "iqr": [
+     12.625,
+     27.5
+    ],
+    "no_band_share": 0.018691588785046728
+   },
+   "baseline": "b_b055_n26120003_c1",
+   "baseline_noise_T": 1.0,
+   "local": {
+    "band_px": 204,
+    "outside_share_of_rock": 0.30613803659208355,
+    "geometry_changed_share": 0.0,
+    "T_variant": 1.0,
+    "T_null": 1.0,
+    "geometry_gate": "PASS",
+    "image_gate": "PASS",
+    "T_inside_band": 121.0
+   },
+   "centre_shift_px": {
+    "variant_to_base_p50": 0.0,
+    "variant_to_base_p99": 3.4500000000000455,
+    "base_to_variant_p50": 0.0,
+    "base_to_variant_p99": 5.830951894845301
+   },
+   "overall": "PASS"
+  },
+  {
+   "id": "b_w030_n26130007_c0",
+   "cam": "n26130007_c0",
+   "group": "A_opening",
+   "tag": "w030",
+   "role": "variant",
+   "reused": true,
+   "recorded": true,
+   "physical": {
+    "mean_opening_m": 0.03,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.001125
+   },
+   "build_status": "completed",
+   "error": null,
+   "M3i": {
+    "null_N2_all_pass": true,
+    "offset_pass": true,
+    "dperp_pass": true
+   },
+   "identity": true,
+   "own_noise_T": null,
+   "status": "measured",
+   "labels": {
+    "visible_length_px": 2184.3552862233205,
+    "nontip_px": 2184.355286223321,
+    "nontip_share": 1.0000000000000002,
+    "nontip_gate": true,
+    "positive_pixels": 2009,
+    "u_line_px": 141.72792206135784,
+    "u_windows": {
+     "total": 276,
+     "u": 24,
+     "ring_below_min": 18
+    },
+    "ignore_fraction_of_rock": 0.3569937006877504,
+    "opening_class_px": 9208,
+    "exit_code": 0,
+    "numeric_overall": "PASS",
+    "numeric_items": {
+     "1_gates": true,
+     "2_jumps": true,
+     "3_displacement": true,
+     "4_breaks": true,
+     "5_capped": true
+    }
+   },
+   "pixel_mm": 2.0,
+   "apparent_width_px": {
+    "samples": 499,
+    "median": 10.5,
+    "iqr": [
+     5.0,
+     23.0
+    ],
+    "no_band_share": 0.028056112224448898
+   },
+   "baseline": "b_b055_n26130007_c0",
+   "baseline_noise_T": 1.0,
+   "local": {
+    "band_px": 204,
+    "outside_share_of_rock": 0.42468062290479563,
+    "geometry_changed_share": 0.0,
+    "T_variant": 1.0,
+    "T_null": 1.0,
+    "geometry_gate": "PASS",
+    "image_gate": "PASS",
+    "T_inside_band": 121.0
+   },
+   "centre_shift_px": {
+    "variant_to_base_p50": 0.0,
+    "variant_to_base_p99": 6.68379755689407,
+    "base_to_variant_p50": 0.0,
+    "base_to_variant_p99": 5.0
+   },
+   "overall": "PASS"
+  },
+  {
+   "id": "b_w040_n26130007_c0",
+   "cam": "n26130007_c0",
+   "group": "A_opening",
+   "tag": "w040",
+   "role": "variant",
+   "reused": false,
+   "recorded": true,
+   "physical": {
+    "mean_opening_m": 0.04,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0015
+   },
+   "build_status": "built",
+   "error": null,
+   "M3i": {
+    "null_N2_all_pass": true,
+    "offset_pass": true,
+    "dperp_pass": true
+   },
+   "identity": true,
+   "own_noise_T": null,
+   "status": "measured",
+   "labels": {
+    "visible_length_px": 2205.2688090580336,
+    "nontip_px": 2205.2688090580336,
+    "nontip_share": 1.0,
+    "nontip_gate": true,
+    "positive_pixels": 1959,
+    "u_line_px": 203.21320343559643,
+    "u_windows": {
+     "total": 279,
+     "u": 31,
+     "ring_below_min": 22
+    },
+    "ignore_fraction_of_rock": 0.3447257069823425,
+    "opening_class_px": 15333,
+    "exit_code": 0,
+    "numeric_overall": "PASS",
+    "numeric_items": {
+     "1_gates": true,
+     "2_jumps": true,
+     "3_displacement": true,
+     "4_breaks": true,
+     "5_capped": true
+    }
+   },
+   "pixel_mm": 2.0,
+   "apparent_width_px": {
+    "samples": 488,
+    "median": 12.5,
+    "iqr": [
+     6.0,
+     29.125
+    ],
+    "no_band_share": 0.01639344262295082
+   },
+   "baseline": "b_b055_n26130007_c0",
+   "baseline_noise_T": 1.0,
+   "local": {
+    "band_px": 204,
+    "outside_share_of_rock": 0.42468062290479563,
+    "geometry_changed_share": 0.0,
+    "T_variant": 1.0,
+    "T_null": 1.0,
+    "geometry_gate": "PASS",
+    "image_gate": "PASS",
+    "T_inside_band": 116.0
+   },
+   "centre_shift_px": {
+    "variant_to_base_p50": 0.0,
+    "variant_to_base_p99": 6.357554265517122,
+    "base_to_variant_p50": 0.0,
+    "base_to_variant_p99": 5.910782104868022
+   },
+   "overall": "PASS"
+  },
+  {
+   "id": "b_w065_n26130007_c0",
+   "cam": "n26130007_c0",
+   "group": "A_opening",
+   "tag": "w065",
+   "role": "variant",
+   "reused": false,
+   "recorded": true,
+   "physical": {
+    "mean_opening_m": 0.065,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0024375
+   },
+   "build_status": "built",
+   "error": null,
+   "M3i": {
+    "null_N2_all_pass": true,
+    "offset_pass": true,
+    "dperp_pass": true
+   },
+   "identity": true,
+   "own_noise_T": null,
+   "status": "measured",
+   "labels": {
+    "visible_length_px": 2251.000238533683,
+    "nontip_px": 2251.000238533683,
+    "nontip_share": 1.0,
+    "nontip_gate": true,
+    "positive_pixels": 1806,
+    "u_line_px": 352.5979797464467,
+    "u_windows": {
+     "total": 289,
+     "u": 54,
+     "ring_below_min": 47
+    },
+    "ignore_fraction_of_rock": 0.3280199936185296,
+    "opening_class_px": 31723,
+    "exit_code": 0,
+    "numeric_overall": "PASS",
+    "numeric_items": {
+     "1_gates": true,
+     "2_jumps": true,
+     "3_displacement": true,
+     "4_breaks": true,
+     "5_capped": true
+    }
+   },
+   "pixel_mm": 2.0,
+   "apparent_width_px": {
+    "samples": 450,
+    "median": 17.0,
+    "iqr": [
+     8.0,
+     35.0
+    ],
+    "no_band_share": 0.024444444444444446
+   },
+   "baseline": "b_b055_n26130007_c0",
+   "baseline_noise_T": 1.0,
+   "local": {
+    "band_px": 204,
+    "outside_share_of_rock": 0.4214116954722599,
+    "geometry_changed_share": 0.0,
+    "T_variant": 1.0,
+    "T_null": 1.0,
+    "geometry_gate": "PASS",
+    "image_gate": "PASS",
+    "T_inside_band": 105.0
+   },
+   "centre_shift_px": {
+    "variant_to_base_p50": 0.0,
+    "variant_to_base_p99": 5.0990195135927845,
+    "base_to_variant_p50": 0.0,
+    "base_to_variant_p99": 8.375295231494167
+   },
+   "overall": "PASS"
+  },
+  {
+   "id": "b_w080_n26130007_c0",
+   "cam": "n26130007_c0",
+   "group": "A_opening",
+   "tag": "w080",
+   "role": "variant",
+   "reused": true,
+   "recorded": true,
+   "physical": {
+    "mean_opening_m": 0.08,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.003
+   },
+   "build_status": "completed",
+   "error": null,
+   "M3i": {
+    "null_N2_all_pass": true,
+    "offset_pass": true,
+    "dperp_pass": true
+   },
+   "identity": true,
+   "own_noise_T": null,
+   "status": "measured",
+   "labels": {
+    "visible_length_px": 2288.3108660711705,
+    "nontip_px": 2288.310866071171,
+    "nontip_share": 1.0000000000000002,
+    "nontip_gate": true,
+    "positive_pixels": 1615,
+    "u_line_px": 512.0832611206853,
+    "u_windows": {
+     "total": 287,
+     "u": 70,
+     "ring_below_min": 62
+    },
+    "ignore_fraction_of_rock": 0.2909239749518951,
+    "opening_class_px": 41957,
+    "exit_code": 0,
+    "numeric_overall": "PASS",
+    "numeric_items": {
+     "1_gates": true,
+     "2_jumps": true,
+     "3_displacement": true,
+     "4_breaks": true,
+     "5_capped": true
+    }
+   },
+   "pixel_mm": 2.0,
+   "apparent_width_px": {
+    "samples": 402,
+    "median": 22.0,
+    "iqr": [
+     10.5,
+     41.5
+    ],
+    "no_band_share": 0.022388059701492536
+   },
+   "baseline": "b_b055_n26130007_c0",
+   "baseline_noise_T": 1.0,
+   "local": {
+    "band_px": 204,
+    "outside_share_of_rock": 0.41707753061759406,
+    "geometry_changed_share": 0.0,
+    "T_variant": 1.0,
+    "T_null": 1.0,
+    "geometry_gate": "PASS",
+    "image_gate": "PASS",
+    "T_inside_band": 119.0
+   },
+   "centre_shift_px": {
+    "variant_to_base_p50": 0.0,
+    "variant_to_base_p99": 5.830951894845301,
+    "base_to_variant_p50": 0.0,
+    "base_to_variant_p99": 14.965177874302812
+   },
+   "overall": "PASS"
+  },
+  {
+   "id": "b_v000_a26120005_c0",
+   "cam": "a26120005_c0",
+   "group": "B_other_genes",
+   "tag": "v000",
+   "role": "variant",
+   "reused": false,
+   "recorded": true,
+   "physical": {
+    "mean_opening_m": 0.055,
+    "opening_variation": 0.0,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0020625
+   },
+   "build_status": "built",
+   "error": null,
+   "M3i": null,
+   "identity": true,
+   "own_noise_T": null,
+   "status": "measured",
+   "labels": {
+    "visible_length_px": 1292.3627215076394,
+    "nontip_px": 1288.2535607151565,
+    "nontip_share": 0.9968204276368408,
+    "nontip_gate": true,
+    "positive_pixels": 1131,
+    "u_line_px": 26.242640687119287,
+    "u_windows": {
+     "total": 170,
+     "u": 9,
+     "ring_below_min": 5
+    },
+    "ignore_fraction_of_rock": 0.0026874542236328125,
+    "opening_class_px": 4734,
+    "exit_code": 0,
+    "numeric_overall": "PASS",
+    "numeric_items": {
+     "1_gates": true,
+     "2_jumps": true,
+     "3_displacement": true,
+     "4_breaks": true,
+     "5_capped": true
+    }
+   },
+   "pixel_mm": 6.767284527431953,
+   "apparent_width_px": {
+    "samples": 282,
+    "median": 5.5,
+    "iqr": [
+     4.0,
+     8.5
+    ],
+    "no_band_share": 0.0035460992907801418
+   },
+   "baseline": "b_b055_a26120005_c0",
+   "baseline_noise_T": 1.0,
+   "local": {
+    "band_px": 64,
+    "outside_share_of_rock": 0.8763055801391602,
+    "geometry_changed_share": 0.0,
+    "T_variant": 0.0,
+    "T_null": 1.0,
+    "geometry_gate": "PASS",
+    "image_gate": "PASS",
+    "T_inside_band": 62.0
+   },
+   "centre_shift_px": {
+    "variant_to_base_p50": 0.0,
+    "variant_to_base_p99": 4.403287374635502,
+    "base_to_variant_p50": 0.0,
+    "base_to_variant_p99": 3.0389466384404127
+   },
+   "overall": "PASS"
+  },
+  {
+   "id": "b_v045_a26120005_c0",
+   "cam": "a26120005_c0",
+   "group": "B_other_genes",
+   "tag": "v045",
+   "role": "variant",
+   "reused": false,
+   "recorded": true,
+   "physical": {
+    "mean_opening_m": 0.055,
+    "opening_variation": 0.45,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0020625
+   },
+   "build_status": "built",
+   "error": null,
+   "M3i": null,
+   "identity": true,
+   "own_noise_T": null,
+   "status": "measured",
+   "labels": {
+    "visible_length_px": 1288.1944613912349,
+    "nontip_px": 1287.1451163543284,
+    "nontip_share": 0.9991854141060557,
+    "nontip_gate": true,
+    "positive_pixels": 1099,
+    "u_line_px": 48.071067811865476,
+    "u_windows": {
+     "total": 170,
+     "u": 13,
+     "ring_below_min": 6
+    },
+    "ignore_fraction_of_rock": 0.002826690673828125,
+    "opening_class_px": 7274,
+    "exit_code": 0,
+    "numeric_overall": "PASS",
+    "numeric_items": {
+     "1_gates": true,
+     "2_jumps": true,
+     "3_displacement": true,
+     "4_breaks": true,
+     "5_capped": true
+    }
+   },
+   "pixel_mm": 6.767284527431953,
+   "apparent_width_px": {
+    "samples": 274,
+    "median": 7.0,
+    "iqr": [
+     5.0,
+     9.5
+    ],
+    "no_band_share": 0.010948905109489052
+   },
+   "baseline": "b_b055_a26120005_c0",
+   "baseline_noise_T": 1.0,
+   "local": {
+    "band_px": 64,
+    "outside_share_of_rock": 0.875208854675293,
+    "geometry_changed_share": 0.0,
+    "T_variant": 0.0,
+    "T_null": 1.0,
+    "geometry_gate": "PASS",
+    "image_gate": "PASS",
+    "T_inside_band": 69.0
+   },
+   "centre_shift_px": {
+    "variant_to_base_p50": 0.0,
+    "variant_to_base_p99": 3.613440249954702,
+    "base_to_variant_p50": 0.0,
+    "base_to_variant_p99": 3.0389466384404127
+   },
+   "overall": "PASS"
+  },
+  {
+   "id": "b_d010_a26120005_c0",
+   "cam": "a26120005_c0",
+   "group": "B_other_genes",
+   "tag": "d010",
+   "role": "variant",
+   "reused": true,
+   "recorded": true,
+   "physical": {
+    "mean_opening_m": 0.055,
+    "opening_variation": 0.225,
+    "depth_m": 0.1,
+    "roughness_m": 0.0020625
+   },
+   "build_status": "reused",
+   "error": null,
+   "M3i": null,
+   "identity": true,
+   "own_noise_T": null,
+   "status": "measured",
+   "labels": {
+    "visible_length_px": 1225.4952971804291,
+    "nontip_px": 1224.4460354094704,
+    "nontip_share": 0.9991438059588047,
+    "nontip_gate": true,
+    "positive_pixels": 1051,
+    "u_line_px": 37.24264068711929,
+    "u_windows": {
+     "total": 160,
+     "u": 12,
+     "ring_below_min": 6
+    },
+    "ignore_fraction_of_rock": 0.0029554367065429688,
+    "opening_class_px": 6050,
+    "exit_code": 0,
+    "numeric_overall": "PASS",
+    "numeric_items": {
+     "1_gates": true,
+     "2_jumps": true,
+     "3_displacement": true,
+     "4_breaks": true,
+     "5_capped": true
+    }
+   },
+   "pixel_mm": 6.767284527431953,
+   "apparent_width_px": {
+    "samples": 261,
+    "median": 6.5,
+    "iqr": [
+     4.5,
+     9.0
+    ],
+    "no_band_share": 0.007662835249042145
+   },
+   "baseline": "b_b055_a26120005_c0",
+   "baseline_noise_T": 1.0,
+   "local": {
+    "band_px": 64,
+    "outside_share_of_rock": 0.8762931823730469,
+    "geometry_changed_share": 0.0,
+    "T_variant": 0.0,
+    "T_null": 1.0,
+    "geometry_gate": "PASS",
+    "image_gate": "PASS",
+    "T_inside_band": 40.853000000002794
+   },
+   "centre_shift_px": {
+    "variant_to_base_p50": 0.0,
+    "variant_to_base_p99": 4.182873156368473,
+    "base_to_variant_p50": 0.0,
+    "base_to_variant_p99": 6.140792799907471
+   },
+   "overall": "PASS"
+  },
+  {
+   "id": "b_d025_a26120005_c0",
+   "cam": "a26120005_c0",
+   "group": "B_other_genes",
+   "tag": "d025",
+   "role": "variant",
+   "reused": false,
+   "recorded": true,
+   "physical": {
+    "mean_opening_m": 0.055,
+    "opening_variation": 0.225,
+    "depth_m": 0.25,
+    "roughness_m": 0.0020625
+   },
+   "build_status": "built",
+   "error": null,
+   "M3i": null,
+   "identity": true,
+   "own_noise_T": null,
+   "status": "measured",
+   "labels": {
+    "visible_length_px": 1307.8836634143404,
+    "nontip_px": 1305.9728430949908,
+    "nontip_share": 0.9985389982512961,
+    "nontip_gate": true,
+    "positive_pixels": 1145,
+    "u_line_px": 42.82842712474619,
+    "u_windows": {
+     "total": 172,
+     "u": 9,
+     "ring_below_min": 5
+    },
+    "ignore_fraction_of_rock": 0.002666473388671875,
+    "opening_class_px": 6021,
+    "exit_code": 0,
+    "numeric_overall": "PASS",
+    "numeric_items": {
+     "1_gates": true,
+     "2_jumps": true,
+     "3_displacement": true,
+     "4_breaks": true,
+     "5_capped": true
+    }
+   },
+   "pixel_mm": 6.767284527431953,
+   "apparent_width_px": {
+    "samples": 286,
+    "median": 6.0,
+    "iqr": [
+     4.0,
+     9.0
+    ],
+    "no_band_share": 0.013986013986013986
+   },
+   "baseline": "b_b055_a26120005_c0",
+   "baseline_noise_T": 1.0,
+   "local": {
+    "band_px": 64,
+    "outside_share_of_rock": 0.8762826919555664,
+    "geometry_changed_share": 0.0,
+    "T_variant": 0.0,
+    "T_null": 1.0,
+    "geometry_gate": "PASS",
+    "image_gate": "PASS",
+    "T_inside_band": 4.0
+   },
+   "centre_shift_px": {
+    "variant_to_base_p50": 0.0,
+    "variant_to_base_p99": 4.123105625617661,
+    "base_to_variant_p50": 0.0,
+    "base_to_variant_p99": 2.378234172838931
+   },
+   "overall": "PASS"
+  },
+  {
+   "id": "b_r000_a26120005_c0",
+   "cam": "a26120005_c0",
+   "group": "B_other_genes",
+   "tag": "r000",
+   "role": "variant",
+   "reused": false,
+   "recorded": true,
+   "physical": {
+    "mean_opening_m": 0.055,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0
+   },
+   "build_status": "built",
+   "error": null,
+   "M3i": null,
+   "identity": true,
+   "own_noise_T": null,
+   "status": "measured",
+   "labels": {
+    "visible_length_px": 1288.9640877995378,
+    "nontip_px": 1287.914826028578,
+    "nontip_share": 0.9991859650855355,
+    "nontip_gate": true,
+    "positive_pixels": 1101,
+    "u_line_px": 52.899494936611674,
+    "u_windows": {
+     "total": 172,
+     "u": 13,
+     "ring_below_min": 6
+    },
+    "ignore_fraction_of_rock": 0.0028142929077148438,
+    "opening_class_px": 5994,
+    "exit_code": 0,
+    "numeric_overall": "PASS",
+    "numeric_items": {
+     "1_gates": true,
+     "2_jumps": true,
+     "3_displacement": true,
+     "4_breaks": true,
+     "5_capped": true
+    }
+   },
+   "pixel_mm": 6.767284527431953,
+   "apparent_width_px": {
+    "samples": 274,
+    "median": 6.0,
+    "iqr": [
+     4.0,
+     8.5
+    ],
+    "no_band_share": 0.0036496350364963502
+   },
+   "baseline": "b_b055_a26120005_c0",
+   "baseline_noise_T": 1.0,
+   "local": {
+    "band_px": 64,
+    "outside_share_of_rock": 0.8762741088867188,
+    "geometry_changed_share": 0.0,
+    "T_variant": 0.0,
+    "T_null": 1.0,
+    "geometry_gate": "PASS",
+    "image_gate": "PASS",
+    "T_inside_band": 10.0
+   },
+   "centre_shift_px": {
+    "variant_to_base_p50": 0.0,
+    "variant_to_base_p99": 3.605551275463989,
+    "base_to_variant_p50": 0.0,
+    "base_to_variant_p99": 2.8284271247461903
+   },
+   "overall": "PASS"
+  },
+  {
+   "id": "b_r075_a26120005_c0",
+   "cam": "a26120005_c0",
+   "group": "B_other_genes",
+   "tag": "r075",
+   "role": "variant",
+   "reused": false,
+   "recorded": true,
+   "physical": {
+    "mean_opening_m": 0.055,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.004125
+   },
+   "build_status": "built",
+   "error": null,
+   "M3i": null,
+   "identity": true,
+   "own_noise_T": null,
+   "status": "measured",
+   "labels": {
+    "visible_length_px": 1288.9316643007128,
+    "nontip_px": 1287.8824025297529,
+    "nontip_share": 0.9991859446082201,
+    "nontip_gate": true,
+    "positive_pixels": 1112,
+    "u_line_px": 45.485281374238575,
+    "u_windows": {
+     "total": 169,
+     "u": 13,
+     "ring_below_min": 7
+    },
+    "ignore_fraction_of_rock": 0.0027780532836914062,
+    "opening_class_px": 6026,
+    "exit_code": 0,
+    "numeric_overall": "PASS",
+    "numeric_items": {
+     "1_gates": true,
+     "2_jumps": true,
+     "3_displacement": true,
+     "4_breaks": true,
+     "5_capped": true
+    }
+   },
+   "pixel_mm": 6.767284527431953,
+   "apparent_width_px": {
+    "samples": 277,
+    "median": 6.0,
+    "iqr": [
+     4.5,
+     9.0
+    ],
+    "no_band_share": 0.007220216606498195
+   },
+   "baseline": "b_b055_a26120005_c0",
+   "baseline_noise_T": 1.0,
+   "local": {
+    "band_px": 64,
+    "outside_share_of_rock": 0.8762035369873047,
+    "geometry_changed_share": 0.0,
+    "T_variant": 0.0,
+    "T_null": 1.0,
+    "geometry_gate": "PASS",
+    "image_gate": "PASS",
+    "T_inside_band": 10.0
+   },
+   "centre_shift_px": {
+    "variant_to_base_p50": 0.0,
+    "variant_to_base_p99": 4.123105625617661,
+    "base_to_variant_p50": 0.0,
+    "base_to_variant_p99": 3.26866332783933
+   },
+   "overall": "PASS"
+  },
+  {
+   "id": "b_v000_n26130007_c0",
+   "cam": "n26130007_c0",
+   "group": "B_other_genes",
+   "tag": "v000",
+   "role": "variant",
+   "reused": false,
+   "recorded": true,
+   "physical": {
+    "mean_opening_m": 0.055,
+    "opening_variation": 0.0,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0020625
+   },
+   "build_status": "built",
+   "error": null,
+   "M3i": {
+    "null_N2_all_pass": true,
+    "offset_pass": true,
+    "dperp_pass": true
+   },
+   "identity": true,
+   "own_noise_T": null,
+   "status": "measured",
+   "labels": {
+    "visible_length_px": 2242.3895092379526,
+    "nontip_px": 2242.389509237952,
+    "nontip_share": 0.9999999999999998,
+    "nontip_gate": true,
+    "positive_pixels": 1897,
+    "u_line_px": 299.5269119345812,
+    "u_windows": {
+     "total": 283,
+     "u": 45,
+     "ring_below_min": 38
+    },
+    "ignore_fraction_of_rock": 0.30737996344083085,
+    "opening_class_px": 27635,
+    "exit_code": 0,
+    "numeric_overall": "PASS",
+    "numeric_items": {
+     "1_gates": true,
+     "2_jumps": true,
+     "3_displacement": true,
+     "4_breaks": true,
+     "5_capped": true
+    }
+   },
+   "pixel_mm": 2.0,
+   "apparent_width_px": {
+    "samples": 474,
+    "median": 16.5,
+    "iqr": [
+     8.0,
+     33.0
+    ],
+    "no_band_share": 0.02109704641350211
+   },
+   "baseline": "b_b055_n26130007_c0",
+   "baseline_noise_T": 1.0,
+   "local": {
+    "band_px": 204,
+    "outside_share_of_rock": 0.42331675156136744,
+    "geometry_changed_share": 0.0,
+    "T_variant": 1.0,
+    "T_null": 1.0,
+    "geometry_gate": "PASS",
+    "image_gate": "PASS",
+    "T_inside_band": 84.0
+   },
+   "centre_shift_px": {
+    "variant_to_base_p50": 0.0,
+    "variant_to_base_p99": 5.663818155306491,
+    "base_to_variant_p50": 0.0,
+    "base_to_variant_p99": 4.47213595499958
+   },
+   "overall": "PASS"
+  },
+  {
+   "id": "b_v045_n26130007_c0",
+   "cam": "n26130007_c0",
+   "group": "B_other_genes",
+   "tag": "v045",
+   "role": "variant",
+   "reused": false,
+   "recorded": true,
+   "physical": {
+    "mean_opening_m": 0.055,
+    "opening_variation": 0.45,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0020625
+   },
+   "build_status": "built",
+   "error": null,
+   "M3i": {
+    "null_N2_all_pass": true,
+    "offset_pass": true,
+    "dperp_pass": true
+   },
+   "identity": true,
+   "own_noise_T": null,
+   "status": "measured",
+   "labels": {
+    "visible_length_px": 2222.748274199706,
+    "nontip_px": 2222.7482741997055,
+    "nontip_share": 0.9999999999999998,
+    "nontip_gate": true,
+    "positive_pixels": 1804,
+    "u_line_px": 314.698484809835,
+    "u_windows": {
+     "total": 281,
+     "u": 49,
+     "ring_below_min": 38
+    },
+    "ignore_fraction_of_rock": 0.3288978269370426,
+    "opening_class_px": 22646,
+    "exit_code": 0,
+    "numeric_overall": "PASS",
+    "numeric_items": {
+     "1_gates": true,
+     "2_jumps": true,
+     "3_displacement": true,
+     "4_breaks": true,
+     "5_capped": true
+    }
+   },
+   "pixel_mm": 2.0,
+   "apparent_width_px": {
+    "samples": 450,
+    "median": 17.0,
+    "iqr": [
+     6.5,
+     28.0
+    ],
+    "no_band_share": 0.03777777777777778
+   },
+   "baseline": "b_b055_n26130007_c0",
+   "baseline_noise_T": 1.0,
+   "local": {
+    "band_px": 204,
+    "outside_share_of_rock": 0.4244287090463091,
+    "geometry_changed_share": 0.0,
+    "T_variant": 1.0,
+    "T_null": 1.0,
+    "geometry_gate": "PASS",
+    "image_gate": "PASS",
+    "T_inside_band": 85.0
+   },
+   "centre_shift_px": {
+    "variant_to_base_p50": 0.0,
+    "variant_to_base_p99": 5.3765804483282595,
+    "base_to_variant_p50": 0.0,
+    "base_to_variant_p99": 5.656854249492381
+   },
+   "overall": "PASS"
+  },
+  {
+   "id": "b_d010_n26130007_c0",
+   "cam": "n26130007_c0",
+   "group": "B_other_genes",
+   "tag": "d010",
+   "role": "variant",
+   "reused": true,
+   "recorded": true,
+   "physical": {
+    "mean_opening_m": 0.055,
+    "opening_variation": 0.225,
+    "depth_m": 0.1,
+    "roughness_m": 0.0020625
+   },
+   "build_status": "completed",
+   "error": null,
+   "M3i": {
+    "null_N2_all_pass": true,
+    "offset_pass": true,
+    "dperp_pass": true
+   },
+   "identity": true,
+   "own_noise_T": null,
+   "status": "measured",
+   "labels": {
+    "visible_length_px": 2152.6358757880002,
+    "nontip_px": 2152.6358757880002,
+    "nontip_share": 1.0,
+    "nontip_gate": true,
+    "positive_pixels": 1771,
+    "u_line_px": 310.4558441227157,
+    "u_windows": {
+     "total": 274,
+     "u": 49,
+     "ring_below_min": 38
+    },
+    "ignore_fraction_of_rock": 0.3275609998262467,
+    "opening_class_px": 24727,
+    "exit_code": 0,
+    "numeric_overall": "PASS",
+    "numeric_items": {
+     "1_gates": true,
+     "2_jumps": true,
+     "3_displacement": true,
+     "4_breaks": true,
+     "5_capped": true
+    }
+   },
+   "pixel_mm": 2.0,
+   "apparent_width_px": {
+    "samples": 443,
+    "median": 14.5,
+    "iqr": [
+     7.0,
+     30.5
+    ],
+    "no_band_share": 0.03160270880361174
+   },
+   "baseline": "b_b055_n26130007_c0",
+   "baseline_noise_T": 1.0,
+   "local": {
+    "band_px": 204,
+    "outside_share_of_rock": 0.4246832583678373,
+    "geometry_changed_share": 0.0,
+    "T_variant": 0.0,
+    "T_null": 1.0,
+    "geometry_gate": "PASS",
+    "image_gate": "PASS",
+    "T_inside_band": 110.0
+   },
+   "centre_shift_px": {
+    "variant_to_base_p50": 0.0,
+    "variant_to_base_p99": 5.385164807134504,
+    "base_to_variant_p50": 0.0,
+    "base_to_variant_p99": 26.888371732904943
+   },
+   "overall": "PASS"
+  },
+  {
+   "id": "b_d025_n26130007_c0",
+   "cam": "n26130007_c0",
+   "group": "B_other_genes",
+   "tag": "d025",
+   "role": "variant",
+   "reused": false,
+   "recorded": true,
+   "physical": {
+    "mean_opening_m": 0.055,
+    "opening_variation": 0.225,
+    "depth_m": 0.25,
+    "roughness_m": 0.0020625
+   },
+   "build_status": "built",
+   "error": null,
+   "M3i": {
+    "null_N2_all_pass": true,
+    "offset_pass": true,
+    "dperp_pass": true
+   },
+   "identity": true,
+   "own_noise_T": null,
+   "status": "measured",
+   "labels": {
+    "visible_length_px": 2238.6900918016527,
+    "nontip_px": 2238.690091801652,
+    "nontip_share": 0.9999999999999998,
+    "nontip_gate": true,
+    "positive_pixels": 1884,
+    "u_line_px": 249.2842712474619,
+    "u_windows": {
+     "total": 284,
+     "u": 43,
+     "ring_below_min": 37
+    },
+    "ignore_fraction_of_rock": 0.3289785604178199,
+    "opening_class_px": 25088,
+    "exit_code": 0,
+    "numeric_overall": "PASS",
+    "numeric_items": {
+     "1_gates": true,
+     "2_jumps": true,
+     "3_displacement": true,
+     "4_breaks": true,
+     "5_capped": true
+    }
+   },
+   "pixel_mm": 2.0,
+   "apparent_width_px": {
+    "samples": 468,
+    "median": 17.0,
+    "iqr": [
+     7.5,
+     33.25
+    ],
+    "no_band_share": 0.021367521367521368
+   },
+   "baseline": "b_b055_n26130007_c0",
+   "baseline_noise_T": 1.0,
+   "local": {
+    "band_px": 204,
+    "outside_share_of_rock": 0.42401074337289285,
+    "geometry_changed_share": 0.0,
+    "T_variant": 0.0,
+    "T_null": 1.0,
+    "geometry_gate": "PASS",
+    "image_gate": "PASS",
+    "T_inside_band": 68.0
+   },
+   "centre_shift_px": {
+    "variant_to_base_p50": 0.0,
+    "variant_to_base_p99": 6.123867304604789,
+    "base_to_variant_p50": 0.0,
+    "base_to_variant_p99": 5.385164807134504
+   },
+   "overall": "PASS"
+  },
+  {
+   "id": "b_r000_n26130007_c0",
+   "cam": "n26130007_c0",
+   "group": "B_other_genes",
+   "tag": "r000",
+   "role": "variant",
+   "reused": false,
+   "recorded": true,
+   "physical": {
+    "mean_opening_m": 0.055,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0
+   },
+   "build_status": "built",
+   "error": null,
+   "M3i": {
+    "null_N2_all_pass": true,
+    "offset_pass": true,
+    "dperp_pass": true
+   },
+   "identity": true,
+   "own_noise_T": null,
+   "status": "measured",
+   "labels": {
+    "visible_length_px": 2228.9658969682637,
+    "nontip_px": 2228.965896968264,
+    "nontip_share": 1.0000000000000002,
+    "nontip_gate": true,
+    "positive_pixels": 1828,
+    "u_line_px": 314.7695526217004,
+    "u_windows": {
+     "total": 282,
+     "u": 51,
+     "ring_below_min": 41
+    },
+    "ignore_fraction_of_rock": 0.32888175091162286,
+    "opening_class_px": 25071,
+    "exit_code": 0,
+    "numeric_overall": "PASS",
+    "numeric_items": {
+     "1_gates": true,
+     "2_jumps": true,
+     "3_displacement": true,
+     "4_breaks": true,
+     "5_capped": true
+    }
+   },
+   "pixel_mm": 2.0,
+   "apparent_width_px": {
+    "samples": 456,
+    "median": 16.0,
+    "iqr": [
+     6.5,
+     30.0
+    ],
+    "no_band_share": 0.019736842105263157
+   },
+   "baseline": "b_b055_n26130007_c0",
+   "baseline_noise_T": 1.0,
+   "local": {
+    "band_px": 204,
+    "outside_share_of_rock": 0.42468077606664484,
+    "geometry_changed_share": 0.0,
+    "T_variant": 0.0,
+    "T_null": 1.0,
+    "geometry_gate": "PASS",
+    "image_gate": "PASS",
+    "T_inside_band": 9.0
+   },
+   "centre_shift_px": {
+    "variant_to_base_p50": 0.0,
+    "variant_to_base_p99": 5.385164807134504,
+    "base_to_variant_p50": 0.0,
+    "base_to_variant_p99": 4.412467185350705
+   },
+   "overall": "PASS"
+  },
+  {
+   "id": "b_r075_n26130007_c0",
+   "cam": "n26130007_c0",
+   "group": "B_other_genes",
+   "tag": "r075",
+   "role": "variant",
+   "reused": false,
+   "recorded": true,
+   "physical": {
+    "mean_opening_m": 0.055,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.004125
+   },
+   "build_status": "built",
+   "error": null,
+   "M3i": {
+    "null_N2_all_pass": true,
+    "offset_pass": true,
+    "dperp_pass": true
+   },
+   "identity": true,
+   "own_noise_T": null,
+   "status": "measured",
+   "labels": {
+    "visible_length_px": 2237.677910184245,
+    "nontip_px": 2237.677910184245,
+    "nontip_share": 1.0,
+    "nontip_gate": true,
+    "positive_pixels": 1833,
+    "u_line_px": 316.1126983722081,
+    "u_windows": {
+     "total": 280,
+     "u": 49,
+     "ring_below_min": 41
+    },
+    "ignore_fraction_of_rock": 0.32879155522182435,
+    "opening_class_px": 25065,
+    "exit_code": 0,
+    "numeric_overall": "PASS",
+    "numeric_items": {
+     "1_gates": true,
+     "2_jumps": true,
+     "3_displacement": true,
+     "4_breaks": true,
+     "5_capped": true
+    }
+   },
+   "pixel_mm": 2.0,
+   "apparent_width_px": {
+    "samples": 457,
+    "median": 18.0,
+    "iqr": [
+     8.0,
+     33.125
+    ],
+    "no_band_share": 0.010940919037199124
+   },
+   "baseline": "b_b055_n26130007_c0",
+   "baseline_noise_T": 1.0,
+   "local": {
+    "band_px": 204,
+    "outside_share_of_rock": 0.4246798750404927,
+    "geometry_changed_share": 0.0,
+    "T_variant": 0.0,
+    "T_null": 1.0,
+    "geometry_gate": "PASS",
+    "image_gate": "PASS",
+    "T_inside_band": 9.0
+   },
+   "centre_shift_px": {
+    "variant_to_base_p50": 0.0,
+    "variant_to_base_p99": 5.0673332692430995,
+    "base_to_variant_p50": 0.0,
+    "base_to_variant_p99": 5.0
+   },
+   "overall": "PASS"
+  },
+  {
+   "id": "b_cA_a26120005_c0",
+   "cam": "a26120005_c0",
+   "group": "C_corners",
+   "tag": "cA",
+   "role": "variant",
+   "reused": true,
+   "recorded": true,
+   "physical": {
+    "mean_opening_m": 0.03,
+    "opening_variation": 0.45,
+    "depth_m": 0.25,
+    "roughness_m": 0.00225
+   },
+   "build_status": "reused",
+   "error": null,
+   "M3i": null,
+   "identity": true,
+   "own_noise_T": null,
+   "status": "measured",
+   "labels": {
+    "visible_length_px": 1300.7424812762986,
+    "nontip_px": 1270.8136738460616,
+    "nontip_share": 0.9769909817961273,
+    "nontip_gate": true,
+    "positive_pixels": 1124,
+    "u_line_px": 45.65685424949238,
+    "u_windows": {
+     "total": 174,
+     "u": 11,
+     "ring_below_min": 5
+    },
+    "ignore_fraction_of_rock": 0.0027923583984375,
+    "opening_class_px": 2185,
+    "exit_code": 0,
+    "numeric_overall": "PASS",
+    "numeric_items": {
+     "1_gates": true,
+     "2_jumps": true,
+     "3_displacement": true,
+     "4_breaks": true,
+     "5_capped": true
+    }
+   },
+   "pixel_mm": 6.767284527431953,
+   "apparent_width_px": {
+    "samples": 279,
+    "median": 3.5,
+    "iqr": [
+     2.5,
+     7.0
+    ],
+    "no_band_share": 0.021505376344086023
+   },
+   "baseline": "b_b055_a26120005_c0",
+   "baseline_noise_T": 1.0,
+   "local": {
+    "band_px": 64,
+    "outside_share_of_rock": 0.8762826919555664,
+    "geometry_changed_share": 0.0,
+    "T_variant": 0.0,
+    "T_null": 1.0,
+    "geometry_gate": "PASS",
+    "image_gate": "PASS",
+    "T_inside_band": 105.0
+   },
+   "centre_shift_px": {
+    "variant_to_base_p50": 0.0,
+    "variant_to_base_p99": 4.47213595499958,
+    "base_to_variant_p50": 0.0,
+    "base_to_variant_p99": 3.7002189693526355
+   },
+   "overall": "PASS"
+  },
+  {
+   "id": "b_cB_a26120005_c0",
+   "cam": "a26120005_c0",
+   "group": "C_corners",
+   "tag": "cB",
+   "role": "variant",
+   "reused": true,
+   "recorded": true,
+   "physical": {
+    "mean_opening_m": 0.08,
+    "opening_variation": 0.45,
+    "depth_m": 0.1,
+    "roughness_m": 0.006
+   },
+   "build_status": "reused",
+   "error": null,
+   "M3i": null,
+   "identity": true,
+   "own_noise_T": null,
+   "status": "measured",
+   "labels": {
+    "visible_length_px": 1221.9257894623834,
+    "nontip_px": 1220.8433808374668,
+    "nontip_share": 0.9991141780996432,
+    "nontip_gate": true,
+    "positive_pixels": 1037,
+    "u_line_px": 59.071067811865476,
+    "u_windows": {
+     "total": 163,
+     "u": 13,
+     "ring_below_min": 7
+    },
+    "ignore_fraction_of_rock": 0.0020694732666015625,
+    "opening_class_px": 12035,
+    "exit_code": 0,
+    "numeric_overall": "PASS",
+    "numeric_items": {
+     "1_gates": true,
+     "2_jumps": true,
+     "3_displacement": true,
+     "4_breaks": true,
+     "5_capped": true
+    }
+   },
+   "pixel_mm": 6.767284527431953,
+   "apparent_width_px": {
+    "samples": 259,
+    "median": 10.5,
+    "iqr": [
+     7.5,
+     13.0
+    ],
+    "no_band_share": 0.007722007722007722
+   },
+   "baseline": "b_b055_a26120005_c0",
+   "baseline_noise_T": 1.0,
+   "local": {
+    "band_px": 64,
+    "outside_share_of_rock": 0.8716459274291992,
+    "geometry_changed_share": 0.0,
+    "T_variant": 0.0,
+    "T_null": 1.0,
+    "geometry_gate": "PASS",
+    "image_gate": "PASS",
+    "T_inside_band": 109.0
+   },
+   "centre_shift_px": {
+    "variant_to_base_p50": 0.0,
+    "variant_to_base_p99": 4.47213595499958,
+    "base_to_variant_p50": 0.0,
+    "base_to_variant_p99": 6.140792799907471
+   },
+   "overall": "PASS"
+  },
+  {
+   "id": "b_cA_n26130007_c0",
+   "cam": "n26130007_c0",
+   "group": "C_corners",
+   "tag": "cA",
+   "role": "variant",
+   "reused": true,
+   "recorded": true,
+   "physical": {
+    "mean_opening_m": 0.03,
+    "opening_variation": 0.45,
+    "depth_m": 0.25,
+    "roughness_m": 0.00225
+   },
+   "build_status": "completed",
+   "error": null,
+   "M3i": {
+    "null_N2_all_pass": true,
+    "offset_pass": true,
+    "dperp_pass": true
+   },
+   "identity": true,
+   "own_noise_T": null,
+   "status": "measured",
+   "labels": {
+    "visible_length_px": 2188.0094688131567,
+    "nontip_px": 2188.0094688131567,
+    "nontip_share": 1.0,
+    "nontip_gate": true,
+    "positive_pixels": 2026,
+    "u_line_px": 127.97056274847714,
+    "u_windows": {
+     "total": 280,
+     "u": 23,
+     "ring_below_min": 18
+    },
+    "ignore_fraction_of_rock": 0.354945337189695,
+    "opening_class_px": 8370,
+    "exit_code": 0,
+    "numeric_overall": "PASS",
+    "numeric_items": {
+     "1_gates": true,
+     "2_jumps": true,
+     "3_displacement": true,
+     "4_breaks": true,
+     "5_capped": true
+    }
+   },
+   "pixel_mm": 2.0,
+   "apparent_width_px": {
+    "samples": 506,
+    "median": 11.0,
+    "iqr": [
+     5.0,
+     27.0
+    ],
+    "no_band_share": 0.019762845849802372
+   },
+   "baseline": "b_b055_n26130007_c0",
+   "baseline_noise_T": 1.0,
+   "local": {
+    "band_px": 204,
+    "outside_share_of_rock": 0.4240116468849175,
+    "geometry_changed_share": 0.0,
+    "T_variant": 1.0,
+    "T_null": 1.0,
+    "geometry_gate": "PASS",
+    "image_gate": "PASS",
+    "T_inside_band": 122.0
+   },
+   "centre_shift_px": {
+    "variant_to_base_p50": 0.0,
+    "variant_to_base_p99": 6.4031242374328485,
+    "base_to_variant_p50": 0.0,
+    "base_to_variant_p99": 4.412467185350705
+   },
+   "overall": "PASS"
+  },
+  {
+   "id": "b_cB_n26130007_c0",
+   "cam": "n26130007_c0",
+   "group": "C_corners",
+   "tag": "cB",
+   "role": "variant",
+   "reused": true,
+   "recorded": true,
+   "physical": {
+    "mean_opening_m": 0.08,
+    "opening_variation": 0.45,
+    "depth_m": 0.1,
+    "roughness_m": 0.006
+   },
+   "build_status": "completed",
+   "error": null,
+   "M3i": {
+    "null_N2_all_pass": true,
+    "offset_pass": true,
+    "dperp_pass": true
+   },
+   "identity": true,
+   "own_noise_T": null,
+   "status": "measured",
+   "labels": {
+    "visible_length_px": 2192.3102328728305,
+    "nontip_px": 2192.31023287283,
+    "nontip_share": 0.9999999999999998,
+    "nontip_gate": true,
+    "positive_pixels": 1486,
+    "u_line_px": 554.5685424949238,
+    "u_windows": {
+     "total": 276,
+     "u": 76,
+     "ring_below_min": 65
+    },
+    "ignore_fraction_of_rock": 0.3118615224088244,
+    "opening_class_px": 37756,
+    "exit_code": 0,
+    "numeric_overall": "PASS",
+    "numeric_items": {
+     "1_gates": true,
+     "2_jumps": true,
+     "3_displacement": true,
+     "4_breaks": true,
+     "5_capped": true
+    }
+   },
+   "pixel_mm": 2.0,
+   "apparent_width_px": {
+    "samples": 370,
+    "median": 14.0,
+    "iqr": [
+     6.5,
+     33.0
+    ],
+    "no_band_share": 0.01891891891891892
+   },
+   "baseline": "b_b055_n26130007_c0",
+   "baseline_noise_T": 1.0,
+   "local": {
+    "band_px": 204,
+    "outside_share_of_rock": 0.4192192356330263,
+    "geometry_changed_share": 0.0,
+    "T_variant": 1.0,
+    "T_null": 1.0,
+    "geometry_gate": "PASS",
+    "image_gate": "PASS",
+    "T_inside_band": 125.0
+   },
+   "centre_shift_px": {
+    "variant_to_base_p50": 0.0,
+    "variant_to_base_p99": 6.324555320336759,
+    "base_to_variant_p50": 0.0,
+    "base_to_variant_p99": 26.980714249274858
+   },
+   "overall": "PASS"
+  }
+ ],
+ "group_2": {
+  "per_camera": [
+   {
+    "camera": "a26120005_c2",
+    "width_3cm": 3.5,
+    "width_8cm": 4.5,
+    "expected_change_px": 2.578032138632198,
+    "ratio": 0.3878927593705486
+   },
+   {
+    "camera": "a26120005_c0",
+    "width_3cm": 3.0,
+    "width_8cm": 9.5,
+    "expected_change_px": 7.38848792264007,
+    "ratio": 0.879746988566154
+   },
+   {
+    "camera": "a26120005_c3",
+    "width_3cm": 2.0,
+    "width_8cm": 3.0,
+    "expected_change_px": 3.6920601736137466,
+    "ratio": 0.2708514902185929
+   },
+   {
+    "camera": "a26130005_c1",
+    "width_3cm": 6.0,
+    "width_8cm": 9.5,
+    "expected_change_px": 6.280627705786373,
+    "ratio": 0.5572691399580065
+   }
+  ],
+  "cameras_measured": 4,
+  "triggered": true
+ },
+ "D_scale_gap": [
+  {
+   "id": "b_t3_n26120003_c1",
+   "cam": "t3_n26120003_c1",
+   "reused": true,
+   "build_status": "completed",
+   "identity_r1": true,
+   "identity_oc0": true,
+   "sun_noise_T": 1.0,
+   "M3i": {
+    "null_N2_all_pass": true,
+    "offset_pass": true,
+    "dperp_pass": true,
+    "reused_from": "frames/p2s/measurements/t3_b055_n26120003_c1_M3i.json"
+   },
+   "frames": {
+    "sun0": {
+     "visible_length_px": 635.8306244655831,
+     "nontip_px": 609.5080418191545,
+     "nontip_share": 0.9586012663851277,
+     "nontip_gate": true,
+     "positive_pixels": 701,
+     "u_line_px": 18.414213562373096,
+     "u_windows": {
+      "total": 79,
+      "u": 3,
+      "ring_below_min": 1
+     },
+     "ignore_fraction_of_rock": 0.004057242792757327,
+     "opening_class_px": 9785,
+     "exit_code": 0,
+     "numeric_overall": "PASS",
+     "numeric_items": {
+      "1_gates": true,
+      "2_jumps": true,
+      "3_displacement": true,
+      "4_breaks": true,
+      "5_capped": true
+     }
+    },
+    "oc0": {
+     "visible_length_px": 635.8306244655831,
+     "nontip_px": 609.5080418191545,
+     "nontip_share": 0.9586012663851277,
+     "nontip_gate": true,
+     "positive_pixels": 701,
+     "u_line_px": 35.41421356237309,
+     "u_windows": {
+      "total": 79,
+      "u": 4,
+      "ring_below_min": 1
+     },
+     "ignore_fraction_of_rock": 0.004098996246960945,
+     "opening_class_px": 9785,
+     "exit_code": 0,
+     "numeric_overall": "PASS",
+     "numeric_items": {
+      "1_gates": true,
+      "2_jumps": true,
+      "3_displacement": true,
+      "4_breaks": true,
+      "5_capped": true
+     }
+    }
+   },
+   "sun_numeric": "PASS",
+   "OC_numeric": "PASS",
+   "near_mouth_pass": true,
+   "all_pass": true
+  },
+  {
+   "id": "b_t3_n26130007_c0",
+   "cam": "t3_n26130007_c0",
+   "reused": true,
+   "build_status": "completed",
+   "identity_r1": true,
+   "identity_oc0": true,
+   "sun_noise_T": 1.0,
+   "M3i": {
+    "null_N2_all_pass": true,
+    "offset_pass": true,
+    "dperp_pass": true,
+    "reused_from": "frames/p2s/measurements/t3_b055_n26130007_c0_M3i.json"
+   },
+   "frames": {
+    "sun0": {
+     "visible_length_px": 2651.7215659492667,
+     "nontip_px": 2648.1107517919245,
+     "nontip_share": 0.9986383132363108,
+     "nontip_gate": true,
+     "positive_pixels": 2007,
+     "u_line_px": 184.97056274847714,
+     "u_windows": {
+      "total": 350,
+      "u": 53,
+      "ring_below_min": 48
+     },
+     "ignore_fraction_of_rock": 0.17919334143476873,
+     "opening_class_px": 15463,
+     "exit_code": 0,
+     "numeric_overall": "PASS",
+     "numeric_items": {
+      "1_gates": true,
+      "2_jumps": true,
+      "3_displacement": true,
+      "4_breaks": true,
+      "5_capped": true
+     }
+    },
+    "oc0": {
+     "visible_length_px": 2651.7215659492667,
+     "nontip_px": 2648.1107517919245,
+     "nontip_share": 0.9986383132363108,
+     "nontip_gate": true,
+     "positive_pixels": 1925,
+     "u_line_px": 244.0416305603426,
+     "u_windows": {
+      "total": 350,
+      "u": 62,
+      "ring_below_min": 48
+     },
+     "ignore_fraction_of_rock": 0.1793372663765538,
+     "opening_class_px": 15463,
+     "exit_code": 0,
+     "numeric_overall": "PASS",
+     "numeric_items": {
+      "1_gates": true,
+      "2_jumps": true,
+      "3_displacement": true,
+      "4_breaks": true,
+      "5_capped": true
+     }
+    }
+   },
+   "sun_numeric": "PASS",
+   "OC_numeric": "PASS",
+   "near_mouth_pass": true,
+   "all_pass": true
+  }
+ ]
+}

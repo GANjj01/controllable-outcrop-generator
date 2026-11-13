@@ -1,0 +1,2068 @@
+{
+ "at": "2026-11-09T01:10:04.990991+09:00",
+ "rule": "Cost per frame with the released version of the cavity (with floor relief): numbers of faces (source_faces, result_faces), peak memory, time and disk use, compiled from the step records and memory logs of the runs; nothing was measured anew. views: the 8 viewpoints of the cost table. points: one row per frame folder of blocks B (illumination sun0), C (illumination q0 of each viewpoint; the 10 frames of a viewpoint share one cut mesh) and F; the two rows cr_c0_r1 of block F are second render seeds on the cut mesh of the row before: they repeat its result_faces, disk_case_gb and disk_raw_gb, have a geometry time of 0, no peak memory of the steps chain and display and no label readings; the row frames/f/cr_26120001_p3B/cr_c0 has no label readings. source_faces is recorded for block B only (null in blocks C and F). totals: per block. A row with a source was not built again: its cut mesh and its render are those of the earlier run named there, and its geometry and render readings come from the step records and memory logs of that run. peak_gb: peak memory of the steps chain and display and of the label job; for the label job it is the peak of the whole process tree of the worker (labels_yi_tree). seconds: the label time (labels_yi) runs from the admission of the worker to its end and excludes the wait for a free slot; geometry_pool_wait is the part of the geometry time spent waiting for a free slot. box_table names the cost table of the earlier version of the cavity with a flat floor, which has the same columns and the same 8 viewpoints; its label peak was that of the label job alone, so the two label peaks are close but not the same quantity.",
+ "views": [
+  {
+   "point": "frames/out/b_b055_a26120005_c2/sun0",
+   "source": null,
+   "yi_key": "a0001",
+   "source_faces": 2973598,
+   "result_faces": 9970140,
+   "peak_gb": {
+    "chain": 12.5419921875,
+    "display": 11.770896911621094,
+    "labels_yi_tree": 19.329204559326172
+   },
+   "seconds": {
+    "refine": 0.0005042552947998047,
+    "geometry": 1474.0666058063507,
+    "render": 60.03534913063049,
+    "labels_yi": 518.0,
+    "geometry_pool_wait": 1016.0123655796051,
+    "geometry_minus_pool_wait": 458.0542402267456
+   },
+   "refine_reused": true,
+   "disk_case_gb": 1.2569511691108346,
+   "disk_raw_gb": 0.15573154669255018,
+   "disk_frame_gb": 0.352683343924582
+  },
+  {
+   "point": "frames/out/b_b055_a26120005_c3/sun0",
+   "source": null,
+   "yi_key": "a0002",
+   "source_faces": 3034916,
+   "result_faces": 10892328,
+   "peak_gb": {
+    "chain": 11.903800964355469,
+    "display": 12.736534118652344,
+    "labels_yi_tree": 19.613182067871094
+   },
+   "seconds": {
+    "refine": 0.0010280609130859375,
+    "geometry": 514.9813268184662,
+    "render": 65.98598742485046,
+    "labels_yi": 870.0,
+    "geometry_pool_wait": 0.015317440032958984,
+    "geometry_minus_pool_wait": 514.9660093784332
+   },
+   "refine_reused": true,
+   "disk_case_gb": 1.3794100163504481,
+   "disk_raw_gb": 0.1718090893700719,
+   "disk_frame_gb": 0.3538219351321459
+  },
+  {
+   "point": "frames/r/b_b055_a26120005_c0/sun0",
+   "source": "frames/fr_de/out/fr_b055_a26120005_c0/sun0",
+   "yi_key": "a0017",
+   "source_faces": 2044026,
+   "result_faces": 4009216,
+   "peak_gb": {
+    "chain": 4.856590270996094,
+    "display": 5.270057678222656,
+    "labels_yi_tree": 5.046165466308594
+   },
+   "seconds": {
+    "refine": 0.0,
+    "geometry": 144.2468273639679,
+    "render": 35.42702531814575,
+    "labels_yi": 250.0,
+    "geometry_pool_wait": 0.0025250911712646484,
+    "geometry_minus_pool_wait": 144.24430227279663
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.4898037202656269,
+   "disk_raw_gb": 0.057766543701291084,
+   "disk_frame_gb": 0.35842858254909515
+  },
+  {
+   "point": "frames/out/b_b055_a26130005_c1/sun0",
+   "source": null,
+   "yi_key": "a0061",
+   "source_faces": 2406016,
+   "result_faces": 10075038,
+   "peak_gb": {
+    "chain": 11.431167602539062,
+    "display": 11.565643310546875,
+    "labels_yi_tree": 16.528335571289062
+   },
+   "seconds": {
+    "refine": 0.0,
+    "geometry": 1195.7801280021667,
+    "render": 67.18567442893982,
+    "labels_yi": 450.0,
+    "geometry_pool_wait": 707.7658231258392,
+    "geometry_minus_pool_wait": 488.0143048763275
+   },
+   "refine_reused": true,
+   "disk_case_gb": 1.2861694637686014,
+   "disk_raw_gb": 0.16402939427644014,
+   "disk_frame_gb": 0.21218523755669594
+  },
+  {
+   "point": "frames/r/b_t3_n26120003_c1/sun0",
+   "source": "frames/p2s/out/t3_b055_n26120003_c1/sun0",
+   "yi_key": "a0033",
+   "source_faces": 941996,
+   "result_faces": 1929676,
+   "peak_gb": {
+    "chain": 2.3580551147460938,
+    "display": 2.586700439453125,
+    "labels_yi_tree": 2.5162315368652344
+   },
+   "seconds": {
+    "refine": 0.0005004405975341797,
+    "geometry": 189.8164484500885,
+    "render": 601.8381495475769,
+    "labels_yi": 135.0,
+    "geometry_pool_wait": 100.88734722137451,
+    "geometry_minus_pool_wait": 88.92910122871399
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.23735041171312332,
+   "disk_raw_gb": 0.02835382241755724,
+   "disk_frame_gb": 0.31588332168757915
+  },
+  {
+   "point": "frames/r/b_t3_n26130007_c0/sun0",
+   "source": "frames/p2s/out/t3_b055_n26130007_c0/sun0",
+   "yi_key": "a0034",
+   "source_faces": 2370496,
+   "result_faces": 6683282,
+   "peak_gb": {
+    "chain": 6.918849945068359,
+    "display": 8.10940170288086,
+    "labels_yi_tree": 11.173259735107422
+   },
+   "seconds": {
+    "refine": 0.0004994869232177734,
+    "geometry": 426.2888185977936,
+    "render": 67.255051612854,
+    "labels_yi": 386.0,
+    "geometry_pool_wait": 106.04651546478271,
+    "geometry_minus_pool_wait": 320.24230313301086
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.8465232066810131,
+   "disk_raw_gb": 0.10523177683353424,
+   "disk_frame_gb": 0.4152552867308259
+  },
+  {
+   "point": "frames/r/b_b055_n26120003_c1/sun0",
+   "source": "frames/near_r1/out/nr_b055_n26120003_c1/sun0",
+   "yi_key": "a0018",
+   "source_faces": 1232234,
+   "result_faces": 1855542,
+   "peak_gb": {
+    "chain": 1.95758056640625,
+    "display": 2.661956787109375,
+    "labels_yi_tree": 2.1441268920898438
+   },
+   "seconds": {
+    "refine": 0.0011277198791503906,
+    "geometry": 74.06521129608154,
+    "render": 32.447011947631836,
+    "labels_yi": 199.0,
+    "geometry_pool_wait": 0.06506943702697754,
+    "geometry_minus_pool_wait": 74.00014185905457
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.22329827584326267,
+   "disk_raw_gb": 0.025787356309592724,
+   "disk_frame_gb": 0.38152811024338007
+  },
+  {
+   "point": "frames/r/b_b055_n26130007_c0/sun0",
+   "source": "frames/fr_de/out/fr_b055_n26130007_c0/sun0",
+   "yi_key": "a0020",
+   "source_faces": 2108650,
+   "result_faces": 4830064,
+   "peak_gb": {
+    "chain": 5.472553253173828,
+    "display": 6.108329772949219,
+    "labels_yi_tree": 8.457538604736328
+   },
+   "seconds": {
+    "refine": 0.0,
+    "geometry": 236.06163501739502,
+    "render": 60.05698347091675,
+    "labels_yi": 318.0,
+    "geometry_pool_wait": 0.04502248764038086,
+    "geometry_minus_pool_wait": 236.01661252975464
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.6095848754048347,
+   "disk_raw_gb": 0.07575040217489004,
+   "disk_frame_gb": 0.322192226536572
+  }
+ ],
+ "points": [
+  {
+   "view": "b_b055_a26120005_c0",
+   "point": "frames/r/b_b055_a26120005_c0/sun0",
+   "source": "frames/fr_de/out/fr_b055_a26120005_c0/sun0",
+   "yi_key": "a0017",
+   "source_faces": 2044026,
+   "result_faces": 4009216,
+   "peak_gb": {
+    "chain": 4.856590270996094,
+    "display": 5.270057678222656,
+    "labels_yi_tree": 5.046165466308594
+   },
+   "seconds": {
+    "refine": 0.0,
+    "geometry": 144.2468273639679,
+    "render": 35.42702531814575,
+    "labels_yi": 250.0,
+    "geometry_pool_wait": 0.0025250911712646484,
+    "geometry_minus_pool_wait": 144.24430227279663
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.4898037202656269,
+   "disk_raw_gb": 0.057766543701291084,
+   "disk_frame_gb": 0.35842858254909515,
+   "block": "B",
+   "reused": true
+  },
+  {
+   "view": "b_b055_a26120005_c2",
+   "point": "frames/out/b_b055_a26120005_c2/sun0",
+   "source": null,
+   "yi_key": "a0001",
+   "source_faces": 2973598,
+   "result_faces": 9970140,
+   "peak_gb": {
+    "chain": 12.5419921875,
+    "display": 11.770896911621094,
+    "labels_yi_tree": 19.329204559326172
+   },
+   "seconds": {
+    "refine": 0.0005042552947998047,
+    "geometry": 1474.0666058063507,
+    "render": 60.03534913063049,
+    "labels_yi": 518.0,
+    "geometry_pool_wait": 1016.0123655796051,
+    "geometry_minus_pool_wait": 458.0542402267456
+   },
+   "refine_reused": true,
+   "disk_case_gb": 1.2569511691108346,
+   "disk_raw_gb": 0.15573154669255018,
+   "disk_frame_gb": 0.352683343924582,
+   "block": "B",
+   "reused": false
+  },
+  {
+   "view": "b_b055_a26120005_c3",
+   "point": "frames/out/b_b055_a26120005_c3/sun0",
+   "source": null,
+   "yi_key": "a0002",
+   "source_faces": 3034916,
+   "result_faces": 10892328,
+   "peak_gb": {
+    "chain": 11.903800964355469,
+    "display": 12.736534118652344,
+    "labels_yi_tree": 19.613182067871094
+   },
+   "seconds": {
+    "refine": 0.0010280609130859375,
+    "geometry": 514.9813268184662,
+    "render": 65.98598742485046,
+    "labels_yi": 870.0,
+    "geometry_pool_wait": 0.015317440032958984,
+    "geometry_minus_pool_wait": 514.9660093784332
+   },
+   "refine_reused": true,
+   "disk_case_gb": 1.3794100163504481,
+   "disk_raw_gb": 0.1718090893700719,
+   "disk_frame_gb": 0.3538219351321459,
+   "block": "B",
+   "reused": false
+  },
+  {
+   "view": "b_b055_a26130005_c1",
+   "point": "frames/out/b_b055_a26130005_c1/sun0",
+   "source": null,
+   "yi_key": "a0061",
+   "source_faces": 2406016,
+   "result_faces": 10075038,
+   "peak_gb": {
+    "chain": 11.431167602539062,
+    "display": 11.565643310546875,
+    "labels_yi_tree": 16.528335571289062
+   },
+   "seconds": {
+    "refine": 0.0,
+    "geometry": 1195.7801280021667,
+    "render": 67.18567442893982,
+    "labels_yi": 450.0,
+    "geometry_pool_wait": 707.7658231258392,
+    "geometry_minus_pool_wait": 488.0143048763275
+   },
+   "refine_reused": true,
+   "disk_case_gb": 1.2861694637686014,
+   "disk_raw_gb": 0.16402939427644014,
+   "disk_frame_gb": 0.21218523755669594,
+   "block": "B",
+   "reused": false
+  },
+  {
+   "view": "b_b055_n26120003_c1",
+   "point": "frames/r/b_b055_n26120003_c1/sun0",
+   "source": "frames/near_r1/out/nr_b055_n26120003_c1/sun0",
+   "yi_key": "a0018",
+   "source_faces": 1232234,
+   "result_faces": 1855542,
+   "peak_gb": {
+    "chain": 1.95758056640625,
+    "display": 2.661956787109375,
+    "labels_yi_tree": 2.1441268920898438
+   },
+   "seconds": {
+    "refine": 0.0011277198791503906,
+    "geometry": 74.06521129608154,
+    "render": 32.447011947631836,
+    "labels_yi": 199.0,
+    "geometry_pool_wait": 0.06506943702697754,
+    "geometry_minus_pool_wait": 74.00014185905457
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.22329827584326267,
+   "disk_raw_gb": 0.025787356309592724,
+   "disk_frame_gb": 0.38152811024338007,
+   "block": "B",
+   "reused": true
+  },
+  {
+   "view": "b_b055_n26130007_c0",
+   "point": "frames/r/b_b055_n26130007_c0/sun0",
+   "source": "frames/fr_de/out/fr_b055_n26130007_c0/sun0",
+   "yi_key": "a0020",
+   "source_faces": 2108650,
+   "result_faces": 4830064,
+   "peak_gb": {
+    "chain": 5.472553253173828,
+    "display": 6.108329772949219,
+    "labels_yi_tree": 8.457538604736328
+   },
+   "seconds": {
+    "refine": 0.0,
+    "geometry": 236.06163501739502,
+    "render": 60.05698347091675,
+    "labels_yi": 318.0,
+    "geometry_pool_wait": 0.04502248764038086,
+    "geometry_minus_pool_wait": 236.01661252975464
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.6095848754048347,
+   "disk_raw_gb": 0.07575040217489004,
+   "disk_frame_gb": 0.322192226536572,
+   "block": "B",
+   "reused": true
+  },
+  {
+   "view": "b_w030_a26120005_c2",
+   "point": "frames/out/b_w030_a26120005_c2/sun0",
+   "source": null,
+   "yi_key": "a0003",
+   "source_faces": 2973598,
+   "result_faces": 8963338,
+   "peak_gb": {
+    "chain": 11.72634506225586,
+    "display": 10.727840423583984,
+    "labels_yi_tree": 18.19552993774414
+   },
+   "seconds": {
+    "refine": 0.0,
+    "geometry": 361.7153699398041,
+    "render": 50.779274702072144,
+    "labels_yi": 468.0,
+    "geometry_pool_wait": 0.0020225048065185547,
+    "geometry_minus_pool_wait": 361.71334743499756
+   },
+   "refine_reused": true,
+   "disk_case_gb": 1.1284166788682342,
+   "disk_raw_gb": 0.13853994011878967,
+   "disk_frame_gb": 0.32254473492503166,
+   "block": "B",
+   "reused": false
+  },
+  {
+   "view": "b_w040_a26120005_c2",
+   "point": "frames/out/b_w040_a26120005_c2/sun0",
+   "source": null,
+   "yi_key": "a0004",
+   "source_faces": 2973598,
+   "result_faces": 9320994,
+   "peak_gb": {
+    "chain": 12.011028289794922,
+    "display": 11.098564147949219,
+    "labels_yi_tree": 18.575725555419922
+   },
+   "seconds": {
+    "refine": 0.0005042552947998047,
+    "geometry": 419.85867190361023,
+    "render": 58.440988540649414,
+    "labels_yi": 479.0,
+    "geometry_pool_wait": 0.02584099769592285,
+    "geometry_minus_pool_wait": 419.8328309059143
+   },
+   "refine_reused": true,
+   "disk_case_gb": 1.1735699381679296,
+   "disk_raw_gb": 0.14454722125083208,
+   "disk_frame_gb": 0.32254958152770996,
+   "block": "B",
+   "reused": false
+  },
+  {
+   "view": "b_w065_a26120005_c2",
+   "point": "frames/out/b_w065_a26120005_c2/sun0",
+   "source": null,
+   "yi_key": "a0005",
+   "source_faces": 2973598,
+   "result_faces": 10312854,
+   "peak_gb": {
+    "chain": 12.799327850341797,
+    "display": 12.12380599975586,
+    "labels_yi_tree": 19.705718994140625
+   },
+   "seconds": {
+    "refine": 0.0005042552947998047,
+    "geometry": 1926.6849806308746,
+    "render": 79.7073826789856,
+    "labels_yi": 531.0,
+    "geometry_pool_wait": 1422.7289543151855,
+    "geometry_minus_pool_wait": 503.9560263156891
+   },
+   "refine_reused": true,
+   "disk_case_gb": 1.301537568680942,
+   "disk_raw_gb": 0.16167062427848577,
+   "disk_frame_gb": 0.32254982087761164,
+   "block": "B",
+   "reused": false
+  },
+  {
+   "view": "b_w080_a26120005_c2",
+   "point": "frames/out/b_w080_a26120005_c2/sun0",
+   "source": null,
+   "yi_key": "a0006",
+   "source_faces": 2973598,
+   "result_faces": 10753872,
+   "peak_gb": {
+    "chain": 13.161460876464844,
+    "display": 12.576641082763672,
+    "labels_yi_tree": 20.19546127319336
+   },
+   "seconds": {
+    "refine": 0.0,
+    "geometry": 961.7907605171204,
+    "render": 60.80570650100708,
+    "labels_yi": 545.0,
+    "geometry_pool_wait": 422.1786308288574,
+    "geometry_minus_pool_wait": 539.6121296882629
+   },
+   "refine_reused": true,
+   "disk_case_gb": 1.3594676814973354,
+   "disk_raw_gb": 0.16938352771103382,
+   "disk_frame_gb": 0.3225524164736271,
+   "block": "B",
+   "reused": false
+  },
+  {
+   "view": "b_w030_a26120005_c0",
+   "point": "frames/r/b_w030_a26120005_c0/sun0",
+   "source": "frames/fr_de/out/fr_w030_a26120005_c0/sun0",
+   "yi_key": "a0022",
+   "source_faces": 2044026,
+   "result_faces": 3667282,
+   "peak_gb": {
+    "chain": 4.688484191894531,
+    "display": 4.920719146728516,
+    "labels_yi_tree": 4.971080780029297
+   },
+   "seconds": {
+    "refine": 0.0,
+    "geometry": 162.7855453491211,
+    "render": 35.63556718826294,
+    "labels_yi": 317.0,
+    "geometry_pool_wait": 10.070075511932373,
+    "geometry_minus_pool_wait": 152.71546983718872
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.4458430800586939,
+   "disk_raw_gb": 0.05206613801419735,
+   "disk_frame_gb": 0.3557807728648186,
+   "block": "B",
+   "reused": true
+  },
+  {
+   "view": "b_w040_a26120005_c0",
+   "point": "frames/out/b_w040_a26120005_c0/sun0",
+   "source": null,
+   "yi_key": "a0007",
+   "source_faces": 2044026,
+   "result_faces": 3796222,
+   "peak_gb": {
+    "chain": 4.775981903076172,
+    "display": 5.05181884765625,
+    "labels_yi_tree": 5.0550384521484375
+   },
+   "seconds": {
+    "refine": 0.0,
+    "geometry": 183.3742160797119,
+    "render": 45.28775143623352,
+    "labels_yi": 315.0,
+    "geometry_pool_wait": 0.04754018783569336,
+    "geometry_minus_pool_wait": 183.32667589187622
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.46236844826489687,
+   "disk_raw_gb": 0.05420113634318113,
+   "disk_frame_gb": 0.2904099291190505,
+   "block": "B",
+   "reused": false
+  },
+  {
+   "view": "b_w065_a26120005_c0",
+   "point": "frames/out/b_w065_a26120005_c0/sun0",
+   "source": null,
+   "yi_key": "a0008",
+   "source_faces": 2044026,
+   "result_faces": 4130144,
+   "peak_gb": {
+    "chain": 4.931385040283203,
+    "display": 5.392139434814453,
+    "labels_yi_tree": 4.94171142578125
+   },
+   "seconds": {
+    "refine": 0.0010170936584472656,
+    "geometry": 255.4181981086731,
+    "render": 49.506675243377686,
+    "labels_yi": 256.0,
+    "geometry_pool_wait": 45.58335542678833,
+    "geometry_minus_pool_wait": 209.83484268188477
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.5054263845086098,
+   "disk_raw_gb": 0.05979898292571306,
+   "disk_frame_gb": 0.2904087891802192,
+   "block": "B",
+   "reused": false
+  },
+  {
+   "view": "b_w080_a26120005_c0",
+   "point": "frames/r/b_w080_a26120005_c0/sun0",
+   "source": "frames/fr_de/out/fr_w080_a26120005_c0/sun0",
+   "yi_key": "a0023",
+   "source_faces": 2044026,
+   "result_faces": 4318502,
+   "peak_gb": {
+    "chain": 5.025226593017578,
+    "display": 5.583354949951172,
+    "labels_yi_tree": 5.068759918212891
+   },
+   "seconds": {
+    "refine": 0.0005054473876953125,
+    "geometry": 182.372545003891,
+    "render": 40.68346452713013,
+    "labels_yi": 263.0,
+    "geometry_pool_wait": 0.03130388259887695,
+    "geometry_minus_pool_wait": 182.34124112129211
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.5300598572939634,
+   "disk_raw_gb": 0.06301997043192387,
+   "disk_frame_gb": 0.36076042521744967,
+   "block": "B",
+   "reused": true
+  },
+  {
+   "view": "b_w030_a26120005_c3",
+   "point": "frames/out/b_w030_a26120005_c3/sun0",
+   "source": null,
+   "yi_key": "a0009",
+   "source_faces": 3034916,
+   "result_faces": 9642624,
+   "peak_gb": {
+    "chain": 11.086200714111328,
+    "display": 11.44753646850586,
+    "labels_yi_tree": 18.42626190185547
+   },
+   "seconds": {
+    "refine": 0.0005033016204833984,
+    "geometry": 535.8957622051239,
+    "render": 79.92108535766602,
+    "labels_yi": 547.0,
+    "geometry_pool_wait": 60.31293535232544,
+    "geometry_minus_pool_wait": 475.58282685279846
+   },
+   "refine_reused": true,
+   "disk_case_gb": 1.2191278506070375,
+   "disk_raw_gb": 0.15081510599702597,
+   "disk_frame_gb": 0.3235949231311679,
+   "block": "B",
+   "reused": false
+  },
+  {
+   "view": "b_w040_a26120005_c3",
+   "point": "frames/out/b_w040_a26120005_c3/sun0",
+   "source": null,
+   "yi_key": "a0096",
+   "source_faces": 3034916,
+   "result_faces": 10146574,
+   "peak_gb": {
+    "chain": 11.421588897705078,
+    "display": 11.96826171875,
+    "labels_yi_tree": 18.907333374023438
+   },
+   "seconds": {
+    "refine": 0.0,
+    "geometry": 4700.763196706772,
+    "render": 56.41107964515686,
+    "labels_yi": 562.0,
+    "geometry_pool_wait": 4935.1854593753815,
+    "geometry_minus_pool_wait": -234.42226266860962
+   },
+   "refine_reused": true,
+   "disk_case_gb": 1.2835492948070168,
+   "disk_raw_gb": 0.15926652681082487,
+   "disk_frame_gb": 0.32357495184987783,
+   "block": "B",
+   "reused": false
+  },
+  {
+   "view": "b_w065_a26120005_c3",
+   "point": "frames/out/b_w065_a26120005_c3/sun0",
+   "source": null,
+   "yi_key": "a0097",
+   "source_faces": 3034916,
+   "result_faces": 11326558,
+   "peak_gb": {
+    "chain": 12.17331314086914,
+    "display": 13.182369232177734,
+    "labels_yi_tree": 20.011627197265625
+   },
+   "seconds": {
+    "refine": 0.0,
+    "geometry": 9104.631258010864,
+    "render": 63.62840127944946,
+    "labels_yi": 697.0,
+    "geometry_pool_wait": 9496.473509788513,
+    "geometry_minus_pool_wait": -391.8422517776489
+   },
+   "refine_reused": true,
+   "disk_case_gb": 1.435763862915337,
+   "disk_raw_gb": 0.17922760732471943,
+   "disk_frame_gb": 0.3235879121348262,
+   "block": "B",
+   "reused": false
+  },
+  {
+   "view": "b_w080_a26120005_c3",
+   "point": "frames/out/b_w080_a26120005_c3/sun0",
+   "source": null,
+   "yi_key": "a0098",
+   "source_faces": 3034916,
+   "result_faces": 11990622,
+   "peak_gb": {
+    "chain": 12.626289367675781,
+    "display": 13.864246368408203,
+    "labels_yi_tree": 20.669322967529297
+   },
+   "seconds": {
+    "refine": 0.0010211467742919922,
+    "geometry": 9521.491577863693,
+    "render": 113.69013452529907,
+    "labels_yi": 731.0,
+    "geometry_pool_wait": 8974.3811378479,
+    "geometry_minus_pool_wait": 547.1104400157928
+   },
+   "refine_reused": true,
+   "disk_case_gb": 1.5229384126141667,
+   "disk_raw_gb": 0.19081378728151321,
+   "disk_frame_gb": 0.3236021101474762,
+   "block": "B",
+   "reused": false
+  },
+  {
+   "view": "b_w030_a26130005_c1",
+   "point": "frames/out/b_w030_a26130005_c1/sun0",
+   "source": null,
+   "yi_key": "a0072",
+   "source_faces": 2406016,
+   "result_faces": 8975476,
+   "peak_gb": {
+    "chain": 10.65201187133789,
+    "display": 10.436561584472656,
+    "labels_yi_tree": 15.44464111328125
+   },
+   "seconds": {
+    "refine": 0.0,
+    "geometry": 3235.2014503479004,
+    "render": 56.437429428100586,
+    "labels_yi": 406.0,
+    "geometry_pool_wait": 2849.4590735435486,
+    "geometry_minus_pool_wait": 385.7423768043518
+   },
+   "refine_reused": true,
+   "disk_case_gb": 1.1444070525467396,
+   "disk_raw_gb": 0.14532989636063576,
+   "disk_frame_gb": 0.18331229221075773,
+   "block": "B",
+   "reused": false
+  },
+  {
+   "view": "b_w040_a26130005_c1",
+   "point": "frames/out/b_w040_a26130005_c1/sun0",
+   "source": null,
+   "yi_key": "a0075",
+   "source_faces": 2406016,
+   "result_faces": 9392442,
+   "peak_gb": {
+    "chain": 10.94845962524414,
+    "display": 10.86367416381836,
+    "labels_yi_tree": 15.845603942871094
+   },
+   "seconds": {
+    "refine": 0.0,
+    "geometry": 3438.9500439167023,
+    "render": 290.3460328578949,
+    "labels_yi": 421.0,
+    "geometry_pool_wait": 3014.128973722458,
+    "geometry_minus_pool_wait": 424.8210701942444
+   },
+   "refine_reused": true,
+   "disk_case_gb": 1.197727239690721,
+   "disk_raw_gb": 0.15239466447383165,
+   "disk_frame_gb": 0.18330753967165947,
+   "block": "B",
+   "reused": false
+  },
+  {
+   "view": "b_w065_a26130005_c1",
+   "point": "frames/out/b_w065_a26130005_c1/sun0",
+   "source": null,
+   "yi_key": "a0076",
+   "source_faces": 2406016,
+   "result_faces": 10471132,
+   "peak_gb": {
+    "chain": 11.702442169189453,
+    "display": 11.970478057861328,
+    "labels_yi_tree": 16.867725372314453
+   },
+   "seconds": {
+    "refine": 0.0,
+    "geometry": 3487.6665239334106,
+    "render": 292.44607877731323,
+    "labels_yi": 477.0,
+    "geometry_pool_wait": 2988.723574399948,
+    "geometry_minus_pool_wait": 498.9429495334625
+   },
+   "refine_reused": true,
+   "disk_case_gb": 1.3378723347559571,
+   "disk_raw_gb": 0.1708392184227705,
+   "disk_frame_gb": 0.18330061994493008,
+   "block": "B",
+   "reused": false
+  },
+  {
+   "view": "b_w080_a26130005_c1",
+   "point": "frames/out/b_w080_a26130005_c1/sun0",
+   "source": null,
+   "yi_key": "a0073",
+   "source_faces": 2406016,
+   "result_faces": 11036668,
+   "peak_gb": {
+    "chain": 12.092430114746094,
+    "display": 12.549736022949219,
+    "labels_yi_tree": 17.360492706298828
+   },
+   "seconds": {
+    "refine": 0.0010099411010742188,
+    "geometry": 3275.0662219524384,
+    "render": 64.88684821128845,
+    "labels_yi": 492.0,
+    "geometry_pool_wait": 2738.854786634445,
+    "geometry_minus_pool_wait": 536.2114353179932
+   },
+   "refine_reused": true,
+   "disk_case_gb": 1.4117753757163882,
+   "disk_raw_gb": 0.18067750614136457,
+   "disk_frame_gb": 0.18329632189124823,
+   "block": "B",
+   "reused": false
+  },
+  {
+   "view": "b_w030_n26120003_c1",
+   "point": "frames/out/b_w030_n26120003_c1/sun0",
+   "source": null,
+   "yi_key": "a0010",
+   "source_faces": 1232234,
+   "result_faces": 1764814,
+   "peak_gb": {
+    "chain": 1.8686866760253906,
+    "display": 2.5711898803710938,
+    "labels_yi_tree": 2.1272315979003906
+   },
+   "seconds": {
+    "refine": 0.0010132789611816406,
+    "geometry": 124.0238778591156,
+    "render": 33.07628917694092,
+    "labels_yi": 185.0,
+    "geometry_pool_wait": 35.348689794540405,
+    "geometry_minus_pool_wait": 88.6751880645752
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.21164420619606972,
+   "disk_raw_gb": 0.024193276651203632,
+   "disk_frame_gb": 0.25777243077754974,
+   "block": "B",
+   "reused": false
+  },
+  {
+   "view": "b_w040_n26120003_c1",
+   "point": "frames/out/b_w040_n26120003_c1/sun0",
+   "source": null,
+   "yi_key": "a0011",
+   "source_faces": 1232234,
+   "result_faces": 1786888,
+   "peak_gb": {
+    "chain": 1.8896446228027344,
+    "display": 2.592121124267578,
+    "labels_yi_tree": 2.135772705078125
+   },
+   "seconds": {
+    "refine": 0.0010132789611816406,
+    "geometry": 125.81870174407959,
+    "render": 65.52148008346558,
+    "labels_yi": 115.0,
+    "geometry_pool_wait": 35.399574756622314,
+    "geometry_minus_pool_wait": 90.41912698745728
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.21437943913042545,
+   "disk_raw_gb": 0.024584912694990635,
+   "disk_frame_gb": 0.2577907992526889,
+   "block": "B",
+   "reused": false
+  },
+  {
+   "view": "b_w065_n26120003_c1",
+   "point": "frames/out/b_w065_n26120003_c1/sun0",
+   "source": null,
+   "yi_key": "a0012",
+   "source_faces": 1232234,
+   "result_faces": 1894456,
+   "peak_gb": {
+    "chain": 1.9919586181640625,
+    "display": 2.700511932373047,
+    "labels_yi_tree": 2.150920867919922
+   },
+   "seconds": {
+    "refine": 0.0010132789611816406,
+    "geometry": 132.51006507873535,
+    "render": 131.66612672805786,
+    "labels_yi": 200.0,
+    "geometry_pool_wait": 35.267380237579346,
+    "geometry_minus_pool_wait": 97.242684841156
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.22838238067924976,
+   "disk_raw_gb": 0.026476461440324783,
+   "disk_frame_gb": 0.25780162308365107,
+   "block": "B",
+   "reused": false
+  },
+  {
+   "view": "b_w080_n26120003_c1",
+   "point": "frames/r/b_w080_n26120003_c1/sun0",
+   "source": "frames/near_r1/out/nr_w080_n26120003_c1/sun0",
+   "yi_key": "a0024",
+   "source_faces": 1232234,
+   "result_faces": 1926784,
+   "peak_gb": {
+    "chain": 2.022571563720703,
+    "display": 2.7315216064453125,
+    "labels_yi_tree": 2.1570663452148438
+   },
+   "seconds": {
+    "refine": 0.0,
+    "geometry": 205.78834176063538,
+    "render": 69.61881041526794,
+    "labels_yi": 128.0,
+    "geometry_pool_wait": 130.4169454574585,
+    "geometry_minus_pool_wait": 75.37139630317688
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.2327465070411563,
+   "disk_raw_gb": 0.027058903127908707,
+   "disk_frame_gb": 0.3822543704882264,
+   "block": "B",
+   "reused": true
+  },
+  {
+   "view": "b_w030_n26130007_c0",
+   "point": "frames/r/b_w030_n26130007_c0/sun0",
+   "source": "frames/fr_de/out/fr_w030_n26130007_c0/sun0",
+   "yi_key": "a0025",
+   "source_faces": 2108650,
+   "result_faces": 4596414,
+   "peak_gb": {
+    "chain": 5.252506256103516,
+    "display": 5.875633239746094,
+    "labels_yi_tree": 8.071208953857422
+   },
+   "seconds": {
+    "refine": 0.0,
+    "geometry": 215.09540581703186,
+    "render": 175.2407522201538,
+    "labels_yi": 340.0,
+    "geometry_pool_wait": 0.014653205871582031,
+    "geometry_minus_pool_wait": 215.08075261116028
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.5792435687035322,
+   "disk_raw_gb": 0.07141079101711512,
+   "disk_frame_gb": 0.3187102200463414,
+   "block": "B",
+   "reused": true
+  },
+  {
+   "view": "b_w040_n26130007_c0",
+   "point": "frames/out/b_w040_n26130007_c0/sun0",
+   "source": null,
+   "yi_key": "a0054",
+   "source_faces": 2108650,
+   "result_faces": 4691742,
+   "peak_gb": {
+    "chain": 5.313972473144531,
+    "display": 5.970668792724609,
+    "labels_yi_tree": 8.200305938720703
+   },
+   "seconds": {
+    "refine": 0.0010142326354980469,
+    "geometry": 1636.3904950618744,
+    "render": 71.52740001678467,
+    "labels_yi": 340.0,
+    "geometry_pool_wait": 1403.7734072208405,
+    "geometry_minus_pool_wait": 232.61708784103394
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.5914865406230092,
+   "disk_raw_gb": 0.0731763169169426,
+   "disk_frame_gb": 0.2005952224135399,
+   "block": "B",
+   "reused": false
+  },
+  {
+   "view": "b_w065_n26130007_c0",
+   "point": "frames/out/b_w065_n26130007_c0/sun0",
+   "source": null,
+   "yi_key": "a0041",
+   "source_faces": 2108650,
+   "result_faces": 4910678,
+   "peak_gb": {
+    "chain": 5.512592315673828,
+    "display": 6.187808990478516,
+    "labels_yi_tree": 8.5294189453125
+   },
+   "seconds": {
+    "refine": 0.0010170936584472656,
+    "geometry": 478.0338158607483,
+    "render": 54.5719518661499,
+    "labels_yi": 337.0,
+    "geometry_pool_wait": 230.20934748649597,
+    "geometry_minus_pool_wait": 247.82446837425232
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.6203825324773788,
+   "disk_raw_gb": 0.07727464288473129,
+   "disk_frame_gb": 0.20058381743729115,
+   "block": "B",
+   "reused": false
+  },
+  {
+   "view": "b_w080_n26130007_c0",
+   "point": "frames/r/b_w080_n26130007_c0/sun0",
+   "source": "frames/fr_de/out/fr_w080_n26130007_c0/sun0",
+   "yi_key": "a0026",
+   "source_faces": 2108650,
+   "result_faces": 5060282,
+   "peak_gb": {
+    "chain": 5.6103668212890625,
+    "display": 6.336383819580078,
+    "labels_yi_tree": 8.737342834472656
+   },
+   "seconds": {
+    "refine": 0.0,
+    "geometry": 259.06884026527405,
+    "render": 84.46494030952454,
+    "labels_yi": 408.0,
+    "geometry_pool_wait": 0.020720958709716797,
+    "geometry_minus_pool_wait": 259.04811930656433
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.6403596317395568,
+   "disk_raw_gb": 0.08007899206131697,
+   "disk_frame_gb": 0.3253960218280554,
+   "block": "B",
+   "reused": true
+  },
+  {
+   "view": "b_v000_a26120005_c0",
+   "point": "frames/out/b_v000_a26120005_c0/sun0",
+   "source": null,
+   "yi_key": "a0013",
+   "source_faces": 2044026,
+   "result_faces": 3900414,
+   "peak_gb": {
+    "chain": 4.789669036865234,
+    "display": 5.156028747558594,
+    "labels_yi_tree": 4.867500305175781
+   },
+   "seconds": {
+    "refine": 0.0005061626434326172,
+    "geometry": 204.76744103431702,
+    "render": 37.71392869949341,
+    "labels_yi": 320.0,
+    "geometry_pool_wait": 25.400785207748413,
+    "geometry_minus_pool_wait": 179.3666558265686
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.4753296282142401,
+   "disk_raw_gb": 0.055861297994852066,
+   "disk_frame_gb": 0.2904113680124283,
+   "block": "B",
+   "reused": false
+  },
+  {
+   "view": "b_v045_a26120005_c0",
+   "point": "frames/out/b_v045_a26120005_c0/sun0",
+   "source": null,
+   "yi_key": "a0014",
+   "source_faces": 2044026,
+   "result_faces": 4031222,
+   "peak_gb": {
+    "chain": 4.874523162841797,
+    "display": 5.2923431396484375,
+    "labels_yi_tree": 5.15850830078125
+   },
+   "seconds": {
+    "refine": 0.0010838508605957031,
+    "geometry": 471.7332067489624,
+    "render": 51.08662819862366,
+    "labels_yi": 276.0,
+    "geometry_pool_wait": 282.5618243217468,
+    "geometry_minus_pool_wait": 189.17138242721558
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.4928738074377179,
+   "disk_raw_gb": 0.05818315129727125,
+   "disk_frame_gb": 0.29043497424572706,
+   "block": "B",
+   "reused": false
+  },
+  {
+   "view": "b_d010_a26120005_c0",
+   "point": "frames/r/b_d010_a26120005_c0/sun0",
+   "source": "frames/fr_de/out/fr_d010_a26120005_c0/sun0",
+   "yi_key": "a0027",
+   "source_faces": 2044026,
+   "result_faces": 3375022,
+   "peak_gb": {
+    "chain": 3.972187042236328,
+    "display": 4.6456298828125,
+    "labels_yi_tree": 4.098976135253906
+   },
+   "seconds": {
+    "refine": 0.0,
+    "geometry": 152.66256070137024,
+    "render": 34.352601528167725,
+    "labels_yi": 330.0,
+    "geometry_pool_wait": 0.06016874313354492,
+    "geometry_minus_pool_wait": 152.6023919582367
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.4073740756139159,
+   "disk_raw_gb": 0.04758686013519764,
+   "disk_frame_gb": 0.3491459246724844,
+   "block": "B",
+   "reused": true
+  },
+  {
+   "view": "b_d025_a26120005_c0",
+   "point": "frames/out/b_d025_a26120005_c0/sun0",
+   "source": null,
+   "yi_key": "a0015",
+   "source_faces": 2044026,
+   "result_faces": 4636898,
+   "peak_gb": {
+    "chain": 5.646152496337891,
+    "display": 5.887359619140625,
+    "labels_yi_tree": 5.9073944091796875
+   },
+   "seconds": {
+    "refine": 0.0005040168762207031,
+    "geometry": 277.0839886665344,
+    "render": 38.83545470237732,
+    "labels_yi": 301.0,
+    "geometry_pool_wait": 75.90057849884033,
+    "geometry_minus_pool_wait": 201.1834101676941
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.5712540708482265,
+   "disk_raw_gb": 0.0678634811192751,
+   "disk_frame_gb": 0.290420095436275,
+   "block": "B",
+   "reused": false
+  },
+  {
+   "view": "b_r000_a26120005_c0",
+   "point": "frames/out/b_r000_a26120005_c0/sun0",
+   "source": null,
+   "yi_key": "a0016",
+   "source_faces": 2044026,
+   "result_faces": 4008098,
+   "peak_gb": {
+    "chain": 4.875164031982422,
+    "display": 5.269725799560547,
+    "labels_yi_tree": 5.316413879394531
+   },
+   "seconds": {
+    "refine": 0.0,
+    "geometry": 182.37920212745667,
+    "render": 36.7630090713501,
+    "labels_yi": 304.0,
+    "geometry_pool_wait": 0.04237246513366699,
+    "geometry_minus_pool_wait": 182.336829662323
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.48940636962652206,
+   "disk_raw_gb": 0.05772433616220951,
+   "disk_frame_gb": 0.2904170798137784,
+   "block": "B",
+   "reused": false
+  },
+  {
+   "view": "b_r075_a26120005_c0",
+   "point": "frames/out/b_r075_a26120005_c0/sun0",
+   "source": null,
+   "yi_key": "a0042",
+   "source_faces": 2044026,
+   "result_faces": 4009744,
+   "peak_gb": {
+    "chain": 4.873928070068359,
+    "display": 5.270847320556641,
+    "labels_yi_tree": 5.2377777099609375
+   },
+   "seconds": {
+    "refine": 0.0004985332489013672,
+    "geometry": 448.79955863952637,
+    "render": 37.453126192092896,
+    "labels_yi": 256.0,
+    "geometry_pool_wait": 265.7802948951721,
+    "geometry_minus_pool_wait": 183.01926374435425
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.4898569379001856,
+   "disk_raw_gb": 0.05777888931334019,
+   "disk_frame_gb": 0.29040563851594925,
+   "block": "B",
+   "reused": false
+  },
+  {
+   "view": "b_v000_n26130007_c0",
+   "point": "frames/out/b_v000_n26130007_c0/sun0",
+   "source": null,
+   "yi_key": "a0057",
+   "source_faces": 2108650,
+   "result_faces": 4854894,
+   "peak_gb": {
+    "chain": 5.495460510253906,
+    "display": 6.134571075439453,
+    "labels_yi_tree": 8.49810791015625
+   },
+   "seconds": {
+    "refine": 0.0,
+    "geometry": 2932.832537174225,
+    "render": 89.65628027915955,
+    "labels_yi": 377.0,
+    "geometry_pool_wait": 2678.4703459739685,
+    "geometry_minus_pool_wait": 254.36219120025635
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.6128904744982719,
+   "disk_raw_gb": 0.07625191379338503,
+   "disk_frame_gb": 0.20060212537646294,
+   "block": "B",
+   "reused": false
+  },
+  {
+   "view": "b_v045_n26130007_c0",
+   "point": "frames/out/b_v045_n26130007_c0/sun0",
+   "source": null,
+   "yi_key": "a0043",
+   "source_faces": 2108650,
+   "result_faces": 4823632,
+   "peak_gb": {
+    "chain": 5.454307556152344,
+    "display": 6.101844787597656,
+    "labels_yi_tree": 8.451526641845703
+   },
+   "seconds": {
+    "refine": 0.0010182857513427734,
+    "geometry": 508.68543314933777,
+    "render": 71.53216481208801,
+    "labels_yi": 345.0,
+    "geometry_pool_wait": 811.7184381484985,
+    "geometry_minus_pool_wait": -303.03300499916077
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.6089422963559628,
+   "disk_raw_gb": 0.07561524771153927,
+   "disk_frame_gb": 0.20058310497552156,
+   "block": "B",
+   "reused": false
+  },
+  {
+   "view": "b_d010_n26130007_c0",
+   "point": "frames/r/b_d010_n26130007_c0/sun0",
+   "source": "frames/fr_de/out/fr_d010_n26130007_c0/sun0",
+   "yi_key": "a0028",
+   "source_faces": 2108650,
+   "result_faces": 3875448,
+   "peak_gb": {
+    "chain": 4.582954406738281,
+    "display": 5.167236328125,
+    "labels_yi_tree": 6.967376708984375
+   },
+   "seconds": {
+    "refine": 0.001013040542602539,
+    "geometry": 211.72268176078796,
+    "render": 39.95623159408569,
+    "labels_yi": 323.0,
+    "geometry_pool_wait": 0.03750801086425781,
+    "geometry_minus_pool_wait": 211.6851737499237
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.4857450881972909,
+   "disk_raw_gb": 0.06032743491232395,
+   "disk_frame_gb": 0.3020314993336797,
+   "block": "B",
+   "reused": true
+  },
+  {
+   "view": "b_d025_n26130007_c0",
+   "point": "frames/out/b_d025_n26130007_c0/sun0",
+   "source": null,
+   "yi_key": "a0058",
+   "source_faces": 2108650,
+   "result_faces": 5772488,
+   "peak_gb": {
+    "chain": 6.301548004150391,
+    "display": 7.036205291748047,
+    "labels_yi_tree": 9.872795104980469
+   },
+   "seconds": {
+    "refine": 0.0,
+    "geometry": 2387.1869180202484,
+    "render": 60.102906703948975,
+    "labels_yi": 397.0,
+    "geometry_pool_wait": 2108.5153086185455,
+    "geometry_minus_pool_wait": 278.6716094017029
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.7318079918622971,
+   "disk_raw_gb": 0.09093835204839706,
+   "disk_frame_gb": 0.20059196930378675,
+   "block": "B",
+   "reused": false
+  },
+  {
+   "view": "b_r000_n26130007_c0",
+   "point": "frames/out/b_r000_n26130007_c0/sun0",
+   "source": null,
+   "yi_key": "a0059",
+   "source_faces": 2108650,
+   "result_faces": 4830778,
+   "peak_gb": {
+    "chain": 5.472492218017578,
+    "display": 6.109058380126953,
+    "labels_yi_tree": 8.465675354003906
+   },
+   "seconds": {
+    "refine": 0.0010275840759277344,
+    "geometry": 1234.4691815376282,
+    "render": 43.05489683151245,
+    "labels_yi": 323.0,
+    "geometry_pool_wait": 1007.4590456485748,
+    "geometry_minus_pool_wait": 227.01013588905334
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.6094370884820819,
+   "disk_raw_gb": 0.07572340313345194,
+   "disk_frame_gb": 0.2005909811705351,
+   "block": "B",
+   "reused": false
+  },
+  {
+   "view": "b_r075_n26130007_c0",
+   "point": "frames/out/b_r075_n26130007_c0/sun0",
+   "source": null,
+   "yi_key": "a0060",
+   "source_faces": 2108650,
+   "result_faces": 4828374,
+   "peak_gb": {
+    "chain": 5.472015380859375,
+    "display": 6.106761932373047,
+    "labels_yi_tree": 8.464027404785156
+   },
+   "seconds": {
+    "refine": 0.0,
+    "geometry": 668.5179784297943,
+    "render": 77.30019974708557,
+    "labels_yi": 326.0,
+    "geometry_pool_wait": 442.56139373779297,
+    "geometry_minus_pool_wait": 225.95658469200134
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.6094140280038118,
+   "disk_raw_gb": 0.07573213148862123,
+   "disk_frame_gb": 0.20059101656079292,
+   "block": "B",
+   "reused": false
+  },
+  {
+   "view": "b_cA_a26120005_c0",
+   "point": "frames/r/b_cA_a26120005_c0/sun0",
+   "source": "frames/fr_de/out/fr_cA_a26120005_c0/sun0",
+   "yi_key": "a0029",
+   "source_faces": 2044026,
+   "result_faces": 4318340,
+   "peak_gb": {
+    "chain": 5.496734619140625,
+    "display": 5.561672210693359,
+    "labels_yi_tree": 5.391704559326172
+   },
+   "seconds": {
+    "refine": 0.0010256767272949219,
+    "geometry": 464.4889073371887,
+    "render": 35.86712884902954,
+    "labels_yi": 273.0,
+    "geometry_pool_wait": 311.16231656074524,
+    "geometry_minus_pool_wait": 153.32659077644348
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.531163782812655,
+   "disk_raw_gb": 0.06260559987276793,
+   "disk_frame_gb": 0.36535376217216253,
+   "block": "B",
+   "reused": true
+  },
+  {
+   "view": "b_cB_a26120005_c0",
+   "point": "frames/r/b_cB_a26120005_c0/sun0",
+   "source": "frames/fr_de/out/fr_cB_a26120005_c0/sun0",
+   "yi_key": "a0030",
+   "source_faces": 2044026,
+   "result_faces": 3629616,
+   "peak_gb": {
+    "chain": 4.148212432861328,
+    "display": 4.901100158691406,
+    "labels_yi_tree": 4.312953948974609
+   },
+   "seconds": {
+    "refine": 0.0005016326904296875,
+    "geometry": 399.4835195541382,
+    "render": 33.69952654838562,
+    "labels_yi": 300.0,
+    "geometry_pool_wait": 220.48563027381897,
+    "geometry_minus_pool_wait": 178.9978892803192
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.44067712780088186,
+   "disk_raw_gb": 0.05181628093123436,
+   "disk_frame_gb": 0.3508335342630744,
+   "block": "B",
+   "reused": true
+  },
+  {
+   "view": "b_cA_n26130007_c0",
+   "point": "frames/r/b_cA_n26130007_c0/sun0",
+   "source": "frames/fr_de/out/fr_cA_n26130007_c0/sun0",
+   "yi_key": "a0031",
+   "source_faces": 2108650,
+   "result_faces": 5545616,
+   "peak_gb": {
+    "chain": 6.14599609375,
+    "display": 6.809520721435547,
+    "labels_yi_tree": 9.567611694335938
+   },
+   "seconds": {
+    "refine": 0.0,
+    "geometry": 435.6110212802887,
+    "render": 51.07665777206421,
+    "labels_yi": 387.0,
+    "geometry_pool_wait": 196.32558870315552,
+    "geometry_minus_pool_wait": 239.28543257713318
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.7034437647089362,
+   "disk_raw_gb": 0.08675362635403872,
+   "disk_frame_gb": 0.33831912837922573,
+   "block": "B",
+   "reused": true
+  },
+  {
+   "view": "b_cB_n26130007_c0",
+   "point": "frames/r/b_cB_n26130007_c0/sun0",
+   "source": "frames/fr_de/out/fr_cB_n26130007_c0/sun0",
+   "yi_key": "a0032",
+   "source_faces": 2108650,
+   "result_faces": 4052430,
+   "peak_gb": {
+    "chain": 4.670677185058594,
+    "display": 5.338264465332031,
+    "labels_yi_tree": 7.194770812988281
+   },
+   "seconds": {
+    "refine": 0.001013040542602539,
+    "geometry": 450.59399151802063,
+    "render": 40.70824646949768,
+    "labels_yi": 352.0,
+    "geometry_pool_wait": 216.6613485813141,
+    "geometry_minus_pool_wait": 233.93264293670654
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.5095492685213685,
+   "disk_raw_gb": 0.06359796784818172,
+   "disk_frame_gb": 0.3045046404004097,
+   "block": "B",
+   "reused": true
+  },
+  {
+   "view": "b_t3_n26120003_c1",
+   "point": "frames/r/b_t3_n26120003_c1/sun0",
+   "source": "frames/p2s/out/t3_b055_n26120003_c1/sun0",
+   "yi_key": "a0033",
+   "source_faces": 941996,
+   "result_faces": 1929676,
+   "peak_gb": {
+    "chain": 2.3580551147460938,
+    "display": 2.586700439453125,
+    "labels_yi_tree": 2.5162315368652344
+   },
+   "seconds": {
+    "refine": 0.0005004405975341797,
+    "geometry": 189.8164484500885,
+    "render": 601.8381495475769,
+    "labels_yi": 135.0,
+    "geometry_pool_wait": 100.88734722137451,
+    "geometry_minus_pool_wait": 88.92910122871399
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.23735041171312332,
+   "disk_raw_gb": 0.02835382241755724,
+   "disk_frame_gb": 0.31588332168757915,
+   "block": "B",
+   "reused": true
+  },
+  {
+   "view": "b_t3_n26130007_c0",
+   "point": "frames/r/b_t3_n26130007_c0/sun0",
+   "source": "frames/p2s/out/t3_b055_n26130007_c0/sun0",
+   "yi_key": "a0034",
+   "source_faces": 2370496,
+   "result_faces": 6683282,
+   "peak_gb": {
+    "chain": 6.918849945068359,
+    "display": 8.10940170288086,
+    "labels_yi_tree": 11.173259735107422
+   },
+   "seconds": {
+    "refine": 0.0004994869232177734,
+    "geometry": 426.2888185977936,
+    "render": 67.255051612854,
+    "labels_yi": 386.0,
+    "geometry_pool_wait": 106.04651546478271,
+    "geometry_minus_pool_wait": 320.24230313301086
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.8465232066810131,
+   "disk_raw_gb": 0.10523177683353424,
+   "disk_frame_gb": 0.4152552867308259,
+   "block": "B",
+   "reused": true
+  },
+  {
+   "view": "v4_26120001_r2b_c0_q0",
+   "point": "frames/c/v4_26120001/r2b_c0_q0",
+   "source": null,
+   "yi_key": "a0077",
+   "source_faces": null,
+   "result_faces": 7555000,
+   "peak_gb": {
+    "chain": 7.5532684326171875,
+    "display": 8.71805191040039,
+    "labels_yi_tree": 9.89120101928711
+   },
+   "seconds": {
+    "refine": 0.0010082721710205078,
+    "geometry": 3372.455281496048,
+    "render": 435.3931052684784,
+    "labels_yi": 391.0,
+    "geometry_pool_wait": 3045.7337605953217,
+    "geometry_minus_pool_wait": 326.7215209007263
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.962563144043088,
+   "disk_raw_gb": 0.12056911457329988,
+   "disk_frame_gb": 0.5332599645480514,
+   "block": "C",
+   "reused": false
+  },
+  {
+   "view": "v4_26130000_r2b_c1_q0",
+   "point": "frames/c/v4_26130000/r2b_c1_q0",
+   "source": null,
+   "yi_key": "a0044",
+   "source_faces": null,
+   "result_faces": 4773616,
+   "peak_gb": {
+    "chain": 4.825435638427734,
+    "display": 6.345001220703125,
+    "labels_yi_tree": 5.422641754150391
+   },
+   "seconds": {
+    "refine": 0.0010139942169189453,
+    "geometry": 994.6735324859619,
+    "render": 29.69461703300476,
+    "labels_yi": 285.0,
+    "geometry_pool_wait": 966.3876760005951,
+    "geometry_minus_pool_wait": 28.28585648536682
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.5856338674202561,
+   "disk_raw_gb": 0.06975147686898708,
+   "disk_frame_gb": 0.4654975086450577,
+   "block": "C",
+   "reused": false
+  },
+  {
+   "view": "v4_26130002_r2b_c0_q0",
+   "point": "frames/c/v4_26130002/r2b_c0_q0",
+   "source": null,
+   "yi_key": "a0062",
+   "source_faces": null,
+   "result_faces": 9657550,
+   "peak_gb": {
+    "chain": 12.051311492919922,
+    "display": 10.675773620605469,
+    "labels_yi_tree": 13.034809112548828
+   },
+   "seconds": {
+    "refine": 0.0010151863098144531,
+    "geometry": 1229.9925935268402,
+    "render": 60.36178183555603,
+    "labels_yi": 427.0,
+    "geometry_pool_wait": 810.9848792552948,
+    "geometry_minus_pool_wait": 419.0077142715454
+   },
+   "refine_reused": true,
+   "disk_case_gb": 1.2402256606146693,
+   "disk_raw_gb": 0.15849380753934383,
+   "disk_frame_gb": 1.2263353737071157,
+   "block": "C",
+   "reused": false
+  },
+  {
+   "view": "v4_26130002_r2b_c1_q0",
+   "point": "frames/c/v4_26130002/r2b_c1_q0",
+   "source": null,
+   "yi_key": "a0074",
+   "source_faces": null,
+   "result_faces": 9937536,
+   "peak_gb": {
+    "chain": 11.52065658569336,
+    "display": 10.872047424316406,
+    "labels_yi_tree": 16.661785125732422
+   },
+   "seconds": {
+    "refine": 0.0,
+    "geometry": 3344.9149675369263,
+    "render": 59.14349412918091,
+    "labels_yi": 438.0,
+    "geometry_pool_wait": 2909.5429384708405,
+    "geometry_minus_pool_wait": 435.3720290660858
+   },
+   "refine_reused": true,
+   "disk_case_gb": 1.285964673385024,
+   "disk_raw_gb": 0.16640815883874893,
+   "disk_frame_gb": 1.2263353737071157,
+   "block": "C",
+   "reused": false
+  },
+  {
+   "view": "v4_26130002_r2b_c3_q0",
+   "point": "frames/c/v4_26130002/r2b_c3_q0",
+   "source": null,
+   "yi_key": "a0099",
+   "source_faces": null,
+   "result_faces": 9637324,
+   "peak_gb": {
+    "chain": 10.382133483886719,
+    "display": 11.135631561279297,
+    "labels_yi_tree": 12.466995239257812
+   },
+   "seconds": {
+    "refine": 0.001012563705444336,
+    "geometry": 11054.766299247742,
+    "render": 39.647932291030884,
+    "labels_yi": 376.0,
+    "geometry_pool_wait": 10659.560712337494,
+    "geometry_minus_pool_wait": 395.2055869102478
+   },
+   "refine_reused": true,
+   "disk_case_gb": 1.234530276618898,
+   "disk_raw_gb": 0.15674805734306574,
+   "disk_frame_gb": 1.2263353737071157,
+   "block": "C",
+   "reused": false
+  },
+  {
+   "view": "cr_26120001_p0_cr_c0",
+   "point": "frames/f/cr_26120001_p0/cr_c0",
+   "source": null,
+   "yi_key": "a0035",
+   "source_faces": null,
+   "result_faces": 2662452,
+   "peak_gb": {
+    "chain": 2.752796173095703,
+    "display": 3.6348609924316406,
+    "labels_yi_tree": 2.979625701904297
+   },
+   "seconds": {
+    "refine": 0.0,
+    "geometry": 392.4970455169678,
+    "render": 20.83394980430603,
+    "labels_yi": 206.0,
+    "geometry_pool_wait": 292.00010323524475,
+    "geometry_minus_pool_wait": 100.49694228172302
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.3271782975643873,
+   "disk_raw_gb": 0.038755957037210464,
+   "disk_frame_gb": 0.5430638110265136,
+   "block": "F",
+   "reused": false
+  },
+  {
+   "view": "cr_26120001_p0_cr_c1",
+   "point": "frames/f/cr_26120001_p0/cr_c1",
+   "source": null,
+   "yi_key": "a0036",
+   "source_faces": null,
+   "result_faces": 2397446,
+   "peak_gb": {
+    "chain": 2.5123863220214844,
+    "display": 3.2817726135253906,
+    "labels_yi_tree": 2.891571044921875
+   },
+   "seconds": {
+    "refine": 0.0005033016204833984,
+    "geometry": 511.4214549064636,
+    "render": 33.27647042274475,
+    "labels_yi": 399.0,
+    "geometry_pool_wait": 412.4312767982483,
+    "geometry_minus_pool_wait": 98.99017810821533
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.29632952343672514,
+   "disk_raw_gb": 0.03514508903026581,
+   "disk_frame_gb": 0.5430638110265136,
+   "block": "F",
+   "reused": false
+  },
+  {
+   "view": "cr_26120001_p1_cr_c0",
+   "point": "frames/f/cr_26120001_p1/cr_c0",
+   "source": null,
+   "yi_key": "a0038",
+   "source_faces": null,
+   "result_faces": 2098220,
+   "peak_gb": {
+    "chain": 2.2703399658203125,
+    "display": 2.860443115234375,
+    "labels_yi_tree": 2.543354034423828
+   },
+   "seconds": {
+    "refine": 0.0010120868682861328,
+    "geometry": 165.93819665908813,
+    "render": 15.722303867340088,
+    "labels_yi": 683.0,
+    "geometry_pool_wait": 85.76048183441162,
+    "geometry_minus_pool_wait": 80.17771482467651
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.262173218652606,
+   "disk_raw_gb": 0.031344286166131496,
+   "disk_frame_gb": 0.5055619943886995,
+   "block": "F",
+   "reused": false
+  },
+  {
+   "view": "cr_26120001_p1_cr_c1",
+   "point": "frames/f/cr_26120001_p1/cr_c1",
+   "source": null,
+   "yi_key": "a0039",
+   "source_faces": null,
+   "result_faces": 1526678,
+   "peak_gb": {
+    "chain": 1.9388504028320312,
+    "display": 2.0121231079101562,
+    "labels_yi_tree": 2.1359901428222656
+   },
+   "seconds": {
+    "refine": 0.0005061626434326172,
+    "geometry": 186.98890829086304,
+    "render": 61.57386541366577,
+    "labels_yi": 76.0,
+    "geometry_pool_wait": 125.62752485275269,
+    "geometry_minus_pool_wait": 61.36138343811035
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.18831985723227262,
+   "disk_raw_gb": 0.022710759192705154,
+   "disk_frame_gb": 0.5055619943886995,
+   "block": "F",
+   "reused": false
+  },
+  {
+   "view": "cr_26120001_p2_cr_c0",
+   "point": "frames/f/cr_26120001_p2/cr_c0",
+   "source": null,
+   "yi_key": "a0109",
+   "source_faces": null,
+   "result_faces": 1502108,
+   "peak_gb": {
+    "chain": 1.9423713684082031,
+    "display": 2.0037384033203125,
+    "labels_yi_tree": 2.201610565185547
+   },
+   "seconds": {
+    "refine": 0.0010180473327636719,
+    "geometry": 3010.0687794685364,
+    "render": 424.33284854888916,
+    "labels_yi": 309.0,
+    "geometry_pool_wait": 2956.962482690811,
+    "geometry_minus_pool_wait": 53.10629677772522
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.18638667557388544,
+   "disk_raw_gb": 0.022312103770673275,
+   "disk_frame_gb": 0.5149542633444071,
+   "block": "F",
+   "reused": false
+  },
+  {
+   "view": "cr_26120001_p2_cr_c0_r1",
+   "point": "frames/f/cr_26120001_p2/cr_c0_r1",
+   "source": null,
+   "yi_key": null,
+   "source_faces": null,
+   "result_faces": 1502108,
+   "peak_gb": {
+    "labels_yi_tree": null
+   },
+   "seconds": {
+    "refine": 0.0,
+    "geometry": 0.0,
+    "render": 12.235072135925293,
+    "labels_yi": null,
+    "geometry_pool_wait": 0,
+    "geometry_minus_pool_wait": 0.0
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.18638667557388544,
+   "disk_raw_gb": 0.022312103770673275,
+   "disk_frame_gb": 0.5149542633444071,
+   "block": "F",
+   "reused": false
+  },
+  {
+   "view": "cr_26120001_p2_cr_c1",
+   "point": "frames/f/cr_26120001_p2/cr_c1",
+   "source": null,
+   "yi_key": "a0111",
+   "source_faces": null,
+   "result_faces": 1384548,
+   "peak_gb": {
+    "chain": 1.8436088562011719,
+    "display": 1.8569717407226562,
+    "labels_yi_tree": 2.1334075927734375
+   },
+   "seconds": {
+    "refine": 0.0010137557983398438,
+    "geometry": 56.881348848342896,
+    "render": 28.97455668449402,
+    "labels_yi": 132.0,
+    "geometry_pool_wait": 0.31891608238220215,
+    "geometry_minus_pool_wait": 56.56243276596069
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.17166605964303017,
+   "disk_raw_gb": 0.02054725680500269,
+   "disk_frame_gb": 0.5149542633444071,
+   "block": "F",
+   "reused": false
+  },
+  {
+   "view": "cr_26120001_p3_cr_c0",
+   "point": "frames/f/cr_26120001_p3/cr_c0",
+   "source": null,
+   "yi_key": "a0110",
+   "source_faces": null,
+   "result_faces": 798006,
+   "peak_gb": {
+    "chain": 1.1515922546386719,
+    "display": 1.2256011962890625,
+    "labels_yi_tree": 1.3547706604003906
+   },
+   "seconds": {
+    "refine": 0.0,
+    "geometry": 24.867733478546143,
+    "render": 9.393420696258545,
+    "labels_yi": 32.0,
+    "geometry_pool_wait": 0.5202631950378418,
+    "geometry_minus_pool_wait": 24.3474702835083
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.09539079759269953,
+   "disk_raw_gb": 0.010633272118866444,
+   "disk_frame_gb": 0.5000902293249965,
+   "block": "F",
+   "reused": false
+  },
+  {
+   "view": "cr_26120001_p3_cr_c0_r1",
+   "point": "frames/f/cr_26120001_p3/cr_c0_r1",
+   "source": null,
+   "yi_key": null,
+   "source_faces": null,
+   "result_faces": 798006,
+   "peak_gb": {
+    "labels_yi_tree": null
+   },
+   "seconds": {
+    "refine": 0.0,
+    "geometry": 0.0,
+    "render": 9.139650821685791,
+    "labels_yi": null,
+    "geometry_pool_wait": 0,
+    "geometry_minus_pool_wait": 0.0
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.09539079759269953,
+   "disk_raw_gb": 0.010633272118866444,
+   "disk_frame_gb": 0.5000902293249965,
+   "block": "F",
+   "reused": false
+  },
+  {
+   "view": "cr_26120001_p3_cr_c1",
+   "point": "frames/f/cr_26120001_p3/cr_c1",
+   "source": null,
+   "yi_key": "a0113",
+   "source_faces": null,
+   "result_faces": 1096054,
+   "peak_gb": {
+    "chain": 1.597442626953125,
+    "display": 1.4892120361328125,
+    "labels_yi_tree": 1.8444328308105469
+   },
+   "seconds": {
+    "refine": 0.0,
+    "geometry": 46.89600133895874,
+    "render": 12.104854583740234,
+    "labels_yi": 49.0,
+    "geometry_pool_wait": 0.29471635818481445,
+    "geometry_minus_pool_wait": 46.601284980773926
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.13561763893812895,
+   "disk_raw_gb": 0.01618409249931574,
+   "disk_frame_gb": 0.5000902293249965,
+   "block": "F",
+   "reused": false
+  },
+  {
+   "view": "cr_26120001_p3B_cr_c0",
+   "point": "frames/f/cr_26120001_p3B/cr_c0",
+   "source": null,
+   "yi_key": null,
+   "source_faces": null,
+   "result_faces": 4874870,
+   "peak_gb": {
+    "chain": 8.543148040771484,
+    "display": 5.314403533935547,
+    "labels_yi_tree": null
+   },
+   "seconds": {
+    "refine": 0.0004999637603759766,
+    "geometry": 215.06617403030396,
+    "render": 23.09627342224121,
+    "labels_yi": null,
+    "geometry_pool_wait": 0.5186691284179688,
+    "geometry_minus_pool_wait": 214.547504901886
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.6250706315040588,
+   "disk_raw_gb": 0.07977293245494366,
+   "disk_frame_gb": 0.237099994905293,
+   "block": "F",
+   "reused": false
+  },
+  {
+   "view": "cr_26130000_p0_cr_c0",
+   "point": "frames/f/cr_26130000_p0/cr_c0",
+   "source": null,
+   "yi_key": "a0037",
+   "source_faces": null,
+   "result_faces": 4218930,
+   "peak_gb": {
+    "chain": 5.076206207275391,
+    "display": 5.362430572509766,
+    "labels_yi_tree": 5.0554351806640625
+   },
+   "seconds": {
+    "refine": 0.0,
+    "geometry": 202.73402881622314,
+    "render": 102.32803964614868,
+    "labels_yi": 339.0,
+    "geometry_pool_wait": 35.163246631622314,
+    "geometry_minus_pool_wait": 167.57078218460083
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.530565869063139,
+   "disk_raw_gb": 0.06453711539506912,
+   "disk_frame_gb": 0.18925443291664124,
+   "block": "F",
+   "reused": false
+  },
+  {
+   "view": "cr_26130000_p1_cr_c0",
+   "point": "frames/f/cr_26130000_p1/cr_c0",
+   "source": null,
+   "yi_key": "a0040",
+   "source_faces": null,
+   "result_faces": 1670508,
+   "peak_gb": {
+    "chain": 1.7808151245117188,
+    "display": 2.3901748657226562,
+    "labels_yi_tree": 2.0821762084960938
+   },
+   "seconds": {
+    "refine": 0.0010111331939697266,
+    "geometry": 97.92829728126526,
+    "render": 148.76650857925415,
+    "labels_yi": 252.0,
+    "geometry_pool_wait": 40.25340723991394,
+    "geometry_minus_pool_wait": 57.67489004135132
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.20232099015265703,
+   "disk_raw_gb": 0.023417731747031212,
+   "disk_frame_gb": 0.15731135476380587,
+   "block": "F",
+   "reused": false
+  },
+  {
+   "view": "cr_26130000_p2_cr_c0",
+   "point": "frames/f/cr_26130000_p2/cr_c0",
+   "source": null,
+   "yi_key": "a0112",
+   "source_faces": null,
+   "result_faces": 1164378,
+   "peak_gb": {
+    "chain": 1.6659164428710938,
+    "display": 1.5236358642578125,
+    "labels_yi_tree": 1.9255828857421875
+   },
+   "seconds": {
+    "refine": 0.0,
+    "geometry": 53.931215047836304,
+    "render": 18.910688877105713,
+    "labels_yi": 361.0,
+    "geometry_pool_wait": 0.23458123207092285,
+    "geometry_minus_pool_wait": 53.69663381576538
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.14699615258723497,
+   "disk_raw_gb": 0.018042733892798424,
+   "disk_frame_gb": 0.13393755722790956,
+   "block": "F",
+   "reused": false
+  },
+  {
+   "view": "cr_26130000_p3_cr_c0",
+   "point": "frames/f/cr_26130000_p3/cr_c0",
+   "source": null,
+   "yi_key": "a0114",
+   "source_faces": null,
+   "result_faces": 751354,
+   "peak_gb": {
+    "chain": 1.3108139038085938,
+    "display": 1.041290283203125,
+    "labels_yi_tree": 1.4948043823242188
+   },
+   "seconds": {
+    "refine": 0.0,
+    "geometry": 32.869357109069824,
+    "render": 11.463534116744995,
+    "labels_yi": 62.0,
+    "geometry_pool_wait": 0.21426796913146973,
+    "geometry_minus_pool_wait": 32.655089139938354
+   },
+   "refine_reused": true,
+   "disk_case_gb": 0.0948828998953104,
+   "disk_raw_gb": 0.01169189065694809,
+   "disk_frame_gb": 0.12802411057054996,
+   "block": "F",
+   "reused": false
+  }
+ ],
+ "totals": {
+  "B": {
+   "new_points": 32,
+   "disk_case_gb": 27.963966565206647,
+   "disk_raw_gb": 3.4664535904303193,
+   "disk_frame_dir_gb": 8.446874706074595,
+   "peak_gb_max": {
+    "chain": 13.161460876464844,
+    "display": 13.864246368408203,
+    "labels_yi_tree": 20.669322967529297
+   }
+  },
+  "C": {
+   "new_points": 5,
+   "disk_case_gb": 5.308917622081935,
+   "disk_raw_gb": 0.6719706151634455,
+   "disk_frame_dir_gb": 4.677763594314456,
+   "peak_gb_max": {
+    "chain": 12.051311492919922,
+    "display": 11.135631561279297,
+    "labels_yi_tree": 16.661785125732422
+   }
+  },
+  "F": {
+   "new_points": 15,
+   "disk_case_gb": 3.5446760850027204,
+   "disk_raw_gb": 0.4280405966565013,
+   "disk_frame_dir_gb": 5.9880125392228365,
+   "peak_gb_max": {
+    "chain": 8.543148040771484,
+    "display": 5.362430572509766,
+    "labels_yi_tree": 5.0554351806640625
+   }
+  }
+ },
+ "box_table": "frames/p1s/cost_table.json"
+}

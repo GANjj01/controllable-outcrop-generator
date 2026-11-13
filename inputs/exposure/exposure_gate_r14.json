@@ -1,0 +1,18 @@
+{
+ "schema": "fracture-exposure-gate-r14-1",
+ "H": 0.5,
+ "rule": "strictest cell over both mechanisms and all 16 cells",
+ "source": "exposure_info_r2.json",
+ "mean_luma_min": 0.1214484482612362,
+ "mean_luma_min_from": [
+  "shape",
+  "e1_a0"
+ ],
+ "clipped_fraction_max": 0.4259858577554604,
+ "clipped_fraction_max_from": [
+  "stain",
+  "e3_a3"
+ ],
+ "mean_luma_max": null,
+ "note": "no mean-luma upper bound (the bright end is governed by clipping); CLIP_LOW/HIGH 2/253 and the luma definition unchanged"
+}

@@ -1,0 +1,14 @@
+# Geometry environment: scene generation, cavity construction, refinement and the rendering server.
+# Versions are those of the environment that produced the paper (see tested_versions.json).
+name: fracgen-geometry
+channels:
+  - defaults
+dependencies:
+  - python=3.12
+  - numpy=2.3.5
+  - pip
+  - pip:
+      - OpenEXR==3.5.1
+      - pillow==12.3.0
+      - trimesh==4.7.4
+      - manifold3d==3.5.4

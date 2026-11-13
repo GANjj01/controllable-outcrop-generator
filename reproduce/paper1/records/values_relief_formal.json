@@ -1,0 +1,258 @@
+{
+ "at": "2026-11-09T01:10:05.263713+09:00",
+ "rgb": {
+  "by_block": {
+   "render_check": 2,
+   "B": 44,
+   "F": 15,
+   "H": 4,
+   "C": 50,
+   "K_noise": 4,
+   "other:d_a26130007_c0 sun0 frame (Ble": 1,
+   "other:d_a26130007_c0 sun0_r1 frame (": 1
+  },
+  "total": 121,
+  "cap": 160
+ },
+ "formal_labels": {
+  "indexed": 115,
+  "run": 115,
+  "by_exit": {
+   "0/True": 114,
+   "3/False": 1
+  },
+  "not_pass": [
+   {
+    "key": "a0113",
+    "point": "frames/f/cr_26120001_p3/cr_c1",
+    "exit": 3,
+    "items": {
+     "1_gates": false,
+     "2_jumps": false,
+     "3_displacement": false,
+     "4_breaks": false,
+     "5_capped": false
+    }
+   }
+  ],
+  "by_block": {
+   "B": 32,
+   "R": 20,
+   "F": 12,
+   "C": 50,
+   "D": 1
+  }
+ },
+ "numeric_detail_C": {
+  "frames": 50,
+  "nontip_centre_px_p99": {
+   "n": 50,
+   "min": 0.009042331957973021,
+   "median": 0.012538711778942375,
+   "max": 0.04413839979106044
+  },
+  "jumped_px_max": 0.0,
+  "displacement_fraction": {
+   "n": 50,
+   "min": 0.0,
+   "median": 0.0,
+   "max": 0.0
+  },
+  "breaks_increase_max": 0,
+  "capped_fraction": {
+   "n": 50,
+   "min": 0.0016619296251998105,
+   "median": 0.0035899265630526538,
+   "max": 0.004437913526575029
+  },
+  "pixel_mm": {
+   "n": 50,
+   "min": 4.0670997439709495,
+   "median": 6.403493801260789,
+   "max": 6.609214653138813
+  }
+ },
+ "numeric_detail_B": {
+  "frames": 32,
+  "nontip_centre_px_p99": {
+   "n": 32,
+   "min": 0.005870741489193439,
+   "median": 0.01806379248653888,
+   "max": 0.07523512725357595
+  },
+  "jumped_px_max": 0.0,
+  "displacement_fraction": {
+   "n": 32,
+   "min": 0.0,
+   "median": 0.0,
+   "max": 0.0
+  },
+  "breaks_increase_max": 0,
+  "capped_fraction": {
+   "n": 32,
+   "min": 0.00039795733882074793,
+   "median": 0.004353855140846486,
+   "max": 0.00787729231070535
+  },
+  "pixel_mm": {
+   "n": 32,
+   "min": 2.0,
+   "median": 6.767284527431953,
+   "max": 19.39463796852743
+  }
+ },
+ "numeric_detail_R": {
+  "frames": 20,
+  "nontip_centre_px_p99": {
+   "n": 20,
+   "min": 0.016027059968568538,
+   "median": 0.03033964258761112,
+   "max": 0.07535662256652328
+  },
+  "jumped_px_max": 0.0,
+  "displacement_fraction": {
+   "n": 20,
+   "min": 0.0,
+   "median": 0.0,
+   "max": 0.0
+  },
+  "breaks_increase_max": 0,
+  "capped_fraction": {
+   "n": 20,
+   "min": 0.0007764523327801322,
+   "median": 0.0019585209538861377,
+   "max": 0.009026402308898996
+  },
+  "pixel_mm": {
+   "n": 20,
+   "min": 2.0,
+   "median": 2.5,
+   "max": 6.767284527431953
+  }
+ },
+ "numeric_detail_F": {
+  "frames": 12,
+  "nontip_centre_px_p99": {
+   "n": 11,
+   "min": 0.03878196843514613,
+   "median": 0.1361998127460285,
+   "max": 0.5555268328009156
+  },
+  "jumped_px_max": 0.0,
+  "displacement_fraction": {
+   "n": 11,
+   "min": 0.0,
+   "median": 0.0,
+   "max": 0.0
+  },
+  "breaks_increase_max": 0,
+  "capped_fraction": {
+   "n": 11,
+   "min": 0.0,
+   "median": 0.0016869611613756447,
+   "max": 0.004602907594235734
+  },
+  "pixel_mm": {
+   "n": 12,
+   "min": 0.25,
+   "median": 0.75,
+   "max": 2.0
+  }
+ },
+ "faults": {
+  "b_b055_a26120005_c2": {
+   "key": "a0001",
+   "fault_visible_px": 1033.6535225948553,
+   "fault_visible_u_px": 346.9123646563801,
+   "fault_in_frame_px": 1034.8703232640803,
+   "joint_visible_px": 1178.8426714169748,
+   "fault_sides": {
+    "usable": true,
+    "sides": {
+     "fault-0:moving": "PASS",
+     "fault-0:fixed": "PASS"
+    },
+    "file": "fault_sides.json"
+   }
+  },
+  "b_b055_a26120005_c3": {
+   "key": "a0002",
+   "fault_visible_px": 950.2125526189551,
+   "fault_visible_u_px": 458.6174657528006,
+   "fault_in_frame_px": 979.2180262568161,
+   "joint_visible_px": 1356.3320150412937,
+   "fault_sides": {
+    "usable": true,
+    "sides": {
+     "fault-0:moving": "PASS",
+     "fault-0:fixed": "NOT JUDGED (<200 px)"
+    },
+    "file": "fault_sides.json"
+   }
+  },
+  "b_b055_n26120003_c1": {
+   "key": "a0018",
+   "fault_visible_px": 0.0,
+   "fault_visible_u_px": 0.0,
+   "fault_in_frame_px": 1066.0437147228351,
+   "joint_visible_px": 948.2418547008681,
+   "fault_sides": {
+    "usable": true,
+    "sides": {
+     "fault-0:moving": "PASS",
+     "fault-0:fixed": "none visible"
+    },
+    "file": "fault_sides.json"
+   }
+  },
+  "b_b055_n26130007_c0": {
+   "key": "a0020",
+   "fault_visible_px": 0.0,
+   "fault_visible_u_px": 0.0,
+   "fault_in_frame_px": 0.0,
+   "joint_visible_px": 2233.3007315319683,
+   "fault_sides": {
+    "usable": true,
+    "sides": {
+     "fault-0:moving": "PASS",
+     "fault-0:fixed": "none visible"
+    },
+    "file": "fault_sides.json"
+   }
+  }
+ },
+ "construction": {
+  "records": 65,
+  "by_status": {
+   "built": 51,
+   "error_or_refused": 2,
+   "rendered": 1,
+   "completed": 11
+  },
+  "not_built": [
+   {
+    "record": "d_a26130007_c0_rule.json",
+    "status": "error_or_refused",
+    "error": "not started: the field-display step of case rq1_d_a26130007_c0_sun0 needed 53.5 GB (2.81 GB per million faces of the cut mesh x 15.47 million faces, plus a margin of 10 GB), more than the 47 GB of an idle machine",
+    "fallback": false,
+    "genome_ok": null
+   },
+   {
+    "record": "f_cr_26120001_p2B_0.json",
+    "status": "error_or_refused",
+    "error": "not started: the field-display step of case rq1_cr_26120001_p2B_cr_c0 needed 49.6 GB (2.81 GB per million faces of the cut mesh x 14.11 million faces, plus a margin of 10 GB), more than the 47 GB of an idle machine",
+    "fallback": false,
+    "genome_ok": null
+   },
+   {
+    "record": "h_stain.json",
+    "status": "rendered",
+    "error": null,
+    "fallback": false,
+    "genome_ok": null
+   }
+  ],
+  "geometry_gate_fallback": [],
+  "process_failures": []
+ }
+}

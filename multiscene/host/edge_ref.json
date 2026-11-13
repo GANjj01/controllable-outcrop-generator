@@ -1,0 +1,12 @@
+{
+ "reference": "edge lengths of the wall faces of the outcrop surface of a reference scene generated during development (the scene is not part of this repository)",
+ "wall_faces": 88332,
+ "edge_m": {
+  "p10": 0.09464955007045678,
+  "p50": 0.16003689084073364,
+  "p90": 0.20705238869228534,
+  "rms": 0.16044589354338123
+ },
+ "grid_spacing_m": 0.1389502197414618,
+ "rule": "grid_spacing_m = edge_m.rms x sqrt(3)/2: the rms edge of the flat parts of the base grid (2/sqrt(3) x grid spacing) equals the rms edge of the reference"
+}

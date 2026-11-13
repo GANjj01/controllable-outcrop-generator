@@ -1,0 +1,70 @@
+{
+ "label_set": "formal",
+ "rule": "Trace distances between a shape-parameter variant and its baseline at the same camera (pairs, named by variant tag and camera: the variants d010 and cB at the cameras a26120005_c0 and n26130007_c0, baseline b055). baseline_positive_px: positive pixels of the baseline. The distance of a baseline pixel is its distance to the nearest line pixel of the variant (final centreline, unclear line or occluded line); distance_p99 and distance_max are its 99th percentile and maximum in pixels, and large_distance_px counts the baseline pixels whose distance exceeds 2 px. This line set does not contain the fracture-mouth pixels of the variant; the distances to the segments of all types that supplement S3 gives include them and are smaller. classes divides these pixels: a, the variant has no projected sample point of the same trace within 2 px (the path is shorter or ends); b, the variant has sample points of the same trace within 2 px, all outside the frame or below the ground; c, other. The trace of a baseline pixel is that of the nearest projected baseline sample point. shares = classes / large_distance_px.",
+ "pairs": {
+  "d010_a26120005_c0": {
+   "baseline_positive_px": 1077,
+   "large_distance_px": 49,
+   "distance_p99": 6.140792799907471,
+   "distance_max": 12.529964086141668,
+   "classes": {
+    "a": 30,
+    "b": 0,
+    "c": 19
+   },
+   "shares": {
+    "a": 0.6122448979591837,
+    "b": 0.0,
+    "c": 0.3877551020408163
+   }
+  },
+  "cB_a26120005_c0": {
+   "baseline_positive_px": 1077,
+   "large_distance_px": 48,
+   "distance_p99": 6.140792799907471,
+   "distance_max": 12.529964086141668,
+   "classes": {
+    "a": 32,
+    "b": 0,
+    "c": 16
+   },
+   "shares": {
+    "a": 0.6666666666666666,
+    "b": 0.0,
+    "c": 0.3333333333333333
+   }
+  },
+  "d010_n26130007_c0": {
+   "baseline_positive_px": 1827,
+   "large_distance_px": 83,
+   "distance_p99": 26.888371732904943,
+   "distance_max": 33.24154027718932,
+   "classes": {
+    "a": 80,
+    "b": 0,
+    "c": 3
+   },
+   "shares": {
+    "a": 0.963855421686747,
+    "b": 0.0,
+    "c": 0.03614457831325301
+   }
+  },
+  "cB_n26130007_c0": {
+   "baseline_positive_px": 1827,
+   "large_distance_px": 106,
+   "distance_p99": 26.980714249274858,
+   "distance_max": 33.54101966249684,
+   "classes": {
+    "a": 88,
+    "b": 0,
+    "c": 18
+   },
+   "shares": {
+    "a": 0.8301886792452831,
+    "b": 0.0,
+    "c": 0.16981132075471697
+   }
+  }
+ }
+}

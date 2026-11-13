@@ -1,0 +1,42 @@
+{
+ "schema": "fracture-self-affine-spec-1",
+ "variant": "C_keep_macro_c1_r2",
+ "keep_facets": [
+  0,
+  1
+ ],
+ "facets_c1": true,
+ "octaves": [
+  [
+   0.024,
+   0.048,
+   0.0032254432847133216,
+   256
+  ],
+  [
+   0.048,
+   0.096,
+   0.004538115479770206,
+   256
+  ],
+  [
+   0.096,
+   0.192,
+   0.007483011874284285,
+   256
+  ],
+  [
+   0.192,
+   0.384,
+   0.00910799982052754,
+   256
+  ],
+  [
+   0.384,
+   0.768,
+   0.014977123068699616,
+   256
+  ]
+ ],
+ "note": "octaves = [lam_lo_m, lam_hi_m, rms_m, n_waves] of morph.self_affine_relief; facet octaves 3.8 m and 1.7 m kept (same realization, facet_noise_c1), 0.72 m and 0.28 m replaced by groups 2.4-76.8 cm (scan bins 2.4-38.4 cm exact, 38.4-76.8 cm continued with the scan H); 256 waves per group"
+}

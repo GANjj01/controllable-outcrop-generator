@@ -1,0 +1,14 @@
+# Labels environment: frame driver, refinement levels and trace labels.
+# Versions are those of the environment that produced the paper (see tested_versions.json).
+name: fracgen-labels
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy=2.4.6
+  - shapely=2.1.2
+  - pillow=12.1.1
+  - pip
+  - pip:
+      - scipy==1.17.1
+      - networkx==3.6.1

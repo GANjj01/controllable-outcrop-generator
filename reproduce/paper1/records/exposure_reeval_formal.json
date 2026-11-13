@@ -1,0 +1,360 @@
+{
+ "rule": "Exposure admission of 14 conditions (one viewpoint under one illumination each), evaluated again with the lower brightness bounds of the formal runs; the method is unchanged and only the values of the bounds differ. Each condition has a stored exposure curve (listed under curves). Admission at the measured exposure (the curve point s = 1): mean_luma at or above the lower bound of its sky and clipped at most 0.426. Eligible sampled exposures: curve points with mean_luma at or above the bound, clipped at most 0.426 and discernible at least 0.5 x plateau. formal_gates: the bounds of k_exposure_formal.json (skies.<sky>.relief.mean_luma_min). box_gates: the bounds of the earlier version of the cavity with a flat floor (sun 0.14378748760372984, overcast 0.02610752003597726); self_check_box_gates states that with these bounds the evaluation reproduces the earlier result (13 of 14 admitted, the same numbers of eligible exposures and the same range of s). The 14 curves were measured on the frames of the flat-floor version, with the band and ring windows of their labels; they were not measured again on the frames with floor relief.",
+ "curves": [
+  "frames/final_photometric/a26120005_c2_SUN0_sun.json",
+  "frames/final_photometric/a26120005_c3_SUN0_sun.json",
+  "frames/final_photometric/a26130005_c1_SUN0_sun.json",
+  "frames/final_photometric/n26120003_c1_OC0_overcast.json",
+  "frames/final_photometric/n26120003_c1_SUN0_sun.json",
+  "frames/final_photometric/n26130007_c0_OC0_overcast.json",
+  "frames/final_photometric/n26130007_c0_SUN0_sun.json",
+  "frames/final_photometric/shape_flat_v4_26120001_c0_q0_sun.json",
+  "frames/final_photometric/shape_isolated_v4_26130000_c1_q1_sun.json",
+  "frames/final_photometric/v4_26120001_c0_oc_overcast.json",
+  "frames/final_photometric/v4_26130000_c1_oc_overcast.json",
+  "frames/final_photometric/v4_26130002_c0_oc_overcast.json",
+  "frames/final_photometric/v4_26130002_c1_oc_overcast.json",
+  "frames/final_photometric/v4_26130002_c3_oc_overcast.json"
+ ],
+ "self_check_box_gates": {
+  "admission_equal": true,
+  "admitted_box": 13,
+  "feasibility_equal": true
+ },
+ "box_gates": {
+  "gates": {
+   "sun": 0.14378748760372984,
+   "overcast": 0.02610752003597726
+  },
+  "conditions": 14,
+  "admitted": 13,
+  "not_admitted": [
+   "shape_isolated_v4_26130000_c1_q1"
+  ],
+  "curves_with_eligible_point": 14,
+  "rows": [
+   {
+    "id": "a26120005_c2_SUN0",
+    "sky": "sun",
+    "mean_luma": 0.4539398622587615,
+    "clipped": 1.9073486328125e-05,
+    "lower_bound": 0.14378748760372984,
+    "admitted": true,
+    "eligible_sampled_exposures": 22,
+    "eligible_s_min": 0.10511205190671431,
+    "eligible_s_max": 4.0
+   },
+   {
+    "id": "a26120005_c3_SUN0",
+    "sky": "sun",
+    "mean_luma": 0.4766698776103001,
+    "clipped": 9.5367431640625e-06,
+    "lower_bound": 0.14378748760372984,
+    "admitted": true,
+    "eligible_sampled_exposures": 22,
+    "eligible_s_min": 0.10511205190671431,
+    "eligible_s_max": 4.0
+   },
+   {
+    "id": "a26130005_c1_SUN0",
+    "sky": "sun",
+    "mean_luma": 0.4483626508606706,
+    "clipped": 1.9381021844995755e-05,
+    "lower_bound": 0.14378748760372984,
+    "admitted": true,
+    "eligible_sampled_exposures": 21,
+    "eligible_s_min": 0.125,
+    "eligible_s_max": 4.0
+   },
+   {
+    "id": "n26120003_c1_OC0",
+    "sky": "overcast",
+    "mean_luma": 0.3614883065372713,
+    "clipped": 0.0,
+    "lower_bound": 0.02610752003597726,
+    "admitted": true,
+    "eligible_sampled_exposures": 36,
+    "eligible_s_min": 0.018581361171917516,
+    "eligible_s_max": 8.0
+   },
+   {
+    "id": "n26120003_c1_SUN0",
+    "sky": "sun",
+    "mean_luma": 0.46882188786697543,
+    "clipped": 0.0,
+    "lower_bound": 0.14378748760372984,
+    "admitted": true,
+    "eligible_sampled_exposures": 22,
+    "eligible_s_min": 0.10511205190671431,
+    "eligible_s_max": 4.0
+   },
+   {
+    "id": "n26130007_c0_OC0",
+    "sky": "overcast",
+    "mean_luma": 0.36202781895930464,
+    "clipped": 0.0,
+    "lower_bound": 0.02610752003597726,
+    "admitted": true,
+    "eligible_sampled_exposures": 35,
+    "eligible_s_min": 0.018581361171917516,
+    "eligible_s_max": 6.727171322029716
+   },
+   {
+    "id": "n26130007_c0_SUN0",
+    "sky": "sun",
+    "mean_luma": 0.36547088312500503,
+    "clipped": 2.4822857880450635e-06,
+    "lower_bound": 0.14378748760372984,
+    "admitted": true,
+    "eligible_sampled_exposures": 20,
+    "eligible_s_min": 0.1767766952966369,
+    "eligible_s_max": 4.756828460010884
+   },
+   {
+    "id": "shape_flat_v4_26120001_c0_q0",
+    "sky": "sun",
+    "mean_luma": 0.21811004739723952,
+    "clipped": 0.00086212158203125,
+    "lower_bound": 0.14378748760372984,
+    "admitted": true,
+    "eligible_sampled_exposures": 24,
+    "eligible_s_min": 0.5,
+    "eligible_s_max": 26.908685288118864
+   },
+   {
+    "id": "shape_isolated_v4_26130000_c1_q1",
+    "sky": "sun",
+    "mean_luma": 0.13748257297222027,
+    "clipped": 0.0006265519060300797,
+    "lower_bound": 0.14378748760372984,
+    "admitted": false,
+    "eligible_sampled_exposures": 21,
+    "eligible_s_min": 1.189207115002721,
+    "eligible_s_max": 38.05462768008707
+   },
+   {
+    "id": "v4_26120001_c0_oc",
+    "sky": "overcast",
+    "mean_luma": 0.4778217216207467,
+    "clipped": 0.0,
+    "lower_bound": 0.02610752003597726,
+    "admitted": true,
+    "eligible_sampled_exposures": 36,
+    "eligible_s_min": 0.011048543456039806,
+    "eligible_s_max": 4.756828460010884
+   },
+   {
+    "id": "v4_26130000_c1_oc",
+    "sky": "overcast",
+    "mean_luma": 0.3492035137228667,
+    "clipped": 0.0,
+    "lower_bound": 0.02610752003597726,
+    "admitted": true,
+    "eligible_sampled_exposures": 35,
+    "eligible_s_min": 0.02209708691207961,
+    "eligible_s_max": 8.0
+   },
+   {
+    "id": "v4_26130002_c0_oc",
+    "sky": "overcast",
+    "mean_luma": 0.33805685694624327,
+    "clipped": 0.0,
+    "lower_bound": 0.02610752003597726,
+    "admitted": true,
+    "eligible_sampled_exposures": 35,
+    "eligible_s_min": 0.02209708691207961,
+    "eligible_s_max": 8.0
+   },
+   {
+    "id": "v4_26130002_c1_oc",
+    "sky": "overcast",
+    "mean_luma": 0.3413621876114071,
+    "clipped": 0.0,
+    "lower_bound": 0.02610752003597726,
+    "admitted": true,
+    "eligible_sampled_exposures": 35,
+    "eligible_s_min": 0.02209708691207961,
+    "eligible_s_max": 8.0
+   },
+   {
+    "id": "v4_26130002_c3_oc",
+    "sky": "overcast",
+    "mean_luma": 0.40764842666363155,
+    "clipped": 0.0,
+    "lower_bound": 0.02610752003597726,
+    "admitted": true,
+    "eligible_sampled_exposures": 36,
+    "eligible_s_min": 0.015625,
+    "eligible_s_max": 6.727171322029716
+   }
+  ]
+ },
+ "formal_gates": {
+  "gates": {
+   "sun": 0.1601637670276783,
+   "overcast": 0.02630300604840447
+  },
+  "conditions": 14,
+  "admitted": 13,
+  "not_admitted": [
+   "shape_isolated_v4_26130000_c1_q1"
+  ],
+  "curves_with_eligible_point": 14,
+  "rows": [
+   {
+    "id": "a26120005_c2_SUN0",
+    "sky": "sun",
+    "mean_luma": 0.4539398622587615,
+    "clipped": 1.9073486328125e-05,
+    "lower_bound": 0.1601637670276783,
+    "admitted": true,
+    "eligible_sampled_exposures": 20,
+    "eligible_s_min": 0.14865088937534013,
+    "eligible_s_max": 4.0
+   },
+   {
+    "id": "a26120005_c3_SUN0",
+    "sky": "sun",
+    "mean_luma": 0.4766698776103001,
+    "clipped": 9.5367431640625e-06,
+    "lower_bound": 0.1601637670276783,
+    "admitted": true,
+    "eligible_sampled_exposures": 21,
+    "eligible_s_min": 0.125,
+    "eligible_s_max": 4.0
+   },
+   {
+    "id": "a26130005_c1_SUN0",
+    "sky": "sun",
+    "mean_luma": 0.4483626508606706,
+    "clipped": 1.9381021844995755e-05,
+    "lower_bound": 0.1601637670276783,
+    "admitted": true,
+    "eligible_sampled_exposures": 20,
+    "eligible_s_min": 0.14865088937534013,
+    "eligible_s_max": 4.0
+   },
+   {
+    "id": "n26120003_c1_OC0",
+    "sky": "overcast",
+    "mean_luma": 0.3614883065372713,
+    "clipped": 0.0,
+    "lower_bound": 0.02630300604840447,
+    "admitted": true,
+    "eligible_sampled_exposures": 36,
+    "eligible_s_min": 0.018581361171917516,
+    "eligible_s_max": 8.0
+   },
+   {
+    "id": "n26120003_c1_SUN0",
+    "sky": "sun",
+    "mean_luma": 0.46882188786697543,
+    "clipped": 0.0,
+    "lower_bound": 0.1601637670276783,
+    "admitted": true,
+    "eligible_sampled_exposures": 21,
+    "eligible_s_min": 0.125,
+    "eligible_s_max": 4.0
+   },
+   {
+    "id": "n26130007_c0_OC0",
+    "sky": "overcast",
+    "mean_luma": 0.36202781895930464,
+    "clipped": 0.0,
+    "lower_bound": 0.02630300604840447,
+    "admitted": true,
+    "eligible_sampled_exposures": 35,
+    "eligible_s_min": 0.018581361171917516,
+    "eligible_s_max": 6.727171322029716
+   },
+   {
+    "id": "n26130007_c0_SUN0",
+    "sky": "sun",
+    "mean_luma": 0.36547088312500503,
+    "clipped": 2.4822857880450635e-06,
+    "lower_bound": 0.1601637670276783,
+    "admitted": true,
+    "eligible_sampled_exposures": 19,
+    "eligible_s_min": 0.21022410381342863,
+    "eligible_s_max": 4.756828460010884
+   },
+   {
+    "id": "shape_flat_v4_26120001_c0_q0",
+    "sky": "sun",
+    "mean_luma": 0.21811004739723952,
+    "clipped": 0.00086212158203125,
+    "lower_bound": 0.1601637670276783,
+    "admitted": true,
+    "eligible_sampled_exposures": 23,
+    "eligible_s_min": 0.5946035575013605,
+    "eligible_s_max": 26.908685288118864
+   },
+   {
+    "id": "shape_isolated_v4_26130000_c1_q1",
+    "sky": "sun",
+    "mean_luma": 0.13748257297222027,
+    "clipped": 0.0006265519060300797,
+    "lower_bound": 0.1601637670276783,
+    "admitted": false,
+    "eligible_sampled_exposures": 20,
+    "eligible_s_min": 1.4142135623730951,
+    "eligible_s_max": 38.05462768008707
+   },
+   {
+    "id": "v4_26120001_c0_oc",
+    "sky": "overcast",
+    "mean_luma": 0.4778217216207467,
+    "clipped": 0.0,
+    "lower_bound": 0.02630300604840447,
+    "admitted": true,
+    "eligible_sampled_exposures": 36,
+    "eligible_s_min": 0.011048543456039806,
+    "eligible_s_max": 4.756828460010884
+   },
+   {
+    "id": "v4_26130000_c1_oc",
+    "sky": "overcast",
+    "mean_luma": 0.3492035137228667,
+    "clipped": 0.0,
+    "lower_bound": 0.02630300604840447,
+    "admitted": true,
+    "eligible_sampled_exposures": 35,
+    "eligible_s_min": 0.02209708691207961,
+    "eligible_s_max": 8.0
+   },
+   {
+    "id": "v4_26130002_c0_oc",
+    "sky": "overcast",
+    "mean_luma": 0.33805685694624327,
+    "clipped": 0.0,
+    "lower_bound": 0.02630300604840447,
+    "admitted": true,
+    "eligible_sampled_exposures": 35,
+    "eligible_s_min": 0.02209708691207961,
+    "eligible_s_max": 8.0
+   },
+   {
+    "id": "v4_26130002_c1_oc",
+    "sky": "overcast",
+    "mean_luma": 0.3413621876114071,
+    "clipped": 0.0,
+    "lower_bound": 0.02630300604840447,
+    "admitted": true,
+    "eligible_sampled_exposures": 35,
+    "eligible_s_min": 0.02209708691207961,
+    "eligible_s_max": 8.0
+   },
+   {
+    "id": "v4_26130002_c3_oc",
+    "sky": "overcast",
+    "mean_luma": 0.40764842666363155,
+    "clipped": 0.0,
+    "lower_bound": 0.02630300604840447,
+    "admitted": true,
+    "eligible_sampled_exposures": 36,
+    "eligible_s_min": 0.015625,
+    "eligible_s_max": 6.727171322029716
+   }
+  ]
+ }
+}

@@ -1,0 +1,84 @@
+{
+ "at": "2026-11-08T11:18:38+09:00",
+ "rule": "Render-noise check with the released version of the cavity (with floor relief) for two cases of the multi-illumination aerial set (block C): flat outcrop v4_26120001, camera c0, illumination q0, and standalone ('isolated') outcrop v4_26130000, camera c1, illumination q1. spp4096: the render specification of the frame was rendered twice (noise_s0 and noise_s1, render seeds 0 and 1) at 4096 samples per pixel with nothing else changed; p999 is the noise measure T of the two renders over the pixels that are rock in both, and pass_noise states T <= 2. spp1024_seed_pair: the same measure for the two frames of block C at this viewpoint and illumination that differ only in the render seed (seed 0, and the repeat _r1 with seed 1; 1024 samples per pixel); no new render. box: the values of the same two cases with the earlier version of the cavity with a flat floor. RGB_used: number of images rendered in this series of runs when the record was written.",
+ "rows": [
+  {
+   "case_id": "shape_flat_v4_26120001_c0_q0",
+   "outcrop": "flat",
+   "point": "frames/c/v4_26120001/r2b_c0_q0",
+   "spp4096": {
+    "p999": 1.0,
+    "pass_noise": true,
+    "rock_pixels": 1048576,
+    "render_point": "frames/k_noise/shape_flat_v4_26120001_c0_q0/render/render_point.json",
+    "png_linearity": {
+     "noise_s0": {
+      "exposure_k": 0.03236518009648046,
+      "max_level_diff": 1,
+      "share_above_1": 0.0,
+      "pass_": true
+     },
+     "noise_s1": {
+      "exposure_k": 0.03236518009648046,
+      "max_level_diff": 0,
+      "share_above_1": 0.0,
+      "pass_": true
+     }
+    }
+   },
+   "spp1024_seed_pair": {
+    "p999": 2.0,
+    "pass_noise": true,
+    "rock_pixels": 1048576,
+    "frames": [
+     "frames/c/v4_26120001/r2b_c0_q0/render/frame.npz",
+     "frames/c/v4_26120001/r2b_c0_q0_r1/render/frame.npz"
+    ]
+   },
+   "box": {
+    "spp4096_p999": 1.0,
+    "spp1024_baseline_p999": 2.0
+   }
+  },
+  {
+   "case_id": "shape_isolated_v4_26130000_c1_q1",
+   "outcrop": "isolated",
+   "point": "frames/c/v4_26130000/r2b_c1_q1",
+   "spp4096": {
+    "p999": 2.0,
+    "pass_noise": true,
+    "rock_pixels": 777270,
+    "render_point": "frames/k_noise/shape_isolated_v4_26130000_c1_q1/render/render_point.json",
+    "png_linearity": {
+     "noise_s0": {
+      "exposure_k": 0.03236518009648046,
+      "max_level_diff": 1,
+      "share_above_1": 0.0,
+      "pass_": true
+     },
+     "noise_s1": {
+      "exposure_k": 0.03236518009648046,
+      "max_level_diff": 1,
+      "share_above_1": 0.0,
+      "pass_": true
+     }
+    }
+   },
+   "spp1024_seed_pair": {
+    "p999": 3.0,
+    "pass_noise": false,
+    "rock_pixels": 777270,
+    "frames": [
+     "frames/c/v4_26130000/r2b_c1_q1/render/frame.npz",
+     "frames/c/v4_26130000/r2b_c1_q1_r1/render/frame.npz"
+    ]
+   },
+   "box": {
+    "spp4096_p999": 2.0,
+    "spp1024_baseline_p999": 3.0
+   }
+  }
+ ],
+ "all_4096_pass": true,
+ "RGB_used": 119
+}

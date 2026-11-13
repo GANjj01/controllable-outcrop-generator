@@ -1,0 +1,1288 @@
+{
+ "criterion_sha256": "218a41a29c48a8885f3d6a9af64ecb30cb213350b35598b41fc0196d5e3c16fa",
+ "decl": {
+  "a26120005_c2": {
+   "chain": 19.0,
+   "display": 18.5,
+   "labels": 29.5
+  },
+  "a26120005_c3": {
+   "chain": 18.0,
+   "display": 20.1,
+   "labels": 30.3
+  },
+  "a26130005_c1": {
+   "chain": 17.2,
+   "display": 17.8,
+   "labels": 25.3
+  },
+  "a26120005_c0": {
+   "chain": 8.3,
+   "display": 9.5,
+   "labels": 9.5
+  },
+  "n26120003_c1": {
+   "chain": 3.7,
+   "display": 4.4,
+   "labels": 4.4
+  },
+  "n26130007_c0": {
+   "chain": 10.8,
+   "display": 12.7,
+   "labels": 17.5
+  }
+ },
+ "decl_basis": "decl: memory reserved per job in GB for each camera and step, from the largest job peak at that camera in earlier runs: with the version of the cavity with a flat floor x 1.13 x 1.5, with the version with floor relief x 1.5; the larger of the two, rounded up.",
+ "nets": {
+  "26120005": "frames/nets/26120005",
+  "26130005": "frames/nets/26130005",
+  "26120003": "frames/nets/26120003",
+  "26130007": "frames/nets/26130007"
+ },
+ "cases": [
+  {
+   "cam": "a26120005_c0",
+   "tag": "b055",
+   "role": "baseline",
+   "group": "baseline",
+   "unit": [
+    0.5,
+    0.5,
+    0.5,
+    0.5
+   ],
+   "id": "b_b055_a26120005_c0",
+   "seed": 26120005,
+   "slot": 0,
+   "kind": "aerial",
+   "reuse": "frames/fr_de/out/fr_b055_a26120005_c0",
+   "expected_physical": {
+    "mean_opening_m": 0.055,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0020625
+   },
+   "status": "reused",
+   "box_baseline": "frames/out/a26120005_c0",
+   "box_frame": "frames/out/a26120005_c0"
+  },
+  {
+   "cam": "a26120005_c2",
+   "tag": "b055",
+   "role": "baseline",
+   "group": "baseline",
+   "unit": [
+    0.5,
+    0.5,
+    0.5,
+    0.5
+   ],
+   "id": "b_b055_a26120005_c2",
+   "seed": 26120005,
+   "slot": 2,
+   "kind": "aerial",
+   "reuse": null,
+   "expected_physical": {
+    "mean_opening_m": 0.055,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0020625
+   },
+   "status": "ready",
+   "box_baseline": "frames/coverage/out/a26120005_c2",
+   "box_frame": "frames/coverage/out/a26120005_c2"
+  },
+  {
+   "cam": "a26120005_c3",
+   "tag": "b055",
+   "role": "baseline",
+   "group": "baseline",
+   "unit": [
+    0.5,
+    0.5,
+    0.5,
+    0.5
+   ],
+   "id": "b_b055_a26120005_c3",
+   "seed": 26120005,
+   "slot": 3,
+   "kind": "aerial",
+   "reuse": null,
+   "expected_physical": {
+    "mean_opening_m": 0.055,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0020625
+   },
+   "status": "ready",
+   "box_baseline": "frames/coverage/out/a26120005_c3",
+   "box_frame": "frames/coverage/out/a26120005_c3"
+  },
+  {
+   "cam": "a26130005_c1",
+   "tag": "b055",
+   "role": "baseline",
+   "group": "baseline",
+   "unit": [
+    0.5,
+    0.5,
+    0.5,
+    0.5
+   ],
+   "id": "b_b055_a26130005_c1",
+   "seed": 26130005,
+   "slot": 1,
+   "kind": "aerial",
+   "reuse": null,
+   "expected_physical": {
+    "mean_opening_m": 0.055,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0020625
+   },
+   "status": "ready",
+   "box_baseline": "frames/coverage/out/a26130005_c1",
+   "box_frame": "frames/coverage/out/a26130005_c1"
+  },
+  {
+   "cam": "n26120003_c1",
+   "tag": "b055",
+   "role": "baseline",
+   "group": "baseline",
+   "unit": [
+    0.5,
+    0.5,
+    0.5,
+    0.5
+   ],
+   "id": "b_b055_n26120003_c1",
+   "seed": 26120003,
+   "slot": 1,
+   "kind": "near",
+   "reuse": "frames/near_r1/out/nr_b055_n26120003_c1",
+   "expected_physical": {
+    "mean_opening_m": 0.055,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0020625
+   },
+   "status": "reused",
+   "box_baseline": "frames/coverage/out/n26120003_c1",
+   "box_frame": "frames/coverage/out/n26120003_c1"
+  },
+  {
+   "cam": "n26130007_c0",
+   "tag": "b055",
+   "role": "baseline",
+   "group": "baseline",
+   "unit": [
+    0.5,
+    0.5,
+    0.5,
+    0.5
+   ],
+   "id": "b_b055_n26130007_c0",
+   "seed": 26130007,
+   "slot": 0,
+   "kind": "near",
+   "reuse": "frames/fr_de/out/fr_b055_n26130007_c0",
+   "expected_physical": {
+    "mean_opening_m": 0.055,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0020625
+   },
+   "status": "reused",
+   "box_baseline": "frames/coverage/out/n26130007_c0",
+   "box_frame": "frames/coverage/out/n26130007_c0"
+  },
+  {
+   "cam": "a26120005_c2",
+   "tag": "w030",
+   "role": "variant",
+   "group": "A_opening",
+   "unit": [
+    0.0,
+    0.5,
+    0.5,
+    0.5
+   ],
+   "id": "b_w030_a26120005_c2",
+   "seed": 26120005,
+   "slot": 2,
+   "kind": "aerial",
+   "reuse": null,
+   "expected_physical": {
+    "mean_opening_m": 0.03,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.001125
+   },
+   "status": "ready",
+   "box_baseline": "frames/coverage/out/a26120005_c2",
+   "box_frame": "frames/out/w030_a26120005_c2"
+  },
+  {
+   "cam": "a26120005_c2",
+   "tag": "w040",
+   "role": "variant",
+   "group": "A_opening",
+   "unit": [
+    0.2,
+    0.5,
+    0.5,
+    0.5
+   ],
+   "id": "b_w040_a26120005_c2",
+   "seed": 26120005,
+   "slot": 2,
+   "kind": "aerial",
+   "reuse": null,
+   "expected_physical": {
+    "mean_opening_m": 0.04,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0015
+   },
+   "status": "ready",
+   "box_baseline": "frames/coverage/out/a26120005_c2",
+   "box_frame": "frames/out/w040_a26120005_c2"
+  },
+  {
+   "cam": "a26120005_c2",
+   "tag": "w065",
+   "role": "variant",
+   "group": "A_opening",
+   "unit": [
+    0.7,
+    0.5,
+    0.5,
+    0.5
+   ],
+   "id": "b_w065_a26120005_c2",
+   "seed": 26120005,
+   "slot": 2,
+   "kind": "aerial",
+   "reuse": null,
+   "expected_physical": {
+    "mean_opening_m": 0.065,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0024375
+   },
+   "status": "ready",
+   "box_baseline": "frames/coverage/out/a26120005_c2",
+   "box_frame": "frames/out/w065_a26120005_c2"
+  },
+  {
+   "cam": "a26120005_c2",
+   "tag": "w080",
+   "role": "variant",
+   "group": "A_opening",
+   "unit": [
+    1.0,
+    0.5,
+    0.5,
+    0.5
+   ],
+   "id": "b_w080_a26120005_c2",
+   "seed": 26120005,
+   "slot": 2,
+   "kind": "aerial",
+   "reuse": null,
+   "expected_physical": {
+    "mean_opening_m": 0.08,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.003
+   },
+   "status": "ready",
+   "box_baseline": "frames/coverage/out/a26120005_c2",
+   "box_frame": "frames/out/w080_a26120005_c2"
+  },
+  {
+   "cam": "a26120005_c0",
+   "tag": "w030",
+   "role": "variant",
+   "group": "A_opening",
+   "unit": [
+    0.0,
+    0.5,
+    0.5,
+    0.5
+   ],
+   "id": "b_w030_a26120005_c0",
+   "seed": 26120005,
+   "slot": 0,
+   "kind": "aerial",
+   "reuse": "frames/fr_de/out/fr_w030_a26120005_c0",
+   "expected_physical": {
+    "mean_opening_m": 0.03,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.001125
+   },
+   "status": "reused",
+   "box_baseline": "frames/out/a26120005_c0",
+   "box_frame": "frames/out/w030_a26120005_c0"
+  },
+  {
+   "cam": "a26120005_c0",
+   "tag": "w040",
+   "role": "variant",
+   "group": "A_opening",
+   "unit": [
+    0.2,
+    0.5,
+    0.5,
+    0.5
+   ],
+   "id": "b_w040_a26120005_c0",
+   "seed": 26120005,
+   "slot": 0,
+   "kind": "aerial",
+   "reuse": null,
+   "expected_physical": {
+    "mean_opening_m": 0.04,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0015
+   },
+   "status": "ready",
+   "box_baseline": "frames/out/a26120005_c0",
+   "box_frame": "frames/out/w040_a26120005_c0"
+  },
+  {
+   "cam": "a26120005_c0",
+   "tag": "w065",
+   "role": "variant",
+   "group": "A_opening",
+   "unit": [
+    0.7,
+    0.5,
+    0.5,
+    0.5
+   ],
+   "id": "b_w065_a26120005_c0",
+   "seed": 26120005,
+   "slot": 0,
+   "kind": "aerial",
+   "reuse": null,
+   "expected_physical": {
+    "mean_opening_m": 0.065,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0024375
+   },
+   "status": "ready",
+   "box_baseline": "frames/out/a26120005_c0",
+   "box_frame": "frames/out/w065_a26120005_c0"
+  },
+  {
+   "cam": "a26120005_c0",
+   "tag": "w080",
+   "role": "variant",
+   "group": "A_opening",
+   "unit": [
+    1.0,
+    0.5,
+    0.5,
+    0.5
+   ],
+   "id": "b_w080_a26120005_c0",
+   "seed": 26120005,
+   "slot": 0,
+   "kind": "aerial",
+   "reuse": "frames/fr_de/out/fr_w080_a26120005_c0",
+   "expected_physical": {
+    "mean_opening_m": 0.08,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.003
+   },
+   "status": "reused",
+   "box_baseline": "frames/out/a26120005_c0",
+   "box_frame": "frames/out/w080_a26120005_c0"
+  },
+  {
+   "cam": "a26120005_c3",
+   "tag": "w030",
+   "role": "variant",
+   "group": "A_opening",
+   "unit": [
+    0.0,
+    0.5,
+    0.5,
+    0.5
+   ],
+   "id": "b_w030_a26120005_c3",
+   "seed": 26120005,
+   "slot": 3,
+   "kind": "aerial",
+   "reuse": null,
+   "expected_physical": {
+    "mean_opening_m": 0.03,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.001125
+   },
+   "status": "ready",
+   "box_baseline": "frames/coverage/out/a26120005_c3",
+   "box_frame": "frames/out/w030_a26120005_c3"
+  },
+  {
+   "cam": "a26120005_c3",
+   "tag": "w040",
+   "role": "variant",
+   "group": "A_opening",
+   "unit": [
+    0.2,
+    0.5,
+    0.5,
+    0.5
+   ],
+   "id": "b_w040_a26120005_c3",
+   "seed": 26120005,
+   "slot": 3,
+   "kind": "aerial",
+   "reuse": null,
+   "expected_physical": {
+    "mean_opening_m": 0.04,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0015
+   },
+   "status": "ready",
+   "box_baseline": "frames/coverage/out/a26120005_c3",
+   "box_frame": "frames/out/w040_a26120005_c3"
+  },
+  {
+   "cam": "a26120005_c3",
+   "tag": "w065",
+   "role": "variant",
+   "group": "A_opening",
+   "unit": [
+    0.7,
+    0.5,
+    0.5,
+    0.5
+   ],
+   "id": "b_w065_a26120005_c3",
+   "seed": 26120005,
+   "slot": 3,
+   "kind": "aerial",
+   "reuse": null,
+   "expected_physical": {
+    "mean_opening_m": 0.065,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0024375
+   },
+   "status": "ready",
+   "box_baseline": "frames/coverage/out/a26120005_c3",
+   "box_frame": "frames/out/w065_a26120005_c3"
+  },
+  {
+   "cam": "a26120005_c3",
+   "tag": "w080",
+   "role": "variant",
+   "group": "A_opening",
+   "unit": [
+    1.0,
+    0.5,
+    0.5,
+    0.5
+   ],
+   "id": "b_w080_a26120005_c3",
+   "seed": 26120005,
+   "slot": 3,
+   "kind": "aerial",
+   "reuse": null,
+   "expected_physical": {
+    "mean_opening_m": 0.08,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.003
+   },
+   "status": "ready",
+   "box_baseline": "frames/coverage/out/a26120005_c3",
+   "box_frame": "frames/out/w080_a26120005_c3"
+  },
+  {
+   "cam": "a26130005_c1",
+   "tag": "w030",
+   "role": "variant",
+   "group": "A_opening",
+   "unit": [
+    0.0,
+    0.5,
+    0.5,
+    0.5
+   ],
+   "id": "b_w030_a26130005_c1",
+   "seed": 26130005,
+   "slot": 1,
+   "kind": "aerial",
+   "reuse": null,
+   "expected_physical": {
+    "mean_opening_m": 0.03,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.001125
+   },
+   "status": "ready",
+   "box_baseline": "frames/coverage/out/a26130005_c1",
+   "box_frame": "frames/out/w030_a26130005_c1"
+  },
+  {
+   "cam": "a26130005_c1",
+   "tag": "w040",
+   "role": "variant",
+   "group": "A_opening",
+   "unit": [
+    0.2,
+    0.5,
+    0.5,
+    0.5
+   ],
+   "id": "b_w040_a26130005_c1",
+   "seed": 26130005,
+   "slot": 1,
+   "kind": "aerial",
+   "reuse": null,
+   "expected_physical": {
+    "mean_opening_m": 0.04,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0015
+   },
+   "status": "ready",
+   "box_baseline": "frames/coverage/out/a26130005_c1",
+   "box_frame": "frames/out/w040_a26130005_c1"
+  },
+  {
+   "cam": "a26130005_c1",
+   "tag": "w065",
+   "role": "variant",
+   "group": "A_opening",
+   "unit": [
+    0.7,
+    0.5,
+    0.5,
+    0.5
+   ],
+   "id": "b_w065_a26130005_c1",
+   "seed": 26130005,
+   "slot": 1,
+   "kind": "aerial",
+   "reuse": null,
+   "expected_physical": {
+    "mean_opening_m": 0.065,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0024375
+   },
+   "status": "ready",
+   "box_baseline": "frames/coverage/out/a26130005_c1",
+   "box_frame": "frames/out/w065_a26130005_c1"
+  },
+  {
+   "cam": "a26130005_c1",
+   "tag": "w080",
+   "role": "variant",
+   "group": "A_opening",
+   "unit": [
+    1.0,
+    0.5,
+    0.5,
+    0.5
+   ],
+   "id": "b_w080_a26130005_c1",
+   "seed": 26130005,
+   "slot": 1,
+   "kind": "aerial",
+   "reuse": null,
+   "expected_physical": {
+    "mean_opening_m": 0.08,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.003
+   },
+   "status": "ready",
+   "box_baseline": "frames/coverage/out/a26130005_c1",
+   "box_frame": "frames/out/w080_a26130005_c1"
+  },
+  {
+   "cam": "n26120003_c1",
+   "tag": "w030",
+   "role": "variant",
+   "group": "A_opening",
+   "unit": [
+    0.0,
+    0.5,
+    0.5,
+    0.5
+   ],
+   "id": "b_w030_n26120003_c1",
+   "seed": 26120003,
+   "slot": 1,
+   "kind": "near",
+   "reuse": null,
+   "expected_physical": {
+    "mean_opening_m": 0.03,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.001125
+   },
+   "status": "ready",
+   "box_baseline": "frames/coverage/out/n26120003_c1",
+   "box_frame": "frames/out/w030_n26120003_c1"
+  },
+  {
+   "cam": "n26120003_c1",
+   "tag": "w040",
+   "role": "variant",
+   "group": "A_opening",
+   "unit": [
+    0.2,
+    0.5,
+    0.5,
+    0.5
+   ],
+   "id": "b_w040_n26120003_c1",
+   "seed": 26120003,
+   "slot": 1,
+   "kind": "near",
+   "reuse": null,
+   "expected_physical": {
+    "mean_opening_m": 0.04,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0015
+   },
+   "status": "ready",
+   "box_baseline": "frames/coverage/out/n26120003_c1",
+   "box_frame": "frames/out/w040_n26120003_c1"
+  },
+  {
+   "cam": "n26120003_c1",
+   "tag": "w065",
+   "role": "variant",
+   "group": "A_opening",
+   "unit": [
+    0.7,
+    0.5,
+    0.5,
+    0.5
+   ],
+   "id": "b_w065_n26120003_c1",
+   "seed": 26120003,
+   "slot": 1,
+   "kind": "near",
+   "reuse": null,
+   "expected_physical": {
+    "mean_opening_m": 0.065,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0024375
+   },
+   "status": "ready",
+   "box_baseline": "frames/coverage/out/n26120003_c1",
+   "box_frame": "frames/out/w065_n26120003_c1"
+  },
+  {
+   "cam": "n26120003_c1",
+   "tag": "w080",
+   "role": "variant",
+   "group": "A_opening",
+   "unit": [
+    1.0,
+    0.5,
+    0.5,
+    0.5
+   ],
+   "id": "b_w080_n26120003_c1",
+   "seed": 26120003,
+   "slot": 1,
+   "kind": "near",
+   "reuse": "frames/near_r1/out/nr_w080_n26120003_c1",
+   "expected_physical": {
+    "mean_opening_m": 0.08,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.003
+   },
+   "status": "reused",
+   "box_baseline": "frames/coverage/out/n26120003_c1",
+   "box_frame": "frames/out/w080_n26120003_c1"
+  },
+  {
+   "cam": "n26130007_c0",
+   "tag": "w030",
+   "role": "variant",
+   "group": "A_opening",
+   "unit": [
+    0.0,
+    0.5,
+    0.5,
+    0.5
+   ],
+   "id": "b_w030_n26130007_c0",
+   "seed": 26130007,
+   "slot": 0,
+   "kind": "near",
+   "reuse": "frames/fr_de/out/fr_w030_n26130007_c0",
+   "expected_physical": {
+    "mean_opening_m": 0.03,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.001125
+   },
+   "status": "reused",
+   "box_baseline": "frames/coverage/out/n26130007_c0",
+   "box_frame": "frames/out/w030_n26130007_c0"
+  },
+  {
+   "cam": "n26130007_c0",
+   "tag": "w040",
+   "role": "variant",
+   "group": "A_opening",
+   "unit": [
+    0.2,
+    0.5,
+    0.5,
+    0.5
+   ],
+   "id": "b_w040_n26130007_c0",
+   "seed": 26130007,
+   "slot": 0,
+   "kind": "near",
+   "reuse": null,
+   "expected_physical": {
+    "mean_opening_m": 0.04,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0015
+   },
+   "status": "ready",
+   "box_baseline": "frames/coverage/out/n26130007_c0",
+   "box_frame": "frames/out/w040_n26130007_c0"
+  },
+  {
+   "cam": "n26130007_c0",
+   "tag": "w065",
+   "role": "variant",
+   "group": "A_opening",
+   "unit": [
+    0.7,
+    0.5,
+    0.5,
+    0.5
+   ],
+   "id": "b_w065_n26130007_c0",
+   "seed": 26130007,
+   "slot": 0,
+   "kind": "near",
+   "reuse": null,
+   "expected_physical": {
+    "mean_opening_m": 0.065,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0024375
+   },
+   "status": "ready",
+   "box_baseline": "frames/coverage/out/n26130007_c0",
+   "box_frame": "frames/out/w065_n26130007_c0"
+  },
+  {
+   "cam": "n26130007_c0",
+   "tag": "w080",
+   "role": "variant",
+   "group": "A_opening",
+   "unit": [
+    1.0,
+    0.5,
+    0.5,
+    0.5
+   ],
+   "id": "b_w080_n26130007_c0",
+   "seed": 26130007,
+   "slot": 0,
+   "kind": "near",
+   "reuse": "frames/fr_de/out/fr_w080_n26130007_c0",
+   "expected_physical": {
+    "mean_opening_m": 0.08,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.003
+   },
+   "status": "reused",
+   "box_baseline": "frames/coverage/out/n26130007_c0",
+   "box_frame": "frames/out/w080_n26130007_c0"
+  },
+  {
+   "cam": "a26120005_c0",
+   "tag": "v000",
+   "role": "variant",
+   "group": "B_other_genes",
+   "unit": [
+    0.5,
+    0.5,
+    0.0,
+    0.5
+   ],
+   "id": "b_v000_a26120005_c0",
+   "seed": 26120005,
+   "slot": 0,
+   "kind": "aerial",
+   "reuse": null,
+   "expected_physical": {
+    "mean_opening_m": 0.055,
+    "opening_variation": 0.0,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0020625
+   },
+   "status": "ready",
+   "box_baseline": "frames/out/a26120005_c0",
+   "box_frame": "frames/out/v000_a26120005_c0"
+  },
+  {
+   "cam": "a26120005_c0",
+   "tag": "v045",
+   "role": "variant",
+   "group": "B_other_genes",
+   "unit": [
+    0.5,
+    0.5,
+    1.0,
+    0.5
+   ],
+   "id": "b_v045_a26120005_c0",
+   "seed": 26120005,
+   "slot": 0,
+   "kind": "aerial",
+   "reuse": null,
+   "expected_physical": {
+    "mean_opening_m": 0.055,
+    "opening_variation": 0.45,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0020625
+   },
+   "status": "ready",
+   "box_baseline": "frames/out/a26120005_c0",
+   "box_frame": "frames/out/v045_a26120005_c0"
+  },
+  {
+   "cam": "a26120005_c0",
+   "tag": "d010",
+   "role": "variant",
+   "group": "B_other_genes",
+   "unit": [
+    0.5,
+    0.0,
+    0.5,
+    0.5
+   ],
+   "id": "b_d010_a26120005_c0",
+   "seed": 26120005,
+   "slot": 0,
+   "kind": "aerial",
+   "reuse": "frames/fr_de/out/fr_d010_a26120005_c0",
+   "expected_physical": {
+    "mean_opening_m": 0.055,
+    "opening_variation": 0.225,
+    "depth_m": 0.1,
+    "roughness_m": 0.0020625
+   },
+   "status": "reused",
+   "box_baseline": "frames/out/a26120005_c0",
+   "box_frame": "frames/out/d010_a26120005_c0"
+  },
+  {
+   "cam": "a26120005_c0",
+   "tag": "d025",
+   "role": "variant",
+   "group": "B_other_genes",
+   "unit": [
+    0.5,
+    1.0,
+    0.5,
+    0.5
+   ],
+   "id": "b_d025_a26120005_c0",
+   "seed": 26120005,
+   "slot": 0,
+   "kind": "aerial",
+   "reuse": null,
+   "expected_physical": {
+    "mean_opening_m": 0.055,
+    "opening_variation": 0.225,
+    "depth_m": 0.25,
+    "roughness_m": 0.0020625
+   },
+   "status": "ready",
+   "box_baseline": "frames/out/a26120005_c0",
+   "box_frame": "frames/out/d025_a26120005_c0"
+  },
+  {
+   "cam": "a26120005_c0",
+   "tag": "r000",
+   "role": "variant",
+   "group": "B_other_genes",
+   "unit": [
+    0.5,
+    0.5,
+    0.5,
+    0.0
+   ],
+   "id": "b_r000_a26120005_c0",
+   "seed": 26120005,
+   "slot": 0,
+   "kind": "aerial",
+   "reuse": null,
+   "expected_physical": {
+    "mean_opening_m": 0.055,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0
+   },
+   "status": "ready",
+   "box_baseline": "frames/out/a26120005_c0",
+   "box_frame": "frames/out/r000_a26120005_c0"
+  },
+  {
+   "cam": "a26120005_c0",
+   "tag": "r075",
+   "role": "variant",
+   "group": "B_other_genes",
+   "unit": [
+    0.5,
+    0.5,
+    0.5,
+    1.0
+   ],
+   "id": "b_r075_a26120005_c0",
+   "seed": 26120005,
+   "slot": 0,
+   "kind": "aerial",
+   "reuse": null,
+   "expected_physical": {
+    "mean_opening_m": 0.055,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.004125
+   },
+   "status": "ready",
+   "box_baseline": "frames/out/a26120005_c0",
+   "box_frame": "frames/out/r075_a26120005_c0"
+  },
+  {
+   "cam": "n26130007_c0",
+   "tag": "v000",
+   "role": "variant",
+   "group": "B_other_genes",
+   "unit": [
+    0.5,
+    0.5,
+    0.0,
+    0.5
+   ],
+   "id": "b_v000_n26130007_c0",
+   "seed": 26130007,
+   "slot": 0,
+   "kind": "near",
+   "reuse": null,
+   "expected_physical": {
+    "mean_opening_m": 0.055,
+    "opening_variation": 0.0,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0020625
+   },
+   "status": "ready",
+   "box_baseline": "frames/coverage/out/n26130007_c0",
+   "box_frame": "frames/out/v000_n26130007_c0"
+  },
+  {
+   "cam": "n26130007_c0",
+   "tag": "v045",
+   "role": "variant",
+   "group": "B_other_genes",
+   "unit": [
+    0.5,
+    0.5,
+    1.0,
+    0.5
+   ],
+   "id": "b_v045_n26130007_c0",
+   "seed": 26130007,
+   "slot": 0,
+   "kind": "near",
+   "reuse": null,
+   "expected_physical": {
+    "mean_opening_m": 0.055,
+    "opening_variation": 0.45,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0020625
+   },
+   "status": "ready",
+   "box_baseline": "frames/coverage/out/n26130007_c0",
+   "box_frame": "frames/out/v045_n26130007_c0"
+  },
+  {
+   "cam": "n26130007_c0",
+   "tag": "d010",
+   "role": "variant",
+   "group": "B_other_genes",
+   "unit": [
+    0.5,
+    0.0,
+    0.5,
+    0.5
+   ],
+   "id": "b_d010_n26130007_c0",
+   "seed": 26130007,
+   "slot": 0,
+   "kind": "near",
+   "reuse": "frames/fr_de/out/fr_d010_n26130007_c0",
+   "expected_physical": {
+    "mean_opening_m": 0.055,
+    "opening_variation": 0.225,
+    "depth_m": 0.1,
+    "roughness_m": 0.0020625
+   },
+   "status": "reused",
+   "box_baseline": "frames/coverage/out/n26130007_c0",
+   "box_frame": "frames/out/d010_n26130007_c0"
+  },
+  {
+   "cam": "n26130007_c0",
+   "tag": "d025",
+   "role": "variant",
+   "group": "B_other_genes",
+   "unit": [
+    0.5,
+    1.0,
+    0.5,
+    0.5
+   ],
+   "id": "b_d025_n26130007_c0",
+   "seed": 26130007,
+   "slot": 0,
+   "kind": "near",
+   "reuse": null,
+   "expected_physical": {
+    "mean_opening_m": 0.055,
+    "opening_variation": 0.225,
+    "depth_m": 0.25,
+    "roughness_m": 0.0020625
+   },
+   "status": "ready",
+   "box_baseline": "frames/coverage/out/n26130007_c0",
+   "box_frame": "frames/out/d025_n26130007_c0"
+  },
+  {
+   "cam": "n26130007_c0",
+   "tag": "r000",
+   "role": "variant",
+   "group": "B_other_genes",
+   "unit": [
+    0.5,
+    0.5,
+    0.5,
+    0.0
+   ],
+   "id": "b_r000_n26130007_c0",
+   "seed": 26130007,
+   "slot": 0,
+   "kind": "near",
+   "reuse": null,
+   "expected_physical": {
+    "mean_opening_m": 0.055,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0
+   },
+   "status": "ready",
+   "box_baseline": "frames/coverage/out/n26130007_c0",
+   "box_frame": "frames/out/r000_n26130007_c0"
+  },
+  {
+   "cam": "n26130007_c0",
+   "tag": "r075",
+   "role": "variant",
+   "group": "B_other_genes",
+   "unit": [
+    0.5,
+    0.5,
+    0.5,
+    1.0
+   ],
+   "id": "b_r075_n26130007_c0",
+   "seed": 26130007,
+   "slot": 0,
+   "kind": "near",
+   "reuse": null,
+   "expected_physical": {
+    "mean_opening_m": 0.055,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.004125
+   },
+   "status": "ready",
+   "box_baseline": "frames/coverage/out/n26130007_c0",
+   "box_frame": "frames/out/r075_n26130007_c0"
+  },
+  {
+   "cam": "a26120005_c0",
+   "tag": "cA",
+   "role": "variant",
+   "group": "C_corners",
+   "unit": [
+    0.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "id": "b_cA_a26120005_c0",
+   "seed": 26120005,
+   "slot": 0,
+   "kind": "aerial",
+   "reuse": "frames/fr_de/out/fr_cA_a26120005_c0",
+   "expected_physical": {
+    "mean_opening_m": 0.03,
+    "opening_variation": 0.45,
+    "depth_m": 0.25,
+    "roughness_m": 0.00225
+   },
+   "status": "reused",
+   "box_baseline": "frames/out/a26120005_c0",
+   "box_frame": "frames/out/cA_a26120005_c0"
+  },
+  {
+   "cam": "a26120005_c0",
+   "tag": "cB",
+   "role": "variant",
+   "group": "C_corners",
+   "unit": [
+    1.0,
+    0.0,
+    1.0,
+    1.0
+   ],
+   "id": "b_cB_a26120005_c0",
+   "seed": 26120005,
+   "slot": 0,
+   "kind": "aerial",
+   "reuse": "frames/fr_de/out/fr_cB_a26120005_c0",
+   "expected_physical": {
+    "mean_opening_m": 0.08,
+    "opening_variation": 0.45,
+    "depth_m": 0.1,
+    "roughness_m": 0.006
+   },
+   "status": "reused",
+   "box_baseline": "frames/out/a26120005_c0",
+   "box_frame": "frames/out/cB_a26120005_c0"
+  },
+  {
+   "cam": "n26130007_c0",
+   "tag": "cA",
+   "role": "variant",
+   "group": "C_corners",
+   "unit": [
+    0.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "id": "b_cA_n26130007_c0",
+   "seed": 26130007,
+   "slot": 0,
+   "kind": "near",
+   "reuse": "frames/fr_de/out/fr_cA_n26130007_c0",
+   "expected_physical": {
+    "mean_opening_m": 0.03,
+    "opening_variation": 0.45,
+    "depth_m": 0.25,
+    "roughness_m": 0.00225
+   },
+   "status": "reused",
+   "box_baseline": "frames/coverage/out/n26130007_c0",
+   "box_frame": "frames/out/cA_n26130007_c0"
+  },
+  {
+   "cam": "n26130007_c0",
+   "tag": "cB",
+   "role": "variant",
+   "group": "C_corners",
+   "unit": [
+    1.0,
+    0.0,
+    1.0,
+    1.0
+   ],
+   "id": "b_cB_n26130007_c0",
+   "seed": 26130007,
+   "slot": 0,
+   "kind": "near",
+   "reuse": "frames/fr_de/out/fr_cB_n26130007_c0",
+   "expected_physical": {
+    "mean_opening_m": 0.08,
+    "opening_variation": 0.45,
+    "depth_m": 0.1,
+    "roughness_m": 0.006
+   },
+   "status": "reused",
+   "box_baseline": "frames/coverage/out/n26130007_c0",
+   "box_frame": "frames/out/cB_n26130007_c0"
+  },
+  {
+   "cam": "t3_n26120003_c1",
+   "tag": "t3",
+   "role": "scale",
+   "group": "D_scale_gap",
+   "unit": [
+    0.5,
+    0.5,
+    0.5,
+    0.5
+   ],
+   "id": "b_t3_n26120003_c1",
+   "seed": 26120003,
+   "slot": 1,
+   "kind": "near",
+   "reuse": "frames/p2s/out/t3_b055_n26120003_c1",
+   "expected_physical": {
+    "mean_opening_m": 0.055,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0020625
+   },
+   "status": "reused"
+  },
+  {
+   "cam": "t3_n26130007_c0",
+   "tag": "t3",
+   "role": "scale",
+   "group": "D_scale_gap",
+   "unit": [
+    0.5,
+    0.5,
+    0.5,
+    0.5
+   ],
+   "id": "b_t3_n26130007_c0",
+   "seed": 26130007,
+   "slot": 0,
+   "kind": "near",
+   "reuse": "frames/p2s/out/t3_b055_n26130007_c0",
+   "expected_physical": {
+    "mean_opening_m": 0.055,
+    "opening_variation": 0.225,
+    "depth_m": 0.17500000000000002,
+    "roughness_m": 0.0020625
+   },
+   "status": "reused"
+  }
+ ]
+}

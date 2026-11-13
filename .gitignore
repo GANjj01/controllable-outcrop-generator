@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+inputs/runconfig_local.json
+inputs/large/
+example_output/
+*.partial_*

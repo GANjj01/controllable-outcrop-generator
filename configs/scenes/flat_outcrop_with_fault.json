@@ -1,0 +1,74 @@
+{
+ "schema_version": 1,
+ "seed": 20261109,
+ "geometry": {
+  "family": "group_a",
+  "exposure": "bluff",
+  "tile_m": 32.0,
+  "layer_count": 4,
+  "fault_count": 0,
+  "fracture_count": 16,
+  "unconformity": false,
+  "lithologies": [
+   "group_a_01",
+   "group_a_02",
+   "group_a_04"
+  ],
+  "fracture_network": {
+   "direction_groups": [
+    {
+     "id": "g30",
+     "count": 8,
+     "mean_direction_deg": 30.0,
+     "direction_std_deg": 10.0
+    },
+    {
+     "id": "g120",
+     "count": 8,
+     "mean_direction_deg": 120.0,
+     "direction_std_deg": 10.0
+    }
+   ],
+   "extrusion_direction": [
+    0.0,
+    0.75,
+    1.0
+   ]
+  },
+  "shape": {
+   "width_m": 35.9,
+   "depth_m": 35.9,
+   "height_m": 2.5,
+   "mass_count": 1
+  },
+  "stratigraphy": {
+   "wavelengths_m": [
+    68.0,
+    52.0
+   ]
+  },
+  "faults": [
+   {
+    "id": "fault-user-1",
+    "plane": {
+     "strike_deg": 60.0,
+     "dip_deg": 70.0,
+     "point_m": [
+      20.0,
+      20.0,
+      7.0
+     ]
+    },
+    "motion": {
+     "kind": "throw",
+     "throw_down_m": 0.8,
+     "pure_dip_slip": true
+    },
+    "moving_side": "positive"
+   }
+  ]
+ },
+ "scene": {
+  "scanned_preset": "river_valley"
+ }
+}

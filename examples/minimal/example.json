@@ -1,0 +1,25 @@
+{
+ "about": "End-to-end example: one standalone outcrop of the paper design rendered at 256 px on the CPU",
+ "seed": 26130000,
+ "amplitude": 2.0667663012280917,
+ "hurst": 0.9566568215681955,
+ "outcrop": "standalone",
+ "cameras_per_cell": 2,
+ "camera_slot": 1,
+ "genes": {
+  "mean_opening_m": 0.055,
+  "opening_variation": 0.225,
+  "depth_m": 0.17500000000000002,
+  "roughness_m": 0.0020625
+ },
+ "light": {
+  "azimuth_deg": 102.16591636974047,
+  "elevation_deg": 17.5
+ },
+ "render": {
+  "resolution": 256,
+  "spp": 32,
+  "device": "CPU",
+  "threads": 8
+ }
+}

@@ -1,0 +1,52 @@
+{
+ "scene": {
+  "surface_vertices": 84575,
+  "surface_faces": 169127,
+  "surface_sha256": {
+   "faces": "e5a08f0dd01aa7c06aee4722f62ac9b5e336a59f9f8ec2aa80c33d33f1e35c92",
+   "vertices": "69be9810641e07f694b4cffd8fbaa04b3b5a454223b8c5b30134dcbe0952f991"
+  }
+ },
+ "cameras": 4,
+ "render": {
+  "shape": [
+   256,
+   256,
+   3
+  ],
+  "rock_fraction": 0.7410888671875,
+  "mean_linear_rgb": 0.42095595598220825,
+  "arrays_sha256": {
+   "depth": "fa4ce7cea171bfa5049f86a7ab438459f54d1c5ef28fa5be8c58618412345682",
+   "index": "29bfe294c49cf99391cb6229eaa0aabc7a2a70a965537844690493da221c1888",
+   "mask": "d5ff896ededaa499e6a3c45ea322df1a5d2ba0d0f636b728fb045cdebf804683",
+   "rgb": "16c7c01e890b2f72f571803b70793ea70f8b428144025026e6b45bd3101fdc6f"
+  }
+ },
+ "labels": {
+  "positive_pixels": 115,
+  "valid_pixels": 42716,
+  "u_line_pixels": 7,
+  "occluded_pixels": 387,
+  "marked_pixels": 22820,
+  "visible_length_px": 281.9674928422272,
+  "arrays_sha256": {
+   "target": "102587ce9c2ec7690f272e97030beb8170f3592b759b8cb9e143ee165472b260",
+   "valid": "56ea04c37082049eacbf3435fcfe65b9185eb7f36e06ce84c9d5de65676fd02b",
+   "u_line": "043cc99a94c528b5b081bdff353bb662c137da285ceb6b69ec189231384b4bcc",
+   "occluded_line": "5f7edcef1326906417df747f7c015fe73365fad159e5bfb2990c9a96599c691c",
+   "ignore_reason": "7ef3d1d29edf717ba3c19cffcda0a2885151bca6d0f6343f4e6c02c0a03d48ff"
+  }
+ },
+ "checks": {
+  "overall": "PASS",
+  "label_status": "TRACE_LABEL_CANDIDATE_NOT_QUALIFIED",
+  "items": {
+   "1_gates": true,
+   "2_jumps": true,
+   "3_displacement": true,
+   "4_breaks": true,
+   "5_capped": true
+  }
+ }
+}

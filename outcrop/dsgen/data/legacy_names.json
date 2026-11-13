@@ -1,0 +1,51 @@
+{
+ "about": "Former catalogue names of the geological model and their neutral labels; used only to read configurations and records written with the former names. New records never use them.",
+ "names": {
+  "sandstone": "group_a_01",
+  "shale": "group_a_02",
+  "siltstone": "group_a_03",
+  "limestone": "group_a_04",
+  "mudstone": "group_a_05",
+  "conglomerate": "group_a_06",
+  "dolomite": "group_a_07",
+  "basalt": "group_b_01",
+  "andesite": "group_b_02",
+  "rhyolite": "group_b_03",
+  "tuff": "group_b_04",
+  "volcanic_breccia": "group_b_05",
+  "granite": "group_b_06",
+  "diorite": "group_b_07",
+  "gabbro": "group_b_08",
+  "diabase": "group_b_09",
+  "pegmatite": "group_b_10",
+  "slate": "group_c_01",
+  "phyllite": "group_c_02",
+  "schist": "group_c_03",
+  "gneiss": "group_c_04",
+  "quartzite": "group_c_05",
+  "marble": "group_c_06",
+  "amphibolite": "group_c_07",
+  "hornfels": "group_c_08",
+  "sedimentary": "group_a",
+  "igneous": "group_b",
+  "metamorphic": "group_c"
+ },
+ "subclasses": {
+  "clastic": "group_a_kind_1",
+  "carbonate": "group_a_kind_2",
+  "extrusive/lava": "group_b_kind_1",
+  "extrusive/pyroclastic": "group_b_kind_2",
+  "intrusive/plutonic": "group_b_kind_3",
+  "intrusive/hypabyssal": "group_b_kind_4",
+  "foliated": "group_c_kind_1",
+  "non-foliated": "group_c_kind_2"
+ },
+ "settings": {
+  "extrusive": "setting_1",
+  "intrusive": "setting_2"
+ },
+ "keys": {
+  "igneous_setting": "group_b_setting"
+ },
+ "display": {}
+}
