@@ -470,7 +470,7 @@ tests/            repository checks that need no rendering
 ## Citation
 
 If you use this generator, please cite the paper (reference to be added on publication) and this repository
-(`CITATION.cff`). Version 1.0.0 is archived on Zenodo: <https://doi.org/10.5281/zenodo.24081651>.
+(`CITATION.cff`).
 
 ## License
 

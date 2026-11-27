@@ -2,15 +2,14 @@ cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 title: "Controllable outcrop generator"
 version: 1.0.0
-doi: 10.5281/zenodo.24081651
 date-released: 2026-11-09
 license: MIT
 repository-code: "https://github.com/GANjj01/controllable-outcrop-generator"
 authors:
   - family-names: "Gan"
     given-names: "Jiajing"
-    email: "gjj.research@gmail.com"
     affiliation: "Geomechanics Laboratory, Department of Earth and Environmental Sciences, College of Humanities and Sciences, Nihon University"
   - family-names: "Takemura"
     given-names: "Takato"
+    email: "takemura.takato@nihon-u.ac.jp"
     affiliation: "Geomechanics Laboratory, Department of Earth and Environmental Sciences, College of Humanities and Sciences, Nihon University"
