@@ -2,7 +2,8 @@ cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 title: "Controllable outcrop generator"
 version: 1.0.0
-date-released: 2026-11-09
+doi: 10.5281/zenodo.24081651
+date-released: 2026-11-27
 license: MIT
 repository-code: "https://github.com/GANjj01/controllable-outcrop-generator"
 authors:
